@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>國教盟月報 - 2026年03月</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #1e3a5f; --primary-light: #2a4f7f;
+  --accent: #2a9d8f; --accent-light: #3dbdad;
+  --danger: #c9184a; --warning: #e76f51;
+  --bg: #f0f2f5; --card: #ffffff;
+  --text: #1a1a2e; --text-light: #6b7280; --border: #e5e7eb;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06); --shadow-md: 0 4px 6px rgba(0,0,0,0.04);
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.06);
+  --radius: 16px; --radius-sm: 10px;
+}
+[data-theme="dark"] {
+  --primary: #60a5fa; --accent: #34d399; --danger: #fb7185; --warning: #fb923c;
+  --bg: #0f172a; --card: #1e293b; --text: #f1f5f9; --text-light: #94a3b8; --border: #334155;
+  --shadow: 0 1px 3px rgba(0,0,0,0.3); --shadow-md: 0 4px 6px rgba(0,0,0,0.25); --shadow-lg: 0 10px 25px rgba(0,0,0,0.3);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--text); line-height:1.75; transition:background 0.3s,color 0.3s; }
+.header {
+  background: linear-gradient(135deg, #264653 0%, #1e3a5f 40%, #2a9d8f 100%);
+  color: white; position: relative; overflow: hidden;
+}
+[data-theme="dark"] .header { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); }
+.header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(42,157,143,0.1) 0%,transparent 60%); animation:pulse 8s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{ transform:scale(1); opacity:0.5; } 50%{ transform:scale(1.1); opacity:1; } }
+.header-inner { position:relative; z-index:1; padding:28px 20px 20px; text-align:center; }
+.header-badge { display:inline-flex; align-items:center; gap:6px; background:rgba(255,255,255,0.15); backdrop-filter:blur(10px); padding:4px 14px; border-radius:50px; font-size:0.75rem; font-weight:500; margin-bottom:12px; }
+.header-date { font-size:0.9rem; opacity:0.9; margin-bottom:6px; }
+.header-title { font-size:1.6rem; font-weight:900; letter-spacing:1px; margin-bottom:4px; }
+.header-sub { font-size:0.8rem; opacity:0.7; }
+.nav-bar { display:flex; justify-content:center; gap:4px; padding:10px 16px 14px; position:relative; z-index:1; }
+.nav-bar a { display:inline-flex; align-items:center; gap:4px; padding:6px 14px; border-radius:50px; font-size:0.75rem; font-weight:600; text-decoration:none; color:rgba(255,255,255,0.7); background:rgba(255,255,255,0.1); transition:all 0.2s; }
+.nav-bar a:hover { background:rgba(255,255,255,0.2); color:white; }
+.nav-bar a.active { background:rgba(255,255,255,0.25); color:white; }
+
+.stats-bar { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; padding:0 16px; margin-top:-20px; position:relative; z-index:2; max-width:640px; margin-left:auto; margin-right:auto; }
+.stat-card { background:var(--card); border-radius:var(--radius-sm); padding:14px 8px; text-align:center; box-shadow:var(--shadow-md); transition:transform 0.2s; }
+.stat-card:hover { transform:translateY(-2px); }
+.stat-number { font-size:1.4rem; font-weight:900; color:var(--primary); line-height:1.2; }
+.stat-label { font-size:0.65rem; color:var(--text-light); margin-top:2px; }
+.stat-card:nth-child(2) .stat-number { color:var(--accent); }
+.stat-card:nth-child(3) .stat-number { color:var(--danger); }
+.stat-card:nth-child(4) .stat-number { color:var(--warning); }
+
+.theme-toggle { position:fixed; top:16px; right:16px; z-index:100; width:40px; height:40px; border-radius:50%; border:none; background:var(--card); box-shadow:var(--shadow-md); cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:1.1rem; transition:all 0.3s; }
+.theme-toggle:hover { transform:scale(1.1); }
+main { max-width:640px; margin:0 auto; padding:24px 16px 16px; }
+
+/* Chart */
+.chart-card { background:var(--card); border-radius:var(--radius); padding:20px 16px; margin:20px 0; box-shadow:var(--shadow); border:1px solid var(--border); }
+.chart-title { font-size:0.9rem; font-weight:700; color:var(--text); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.chart-area { display:flex; align-items:flex-end; gap:2px; height:80px; padding-top:10px; }
+.bar-col { display:flex; flex-direction:column; align-items:center; flex:1; min-width:0; }
+.bar { width:100%; max-width:14px; border-radius:3px 3px 0 0; transition:height 0.5s ease; margin:0 auto; }
+.bar-label { font-size:0.5rem; color:var(--text-light); margin-top:4px; }
+
+/* Source Ranking */
+.ranking-card { background:var(--card); border-radius:var(--radius); padding:20px; margin:16px 0; box-shadow:var(--shadow); border:1px solid var(--border); }
+.ranking-title { font-size:0.9rem; font-weight:700; color:var(--text); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.source-row { display:flex; align-items:center; gap:8px; margin-bottom:10px; font-size:0.82rem; }
+.source-rank { font-weight:900; color:var(--primary); width:24px; text-align:center; font-size:0.75rem; }
+.source-name { width:80px; flex-shrink:0; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.source-bar-bg { flex:1; height:8px; background:var(--bg); border-radius:4px; overflow:hidden; }
+.source-bar-fill { height:100%; background:linear-gradient(90deg,var(--accent),var(--primary)); border-radius:4px; transition:width 0.8s ease; }
+.source-count { font-size:0.72rem; color:var(--text-light); width:36px; text-align:right; }
+
+.section-header { display:flex; align-items:center; gap:10px; margin:28px 0 14px; padding-bottom:10px; border-bottom:2px solid var(--border); position:relative; }
+.section-header::after { content:''; position:absolute; bottom:-2px; left:0; width:60px; height:2px; background:var(--primary); border-radius:2px; }
+.section-header.highlight::after { background:var(--danger); }
+.section-icon { width:36px; height:36px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; flex-shrink:0; background:rgba(30,58,95,0.08); }
+.section-header.highlight .section-icon { background:rgba(201,24,74,0.1); }
+[data-theme="dark"] .section-icon { background:rgba(96,165,250,0.15); }
+.section-name { font-size:1.05rem; font-weight:700; }
+.section-count { margin-left:auto; font-size:0.7rem; font-weight:600; color:var(--text-light); background:var(--bg); padding:2px 10px; border-radius:50px; }
+
+.news-card { background:var(--card); border-radius:var(--radius); padding:18px; margin-bottom:12px; box-shadow:var(--shadow); border:1px solid var(--border); transition:all 0.25s ease; animation:slideUp 0.5s ease both; position:relative; overflow:hidden; }
+.news-card::before { content:''; position:absolute; top:0; left:0; width:4px; height:100%; background:var(--accent); border-radius:4px 0 0 4px; }
+.news-card:hover { box-shadow:var(--shadow-lg); transform:translateY(-2px); }
+.news-card.featured { border-color:rgba(201,24,74,0.15); }
+.news-card.featured::before { background:var(--danger); }
+@keyframes slideUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+.card-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.news-source { display:flex; align-items:center; gap:6px; font-size:0.75rem; color:var(--text-light); font-weight:500; }
+.source-dot { width:6px; height:6px; background:var(--accent); border-radius:50%; flex-shrink:0; }
+.news-card.featured .source-dot { background:var(--danger); }
+.news-date { font-size:0.7rem; color:var(--text-light); }
+.news-title { font-size:1rem; font-weight:700; line-height:1.5; margin-bottom:8px; color:var(--text); }
+.badge { display:inline-block; padding:1px 8px; border-radius:4px; font-size:0.65rem; font-weight:700; margin-right:6px; vertical-align:middle; }
+.badge-hot { background:var(--danger); color:white; }
+.news-summary { font-size:0.88rem; color:var(--text-light); line-height:1.65; }
+.news-link { display:inline-flex; align-items:center; gap:4px; margin-top:12px; font-size:0.82rem; color:var(--accent); text-decoration:none; font-weight:600; transition:gap 0.2s; }
+.news-link:hover { gap:8px; }
+.no-news { color:var(--text-light); font-size:0.9rem; padding:20px; text-align:center; background:var(--card); border-radius:var(--radius); border:1px dashed var(--border); }
+
+.action-bar { display:flex; justify-content:center; gap:10px; margin-top:20px; }
+.share-btn { display:inline-flex; align-items:center; gap:6px; padding:12px 24px; border-radius:50px; font-size:0.85rem; font-weight:600; text-decoration:none; transition:all 0.2s; }
+.share-btn.line { background:#06C755; color:white; }
+.share-btn.line:hover { background:#05b04c; }
+footer { text-align:center; padding:24px 16px; font-size:0.75rem; color:var(--text-light); border-top:1px solid var(--border); margin-top:32px; }
+footer a { color:var(--accent); text-decoration:none; font-weight:600; }
+@media (max-width:400px) { .stats-bar { grid-template-columns:repeat(2,1fr); } .header-title { font-size:1.3rem; } .chart-area { gap:1px; } }
+</style>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+<div class="header">
+  <div class="header-inner">
+    <div class="header-badge">📊 月報總覽</div>
+    <div class="header-date">2026年03月</div>
+    <h1 class="header-title">國教盟月報</h1>
+    <div class="header-sub">月度新聞回顧與趨勢分析 · 國教行動聯盟</div>
+  </div>
+  <nav class="nav-bar">
+    <a href="https://weall888-jpg.github.io/daily-news/">📰 日報</a>
+    <a href="https://weall888-jpg.github.io/daily-news/archive/weekly/2026-W11.html">📅 週報</a>
+    <a href="#" class="active">📊 月報</a>
+  </nav>
+</div>
+
+<div class="stats-bar">
+  <div class="stat-card"><div class="stat-number">1</div><div class="stat-label">發刊天數</div></div>
+  <div class="stat-card"><div class="stat-number">0</div><div class="stat-label">新聞總數</div></div>
+  <div class="stat-card"><div class="stat-number">0</div><div class="stat-label">焦點報導</div></div>
+  <div class="stat-card"><div class="stat-number">0</div><div class="stat-label">發出新聞稿</div></div>
+</div>
+
+<main>
+
+<div class="chart-card">
+  <div class="chart-title">📈 每日新聞數量</div>
+  <div class="chart-area">
+    <div class="bar-col" title="3/1：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">1</div></div>
+<div class="bar-col" title="3/2：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">2</div></div>
+<div class="bar-col" title="3/3：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">3</div></div>
+<div class="bar-col" title="3/4：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">4</div></div>
+<div class="bar-col" title="3/5：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">5</div></div>
+<div class="bar-col" title="3/6：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">6</div></div>
+<div class="bar-col" title="3/7：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">7</div></div>
+<div class="bar-col" title="3/8：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">8</div></div>
+<div class="bar-col" title="3/9：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">9</div></div>
+<div class="bar-col" title="3/10：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">10</div></div>
+<div class="bar-col" title="3/11：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">11</div></div>
+<div class="bar-col" title="3/12：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">12</div></div>
+<div class="bar-col" title="3/13：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">13</div></div>
+<div class="bar-col" title="3/14：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">14</div></div>
+<div class="bar-col" title="3/15：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">15</div></div>
+<div class="bar-col" title="3/16：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">16</div></div>
+<div class="bar-col" title="3/17：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">17</div></div>
+<div class="bar-col" title="3/18：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">18</div></div>
+<div class="bar-col" title="3/19：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">19</div></div>
+<div class="bar-col" title="3/20：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">20</div></div>
+<div class="bar-col" title="3/21：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">21</div></div>
+<div class="bar-col" title="3/22：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">22</div></div>
+<div class="bar-col" title="3/23：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">23</div></div>
+<div class="bar-col" title="3/24：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">24</div></div>
+<div class="bar-col" title="3/25：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">25</div></div>
+<div class="bar-col" title="3/26：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">26</div></div>
+<div class="bar-col" title="3/27：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">27</div></div>
+<div class="bar-col" title="3/28：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">28</div></div>
+<div class="bar-col" title="3/29：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">29</div></div>
+<div class="bar-col" title="3/30：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">30</div></div>
+<div class="bar-col" title="3/31：0則"><div class="bar" style="height:2px;background:var(--border)"></div><div class="bar-label">31</div></div>
+
+  </div>
+</div>
+
+<div class="ranking-card">
+  <div class="ranking-title">🏆 新聞來源排行</div>
+  <div class="no-news">本月尚無數據</div>
+</div>
+<div class="section-header highlight"><div class="section-icon">🔥</div><div class="section-name">本月焦點</div><span class="section-count">0 則</span></div>
+<div class="no-news">本月暫無焦點新聞</div>
+
+<div class="section-header"><div class="section-icon">📋</div><div class="section-name">本月新聞總覽</div><span class="section-count">0 則</span></div>
+<div class="no-news">本月暫無其他新聞</div>
+
+<div class="action-bar">
+  <a href="https://social-plugins.line.me/lineit/share?url=https://weall888-jpg.github.io/daily-news/archive/monthly/2026-03.html" target="_blank" class="share-btn line">📤 分享到 LINE</a>
+</div>
+</main>
+<footer>
+  由 <a href="https://www.facebook.com/naer.tw" target="_blank">國教行動聯盟</a> 整理<br>
+  生成時間：2026/03/11 15:29
+</footer>
+<script>
+function toggleTheme() {
+  const b=document.body,btn=document.querySelector('.theme-toggle');
+  if(b.getAttribute('data-theme')==='dark'){b.removeAttribute('data-theme');btn.textContent='🌙';localStorage.setItem('theme','light');}
+  else{b.setAttribute('data-theme','dark');btn.textContent='☀️';localStorage.setItem('theme','dark');}
+}
+(function(){
+  if(localStorage.getItem('theme')==='dark'||(!localStorage.getItem('theme')&&window.matchMedia('(prefers-color-scheme: dark)').matches)){
+    document.body.setAttribute('data-theme','dark');document.querySelector('.theme-toggle').textContent='☀️';
+  }
+})();
+</script>
+</body>
+</html>
