@@ -282,12 +282,12 @@ a{color:var(--kb)}
     <div class="s done"><div class="k">第2會期</div><div class="r">113/9–114/1</div><span class="st">已抽</span></div>
     <div class="s done"><div class="k">第3會期</div><div class="r">114/2–5</div><span class="st">已抽</span></div>
     <div class="s done"><div class="k">第4會期</div><div class="r">114/9–115/1</div><span class="st">已抽</span></div>
-    <div class="s due"><div class="k">第5會期</div><div class="r">115/2–5</div><span class="st">欠著</span></div>
+    <div class="s due"><div class="k">第5會期</div><div class="r">115/2–5（延會至 7 月底以後）</div><span class="st">待確認</span></div>
     <div class="s now"><div class="k">第6會期</div><div class="r">115/9–116/1</div><span class="st">本月開議</span></div>
     <div class="s next"><div class="k">第7會期</div><div class="r">116/2–5</div><span class="st">未來</span></div>
     <div class="s next"><div class="k">第8會期</div><div class="r">116/9–117/1</div><span class="st">未來</span></div>
   </div>
-  <div class="legend">「已抽」依據本機 B 表最後抽取日 2026-03-07（ground-truth 樣本編號到 B-264 以上）；8/8 起自動排程已停用，所以 3/7 之後沒有新抽取；B 表放在桌面資料夾，不在任何一份 GitHub 備份裡。延會期間另計。「完整」等於還要收 4 個會期，約 17 個月，2028 年 2 月前後可以收齊。</div>
+  <div class="legend">「已抽」依據本機 B 表最後抽取日 2026-03-07（ground-truth 樣本編號到 B-264 以上）；8/8 起自動排程已停用，8/30 與 8/31 兩份備份裡也沒有任何第 5 會期抽取的紀錄，但理事長表示電腦內應已有第 5 會期資料，雲端無法核對，故標「待確認」。注意第 5 會期已延會：教文委員會 7/27 仍在審查供餐法草案，公報要收到延會結束為止，不能只收到 5 月。B 表放在桌面資料夾，不在任何一份 GitHub 備份裡。「完整」等於第 5 會期確認後再收 3 個會期，2028 年 2 月前後可以收齊。</div>
 
   <h3>公督盟做什麼，我們為什麼要完全不一樣</h3>
   <div class="vs"><table>
@@ -389,7 +389,7 @@ a{color:var(--kb)}
       <ol>
         <li><strong>先盤點現況，不動資料。</strong>跑 workflow-checklist 的檢核：B 表實際筆數、各會期比例、L1/L2/L3 分布、重複率。把結果寫成一頁「現況」，這一頁決定後面每一步的規模。</li>
         <li><strong>定原始層的資料模型。</strong>每筆一個穩定 ID（屆、會期、委員會、會議次、流水號），欄位：日期、公報卷期頁或 URL、官員職稱姓名、機關、逐字內容、關鍵詞等級。只登錄，不判定，不加備註欄。歸宿建議獨立公開 repo，等理事長裁（第六節第 2 項）。</li>
-        <li><strong>補抽第 5 會期（115 年 2 到 5 月）。</strong>下載公報 PDF、分批跑抽取、每批做品質檢核。順便實測立法院開放資料的程式化路徑，通就記下步驟，不通就維持 PDF，如實寫進 BUILD-LOG。</li>
+        <li><strong>確認第 5 會期收到哪裡。</strong>先對本機 B 表跑會期統計：若第 5 會期已抽，核對是否含延會到 7 月底以後的場次；缺哪一段就補哪一段，不重跑已抽的。順便實測立法院開放資料的程式化路徑，通就記下步驟，不通就維持 PDF，如實寫進 BUILD-LOG。</li>
         <li><strong>A 表議題對齊監督層詞表。</strong>技能內建的議題關鍵詞（長照、托育、課綱等）跟監督層 vocab.yml 的 10 個 tag 不是同一套。以 vocab.yml 為正本重貼議題，否則第 3 節的 C 表跟監督層的議題線對不起來。</li>
         <li><strong>產第 1 到 5 會期的 C 表（議題溫度表）第一版</strong>，純計數，給理事長看。這是產品 B 的雛形，也是產品 A 的目錄。</li>
         <li><strong>試點對接監督層。</strong>從 B 表 L3 事件挑 5 到 10 筆，依 A18 規格建 CCD 候選卡（AI 建卡、人審升格），台帳留卡號互鏈。試點跑通再談全量。</li>
