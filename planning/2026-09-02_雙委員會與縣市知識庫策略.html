@@ -187,13 +187,15 @@ a{color:var(--kb)}
 
   <div class="tbl"><table>
     <thead><tr><th>系統</th><th>現在有什麼</th><th>做對的地方</th><th>處置</th></tr></thead>
-    \1<tr>
+    <tbody>
+      <tr>
         <td><b>政策中心雙委員會試營運</b><br><span class="mono">aabe-legislative-watch（9/2 剛推上來）</span></td>
         <td>8/28 起底、9/1 止 30 個 commit。第 5 會期原始層：155 場會議（教文 76、衛環 79）、1,811 件議案、4,165 筆審議關係、312 筆公報索引、83 冊公報全文（5.1GB，逐檔 SHA-256）、影音只存 URL 與時間碼。知識層：26 條 wiki 條目（全 candidate）、1,317 個實體、2,450 條連結、6 條具名查詢。六議題四層掃描，直接段落 1,061 段。國會回音報告 v1.2（39 場次本盟訴求對 83 冊公報）＋理事長人審版儀表板。Codex 五輪驗收全結案，複驗 11 過 0 敗。</td>
         <td>做對的地方很多，挑五個：①原始快照只讀、帶回應標頭與雜湊，會期靜態 XLS 當母表、動態端點只當提示；②「擬請」不等於「決定」，交付候選只認院會決定欄；③所有模型輸出一律 candidate，立委只記可回溯逐字、不推論動機、不排名；④分類規則靠稽核迭代（名冊排除、年齡層詞、他域共現），每次改動留痕可回滾；⑤回音報告前兩輪 LLM 組裝都漂移，第三輪改成純程式決定性渲染。intent.md 把「為什麼做、成功長什麼樣、不做什麼」寫死，是全部 repo 裡最清楚的一份。</td>
         <td class="keep">保留，當主幹</td>
       </tr>
-      \2<br><span class="mono">aabe-cloud-hq/work/台灣立法知識庫與應用</span></td>
+      <tr>
+        <td><b>台灣立法知識庫</b><br><span class="mono">aabe-cloud-hq/work/台灣立法知識庫與應用</span></td>
         <td>main 上有 6 張議題卡、6 張機關卡、17 張來源卡；另有 PR-3 的 23 張卡（憲法等 5 張法源卡、18 張程序機制卡）停在 7/27 的分支上，經 Codex 十二輪處置但尚未合併；七期 PR 計畫排到 PUB 應用層；每卡標 verify_depth</td>
         <td>SPEC 一開始就寫明「本庫不做即時追蹤，那是 legislative-monitor 的事」，而且「本庫不採立場」。制度層與追蹤層沒有混在一起。</td>
         <td class="keep">保留＋合併</td>
