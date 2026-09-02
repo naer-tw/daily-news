@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>承諾總帳與縣市年帳</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5F6F2; --card:#FFFFFF; --ink:#1C2128; --ink2:#4B5563; --rule:#D9DDD3; --rule2:#EEF0EA;
+  --seal:#B23A2F; --seal-bg:#FBEFEC;
+  --raw:#5A6472; --raw-bg:#EEF0F3;
+  --kb:#2F4B6E;  --kb-bg:#E9EFF6;
+  --act:#9A5B1F; --act-bg:#F7EFE4;
+  --ok:#3E6B3A; --ok-bg:#E8F0E6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181D; --card:#1C2229; --ink:#E8EBE6; --ink2:#A6AEB8; --rule:#2E3740; --rule2:#232B33;
+    --seal:#E0655A; --seal-bg:#3A2320;
+    --raw:#9AA5B3; --raw-bg:#242C35;
+    --kb:#7FA3D1;  --kb-bg:#1F2B3A;
+    --act:#D69A5A; --act-bg:#332618;
+    --ok:#8FBF88; --ok-bg:#1E2E1D;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14181D; --card:#1C2229; --ink:#E8EBE6; --ink2:#A6AEB8; --rule:#2E3740; --rule2:#232B33;
+  --seal:#E0655A; --seal-bg:#3A2320;
+  --raw:#9AA5B3; --raw-bg:#242C35;
+  --kb:#7FA3D1;  --kb-bg:#1F2B3A;
+  --act:#D69A5A; --act-bg:#332618;
+  --ok:#8FBF88; --ok-bg:#1E2E1D;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;
+  font-size:16px;line-height:1.85;color:var(--ink);background:var(--paper);
+  -webkit-font-smoothing:antialiased;
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+.mono{font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;font-variant-numeric:tabular-nums}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px 96px}
+header{padding:56px 0 28px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink2);font-weight:500;margin-bottom:14px}
+.eyebrow b{color:var(--seal);font-weight:700}
+h1{font-family:'Noto Serif TC',serif;font-weight:900;font-size:clamp(28px,5vw,40px);line-height:1.25;letter-spacing:-.01em;text-wrap:balance;margin-bottom:14px}
+.lede{font-size:17px;color:var(--ink2);max-width:62ch}
+.meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px;font-size:13px;color:var(--ink2)}
+.meta span b{color:var(--ink);font-weight:500}
+
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;padding:20px 0 0}
+nav.toc a{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--rule);padding:6px 12px;border-radius:999px;background:var(--card)}
+nav.toc a:hover,nav.toc a:focus-visible{border-color:var(--kb);color:var(--kb);outline:none}
+
+.tldr{margin:32px 0 8px;padding:22px 24px;background:var(--card);border-left:4px solid var(--seal);border-radius:0 8px 8px 0}
+.tldr h2{font-family:'Noto Serif TC',serif;font-size:15px;letter-spacing:.12em;color:var(--seal);margin-bottom:12px;font-weight:700}
+.tldr ol{padding-left:22px;display:grid;gap:10px}
+.tldr li strong{font-weight:700}
+
+section{margin-top:56px}
+h2{font-family:'Noto Serif TC',serif;font-weight:700;font-size:24px;line-height:1.35;text-wrap:balance;padding-bottom:10px;border-bottom:2px solid var(--ink);margin-bottom:8px}
+h2 .num{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink2);margin-right:10px;vertical-align:middle;letter-spacing:.05em}
+.sub{color:var(--ink2);font-size:15px;margin-bottom:22px;max-width:65ch}
+h3{font-family:'Noto Serif TC',serif;font-weight:700;font-size:18px;margin:30px 0 10px;text-wrap:balance}
+p{max-width:68ch;margin-bottom:14px}
+ul,ol{padding-left:22px;margin-bottom:14px;max-width:68ch}
+li{margin-bottom:6px}
+li strong,p strong{font-weight:700}
+.note{font-size:14px;color:var(--ink2);padding:12px 16px;background:var(--rule2);border-radius:6px;max-width:68ch;margin:10px 0 18px}
+.redline{font-size:14px;padding:12px 16px;background:var(--seal-bg);border-left:3px solid var(--seal);border-radius:0 6px 6px 0;max-width:68ch;margin:10px 0 18px}
+.redline b{color:var(--seal)}
+
+.tbl{overflow-x:auto;margin:14px 0 22px;border:1px solid var(--rule);border-radius:8px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+th,td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--rule)}
+th{font-weight:700;font-size:13px;letter-spacing:.04em;color:var(--ink2);background:var(--rule2)}
+tr:last-child td{border-bottom:none}
+td.keep{color:var(--ok);font-weight:700;white-space:nowrap}
+
+.layers{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 10px}
+.layer{padding:16px 16px 14px;border-radius:8px;border-top:4px solid;background:var(--card)}
+.layer.raw{border-color:var(--raw)} .layer.kb{border-color:var(--kb)} .layer.act{border-color:var(--act)}
+.layer .t{font-family:'Noto Serif TC',serif;font-weight:700;font-size:16px;margin-bottom:6px}
+.layer.raw .t{color:var(--raw)} .layer.kb .t{color:var(--kb)} .layer.act .t{color:var(--act)}
+.layer .d{font-size:13.5px;color:var(--ink2);line-height:1.7}
+.layer .w{font-size:12px;margin-top:10px;color:var(--ink2)}
+.arrowrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;font-size:12px;color:var(--ink2);text-align:center;margin-bottom:18px}
+@media (max-width:640px){.layers,.arrowrow{grid-template-columns:1fr}.arrowrow{display:none}}
+
+.rules{counter-reset:r;list-style:none;padding:0;max-width:none}
+.rules li{counter-increment:r;display:grid;grid-template-columns:34px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--rule)}
+.rules li::before{content:counter(r,cjk-ideographic);font-family:'Noto Serif TC',serif;font-weight:900;color:var(--kb);font-size:18px;line-height:1.5}
+.rules li:last-child{border-bottom:none}
+
+.sessions{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;margin:16px 0 8px}
+.s{padding:10px 6px 8px;border-radius:6px;text-align:center;border:1px solid var(--rule);background:var(--card)}
+.s .k{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600}
+.s .r{font-size:11px;color:var(--ink2);line-height:1.4;margin-top:4px}
+.s .st{display:inline-block;margin-top:6px;font-size:11px;padding:1px 7px;border-radius:999px;font-weight:700}
+.s.done{border-color:var(--raw)} .s.done .st{background:var(--raw-bg);color:var(--raw)}
+.s.due{border-color:var(--seal)} .s.due .st{background:var(--seal-bg);color:var(--seal)}
+.s.now{border-color:var(--act)} .s.now .st{background:var(--act-bg);color:var(--act)}
+.s.next .st{background:var(--rule2);color:var(--ink2)}
+.legend{font-size:12.5px;color:var(--ink2);margin-bottom:18px}
+@media (max-width:640px){.sessions{grid-template-columns:repeat(4,1fr)}}
+
+.vs{overflow-x:auto;margin:14px 0 8px;border:1px solid var(--rule);border-radius:8px;background:var(--card)}
+.vs table{min-width:600px}
+.vs th:nth-child(2){color:var(--raw)} .vs th:nth-child(3){color:var(--kb)}
+.punch{font-family:'Noto Serif TC',serif;font-weight:700;font-size:20px;line-height:1.5;text-align:center;padding:18px 12px;margin:14px 0 24px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);text-wrap:balance}
+
+.prod{display:grid;gap:12px;margin:14px 0 20px}
+.p{padding:16px 18px;background:var(--card);border:1px solid var(--rule);border-radius:8px;display:grid;grid-template-columns:44px 1fr;gap:12px}
+.p .tag{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:13px;color:var(--kb);padding-top:3px}
+.p .h{font-weight:700;margin-bottom:4px}
+.p .b{font-size:14.5px;color:var(--ink2);line-height:1.75}
+.p .b b{color:var(--ink);font-weight:500}
+.p .when{font-size:12.5px;margin-top:8px;color:var(--act);font-weight:500}
+
+.cal{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 20px}
+.c{padding:16px 18px;background:var(--card);border:1px solid var(--rule);border-radius:8px}
+.c .m{font-family:'Noto Serif TC',serif;font-weight:900;font-size:26px;color:var(--act);line-height:1;margin-bottom:6px}
+.c .h{font-weight:700;margin-bottom:6px}
+.c .b{font-size:14px;color:var(--ink2);line-height:1.7}
+@media (max-width:560px){.cal{grid-template-columns:1fr}}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 20px}
+.sess{padding:18px 20px 16px;background:var(--card);border:1px solid var(--rule);border-radius:8px;border-top:4px solid}
+.sess.kbline{border-top-color:var(--kb)} .sess.actline{border-top-color:var(--act)}
+.sess .who{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-bottom:4px}
+.sess.kbline .who{color:var(--kb)} .sess.actline .who{color:var(--act)}
+.sess .cwd{font-size:12.5px;color:var(--ink2);margin-bottom:12px}
+.sess ol{padding-left:20px;margin:0}
+.sess li{font-size:14.5px;margin-bottom:8px}
+.sess .no{margin-top:12px;font-size:13px;color:var(--seal);border-top:1px dashed var(--rule);padding-top:10px}
+@media (max-width:680px){.two{grid-template-columns:1fr}}
+
+.decide{list-style:none;padding:0;max-width:none;counter-reset:d}
+.decide li{counter-increment:d;display:grid;grid-template-columns:30px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--rule)}
+.decide li::before{content:counter(d);font-family:'JetBrains Mono',monospace;font-weight:600;color:var(--seal)}
+.decide li:last-child{border-bottom:none}
+
+footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--rule);font-size:13px;color:var(--ink2)}
+footer p{margin-bottom:6px}
+a{color:var(--kb)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">內部策略備忘 · <b>只看事實與分工，不替理事長下判定</b></div>
+  <h1>雙委員會資料與縣市知識庫：保留什麼、分開什麼、接下來長成什麼</h1>
+  <p class="lede">先把你已經做好的東西一件件點名保留，再用一條分工原則把「指揮中心要的」與「知識庫要的」分開，然後回答兩個問題：第 11 屆雙委員會資料收齊之後能做什麼、縣市政策知識庫每年能公布什麼、怎麼跟議員一起用。最後是兩條 session 各自的下一步。</p>
+  <div class="meta">
+    <span>日期 <b class="mono">2026-09-02</b></span>
+    <span>讀者 <b>理事長</b></span>
+    <span>依據 <b>aabe-ai-advocacy-os、aabe-cloud-hq、mayoral-pledges-watch、policy、advocacy-database 五個 repo 現況</b></span>
+  </div>
+  <nav class="toc" aria-label="目錄">
+    <a href="#keep">一、保留清單</a>
+    <a href="#split">二、分工原則</a>
+    <a href="#ly">三、雙委員會能長成什麼</a>
+    <a href="#city">四、縣市知識庫與議員</a>
+    <a href="#next">五、兩個 session 的下一步</a>
+    <a href="#decide">六、等你裁的事</a>
+  </nav>
+</header>
+
+<div class="tldr">
+  <h2>三句話版本</h2>
+  <ol>
+    <li><strong>你做好的全部保留，一個不動。</strong>立法知識庫、legislative-monitor 三表、監督層 A18、指揮中心台帳、縣市平台與判定規則書，都已經各就各位；缺的不是重做，是把雙委員會資料「放進」你已經有的三層裡。</li>
+    <li><strong>分工一句話：知識庫只放「誰、哪天、哪個會、說了什麼、出處在哪」；判定、訴求、角度、下次檢查日，永遠住在監督層與指揮中心。</strong>指揮中心用 ID 引用知識庫，不複製、不回寫。</li>
+    <li><strong>雙委員會資料收到第 11 屆結束（2028-01），可以長成「政府承諾總帳」。</strong>跟公督盟的差別只有一句：他們評立委、給分數、出榜單；我們追承諾、不排名、出資料集。</li>
+  </ol>
+</div>
+
+<!-- ===================== 一 ===================== -->
+<section id="keep">
+  <h2><span class="num">01</span>先盤點：你已經做好的，全部保留</h2>
+  <p class="sub">下面每一列都是我實際打開 repo 看過的東西。「做對的地方」是保留的理由；「處置」欄一律是保留，只有兩處是「加」，沒有一處是「改」。</p>
+
+  <div class="tbl"><table>
+    <thead><tr><th>系統</th><th>現在有什麼</th><th>做對的地方</th><th>處置</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><b>台灣立法知識庫</b><br><span class="mono">aabe-cloud-hq/work/台灣立法知識庫與應用</span></td>
+        <td>6 張議題卡、6 張機關卡、17 張來源卡；七期 PR 計畫排到 PUB 應用層；每卡標 verify_depth</td>
+        <td>SPEC 一開始就寫明「本庫不做即時追蹤，那是 legislative-monitor 的事」，而且「本庫不採立場」。制度層與追蹤層沒有混在一起。</td>
+        <td class="keep">保留</td>
+      </tr>
+      <tr>
+        <td><b>legislative-monitor 技能</b><br><span class="mono">.claude/skills/legislative-monitor</span></td>
+        <td>A 表議題、B 表事件、C 表對照矩陣；L1/L2/L3 關鍵詞分級；只抓官員發言、排除立委發言；本機 B 表已抽到第 4 會期</td>
+        <td>「只抓官員、不抓立委」這個設計決定，就是你跟公督盟走不同路的起點。三表架構已經是一個可累積的資料模型。</td>
+        <td class="keep">保留＋加</td>
+      </tr>
+      <tr>
+        <td><b>監督層 A18</b><br><span class="mono">aabe-ai-advocacy-os/監督層</span></td>
+        <td>7,970 筆官方原始資料；23 張正式承諾卡、21 張候選卡；tracking_events 只准 AI 寫 pending_human；六輪對抗驗收的防偽機制</td>
+        <td>「判定住在這裡，而且只有理事長能填判定值」已經寫進 lint。這正是「知識庫不碰判定」的機器閘。</td>
+        <td class="keep">保留</td>
+      </tr>
+      <tr>
+        <td><b>指揮中心</b><br><span class="mono">aabe-ai-advocacy-os/指揮中心</span></td>
+        <td>S0 到 S8 作業流程；追蹤台帳表 A 政府回應、表 B 訴求兌現（32 列、84 條訴求）；議題佇列；新議題標準路徑階段 0 到 4</td>
+        <td>方法論已經把「事實層、判斷層、行動層」分成三個 session 跑。你 8/14 寫的復盤裡那句「先建事實層、再開判斷層、最後才執行層」就是本文第二節的全部依據。</td>
+        <td class="keep">保留</td>
+      </tr>
+      <tr>
+        <td><b>縣市長政見監督平台</b><br><span class="mono">mayoral-pledges-watch</span></td>
+        <td>22 縣市、44 指標、638 筆指標值、504 筆預決算、41 筆承諾；十一題問卷；rebuild 加 023 一致性守護；9/1 啟動的資料層重建計畫 P0 到 P2</td>
+        <td>「純數據並陳、不評等、不排名」是理事長 6/12 拍板的紀律，加上五大口徑紅線，這已經是一個能每年出報告的「縣市政策知識庫」底盤。</td>
+        <td class="keep">保留＋加</td>
+      </tr>
+      <tr>
+        <td><b>承諾兌現判定規則書 v1.2</b></td>
+        <td>九個判定值；L1 只登錄不判定；推定跳票先函詢；歸因欄；判定者不驗自己</td>
+        <td>它是縣市承諾、立法院承諾、條約平台三條線共用的判定語言。第 11 屆總帳能不能對外站得住，靠的就是這本。</td>
+        <td class="keep">保留</td>
+      </tr>
+      <tr>
+        <td><b>對外出口</b><br><span class="mono">policy.aabe.org.tw / advocacy.aabe.org.tw</span></td>
+        <td>政策資料庫 47 篇專題、倡議成果資料庫（113 篇新聞稿、286 場活動）；GEO 頁帶 schema.org</td>
+        <td>已經有兩個對外站，年度出版物不需要新開網站，做成頁面掛上去就好。</td>
+        <td class="keep">保留</td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <p><strong>我看到的一個共同型態。</strong>你每一套系統都自帶「AI 只建議、人才核定」與「每個數字回溯到檔、頁、URL」兩條紀律，而且都寫成了腳本閘，不是口號。這代表接下來要做的事，都不需要發明新制度，只需要把雙委員會資料塞進既有的三層，然後排出版節奏。</p>
+  <div class="note">唯一還沒歸位的東西：雙委員會 B 表。它現在是「一個技能、一個桌面 JSON」，沒有穩定 ID、沒有進任何知識庫、也沒有跟監督層對接。立法知識庫的 backlog 已經寫了「legislative-monitor 公報管線正式對接、CMT 上線」，只是還沒排期。第三節就是在回答這件事。</div>
+</section>
+
+<!-- ===================== 二 ===================== -->
+<section id="split">
+  <h2><span class="num">02</span>分工原則：指揮中心要的，跟知識庫要的不一樣</h2>
+  <p class="sub">你的原話是「指揮中心的需要與知識庫不同，不要破壞知識庫的完整」。把它寫成可以執行的規矩，就是下面這三層四條。</p>
+
+  <div class="layers">
+    <div class="layer raw">
+      <div class="t">原始層</div>
+      <div class="d">公報、官方新聞稿、統計檔、預決算、選舉公報。只增不改，逐字存，帶卷期頁或 URL。沒有任何判斷。</div>
+      <div class="w mono">監督層/官方資料 · raw-sources/ · B 表</div>
+    </div>
+    <div class="layer kb">
+      <div class="t">知識層</div>
+      <div class="d">卡片：一件事一張、穩定 ID、frontmatter 帶來源與查證等級。AI 建議，人核定。慢慢長，不帶立場，立場另立 POS 卡。</div>
+      <div class="w mono">立法知識庫 wiki/ · 縣市 wiki.db · 監督層 CCD/CMT</div>
+    </div>
+    <div class="layer act">
+      <div class="t">行動層</div>
+      <div class="d">快、有角度、有訴求、有下次檢查日、有判定值。判定只有理事長能填。跳票是升級素材，不是結案。</div>
+      <div class="w mono">指揮中心 追蹤台帳 · 議題佇列 · tracking_events · 新聞稿</div>
+    </div>
+  </div>
+  <div class="arrowrow"><span>只增不改 →</span><span>用 ID 引用 →</span><span>發現新事實走 inbox 回流 ↺</span></div>
+
+  <h3>四條規矩</h3>
+  <ol class="rules">
+    <li><div><strong>知識庫只收原始事實欄位。</strong>誰（官員職稱姓名）、哪天、哪個會議、說了什麼（逐字）、出處（公報卷期頁或 URL）、關鍵詞命中等級。注意 L1/L2/L3 在 B 表裡是「關鍵詞命中」，不是「承諾判定」；對外講的時候不能把 B 表的 level 直接說成承諾等級。</div></li>
+    <li><div><strong>判定值、訴求、角度、下次檢查日，只住在監督層與指揮中心。</strong>知識庫不開這些欄位，連「備註」欄都不放。這就是 A18 已經用 lint 鎖住的事，把它推廣到所有知識庫。</div></li>
+    <li><div><strong>指揮中心引用知識庫一律用 ID，不複製內容。</strong>台帳寫 B-201、AABE.SV.CMT003、C-O-01 這種 ID；知識庫改一張卡，所有引用它的地方自然跟著對。台帳「監督層卡號」那一欄已經是這個設計。</div></li>
+    <li><div><strong>反向回流只走 inbox。</strong>指揮中心在監控時發現新事實，丟進知識庫的 inbox，依查證紀律建卡後才進知識層。指揮中心 session 自己不直接寫任何 wiki/ 或 wiki.db。這條就是你 8/30 裁決「知識庫線做資料層、指揮中心線做候選人軌」的通則版。</div></li>
+  </ol>
+  <div class="redline"><b>為什麼要這麼硬。</b>知識庫一旦混進判定或角度，之後任何人（包括對手）都可以說「你們的資料本來就帶立場」。純原始資料才是可以開放給所有黨派、所有研究者用的公共財，也才是「跟公督盟完全不一樣」能成立的前提。</div>
+</section>
+
+<!-- ===================== 三 ===================== -->
+<section id="ly">
+  <h2><span class="num">03</span>雙委員會資料，累積到第 11 屆完整之後能做什麼</h2>
+  <p class="sub">雙委員會指教育及文化委員會（教文）與社會福利及衛生環境委員會（衛環）。第 11 屆從 2024 年 2 月到 2028 年 1 月，共 8 個會期。</p>
+
+  <h3>現況：收到哪裡了</h3>
+  <div class="sessions">
+    <div class="s done"><div class="k">第1會期</div><div class="r">113/2–5</div><span class="st">已抽</span></div>
+    <div class="s done"><div class="k">第2會期</div><div class="r">113/9–114/1</div><span class="st">已抽</span></div>
+    <div class="s done"><div class="k">第3會期</div><div class="r">114/2–5</div><span class="st">已抽</span></div>
+    <div class="s done"><div class="k">第4會期</div><div class="r">114/9–115/1</div><span class="st">已抽</span></div>
+    <div class="s due"><div class="k">第5會期</div><div class="r">115/2–5</div><span class="st">欠著</span></div>
+    <div class="s now"><div class="k">第6會期</div><div class="r">115/9–116/1</div><span class="st">本月開議</span></div>
+    <div class="s next"><div class="k">第7會期</div><div class="r">116/2–5</div><span class="st">未來</span></div>
+    <div class="s next"><div class="k">第8會期</div><div class="r">116/9–117/1</div><span class="st">未來</span></div>
+  </div>
+  <div class="legend">「已抽」依據本機 B 表最後抽取日 2026-03-07（ground-truth 樣本編號到 B-264 以上）；延會期間另計。「完整」等於還要收 4 個會期，約 17 個月，2028 年 2 月前後可以收齊。</div>
+
+  <h3>公督盟做什麼，我們為什麼要完全不一樣</h3>
+  <div class="vs"><table>
+    <thead><tr><th>面向</th><th>公民監督國會聯盟</th><th>國教盟這條線</th></tr></thead>
+    <tbody>
+      <tr><td>監督對象</td><td>立委本人</td><td>行政部門在委員會做出的承諾</td></tr>
+      <tr><td>基本單位</td><td>一位委員</td><td>一條承諾（有主體、有內容、有期限）</td></tr>
+      <tr><td>方法</td><td>評分、排名、優秀與待觀察名單</td><td>逐條追蹤、九值判定、不排名、不評等</td></tr>
+      <tr><td>輸出</td><td>每會期評鑑報告、榜單</td><td>承諾總帳、開放資料集、給每個委員辦公室的同一份素材包</td></tr>
+      <tr><td>姿態</td><td>監督者、評鑑者</td><td>促進者：L1 不判定、推定跳票先函詢、歸因欄分清誰該負責</td></tr>
+      <tr><td>時間軸</td><td>會期結算</td><td>跨會期、跨屆延續（行政承諾不因屆期不連續消失）</td></tr>
+      <tr><td>議題範圍</td><td>全院、全議題</td><td>兒少、教育、心理健康三題，兩個委員會</td></tr>
+      <tr><td>資料開放</td><td>方法論與結果公開</td><td>原始 B 表去掉判定欄後整包開放，任何人可重跑</td></tr>
+    </tbody>
+  </table></div>
+  <div class="punch">公督盟評人，我們追事。<br>公督盟給分，我們給資料。</div>
+
+  <h3>六個可以長出來的產品（依資料成熟度排序）</h3>
+  <div class="prod">
+    <div class="p"><div class="tag">A</div><div>
+      <div class="h">政府承諾總帳（年度出版，最核心）</div>
+      <div class="b">每年一冊：教育部、國教署、衛福部、社家署、心健司等機關在教文與衛環各承諾了幾條 L2、L3；每條目前狀態（由理事長判定，AI 只記事實）；每條附公報卷期頁。<b>不排名機關，只並陳。</b>對應規則書九值與監督層 CMT 卡，整本書就是 CMT 的年度彙整。</div>
+      <div class="when">首版：第 5 會期抽完後，以第 1 到 5 會期出 2026 年版；第 11 屆完整版在 2028 年上半年。</div>
+    </div></div>
+    <div class="p"><div class="tag">B</div><div>
+      <div class="h">議題溫度表（C 表的升級）</div>
+      <div class="b">8 個會期乘議題的矩陣，純計數。哪些議題每會期都被問（制度性）、哪些只在事件後冒出（事件驅動，例如兒虐案之後）。<b>它回答的是「立法院在乎什麼、什麼時候在乎」</b>，這是媒體與研究者最想要、但目前沒有人做的圖。</div>
+      <div class="when">第 5 會期抽完就能出第一張；之後每會期更新一欄。</div>
+    </div></div>
+    <div class="p"><div class="tag">C</div><div>
+      <div class="h">同題重問偵測</div>
+      <div class="b">同一件事在不同會期被不同委員問、官員答案沒有進度，就標「結構性卡關」。<b>這是 D 的素材來源</b>，也是新聞稿最有力的一種數據：這題被問過 N 次，答案還是研議中。</div>
+      <div class="when">需要跨會期資料，第 1 到 5 會期就夠做第一輪。</div>
+    </div></div>
+    <div class="p"><div class="tag">D</div><div>
+      <div class="h">委員辦公室質詢素材包（公共財，跨黨派同一份）</div>
+      <div class="b">把公督盟的邏輯反過來：不是給立委打分數，是把資料送到每位委員手上。內容三塊：這個議題部會承諾過什麼、到期了沒、建議索資項目。<b>做法延伸 ADHD 那份「18 項資料、4 個部會、3 層立委工具」的 A3 印本</b>，那已經是這個產品的原型。教文、衛環全體委員收到的是同一份。</div>
+      <div class="when">每會期開議前一個月寄出；第 6 會期來不及，第 7 會期（2027-02）是第一個合理時點。</div>
+    </div></div>
+    <div class="p"><div class="tag">E</div><div>
+      <div class="h">承諾跨屆延續帳</div>
+      <div class="b">2028 年 2 月第 12 屆開始，法案屆期不連續，但行政承諾不會消失（規則書 G1「政府一體」）。第 11 屆完整資料就是第 12 屆的「前屆承諾清單」，新任委員第一次質詢就有得問。<b>目前沒有任何團體在做這件事</b>，也是「完全不一樣」最具體的證明。</div>
+      <div class="when">2028 年第 12 屆第 1 會期開議前。</div>
+    </div></div>
+    <div class="p"><div class="tag">F</div><div>
+      <div class="h">教材與案例：一個承諾的一生</div>
+      <div class="b">從第 11 屆挑 3 到 5 條承諾走完整生命史：質詢、承諾、預算、執行或跳票。進立法知識庫的 PUB 卡與 SYLLABUS 培訓骨架，變成倡議者培訓教材。<b>跟政策中心「培訓倡議者」的構想直接接上。</b></div>
+      <div class="when">A 首版出來之後再做，不搶前面的資源。</div>
+    </div></div>
+  </div>
+
+  <h3>要先補的三件基礎工</h3>
+  <ul>
+    <li><strong>抽取來源從 PDF 加上 API。</strong>指揮中心的盤點四早就寫了：legislative-monitor 是人工餵 PDF，不是規劃書要的定期同步。立法院開放資料與公報系統有可程式化入口，本機才能實測（雲端對外站一律 403），第 5 會期補抽時順便試，試不通就維持 PDF 路徑，不假裝自動化。</li>
+    <li><strong>B 表搬進正式原始層。</strong>每筆一個穩定 ID、公報卷期頁、逐字內容；只登錄，不判定。放在哪裡由你裁：建議獨立成一個公開 repo，因為它日後要整包開放；監督層的 CCD 用 ID 指回去即可，backlog 那條「公報管線正式對接」就是這件事。</li>
+    <li><strong>每會期結束固定跑一次。</strong>第 5 會期現在就欠著。這條要進指揮中心的行程表，不是等想到才做。</li>
+  </ul>
+  <div class="redline"><b>誠實標注。</b>關鍵詞分級是命中規則，L3 約 5 到 10%、L1 約 80% 只是預期分布；升格成 CCD 之前一定要人審，任何對外數字都要先過規則書的分級複核。這條紅線在 7/6 的「說到做到首發 20 筆」清單裡已經踩過一次，不要再踩。</div>
+</section>
+
+<!-- ===================== 四 ===================== -->
+<section id="city">
+  <h2><span class="num">04</span>縣市政策知識庫：每年公布什麼、怎麼跟議員一起用</h2>
+  <p class="sub">縣市長政見監督平台已經是縣市政策知識庫的底。設計書寫了選後轉型 4 年追蹤、每年發布政見兌現體檢；下面把「每年出什麼」與「議員怎麼進來」補齊。</p>
+
+  <h3>每年固定出兩份，配合縣市的年度節奏</h3>
+  <div class="cal">
+    <div class="c"><div class="m">9 月</div><div class="h">22 縣市兒少・教育・心理健康數據年帳</div><div class="b">44 指標純數據並陳、縣市值一律 3 年平均、不排名、口徑紅線隨值標注。趕在 10 到 12 月各縣市議會審隔年總預算之前出，讓數字有機會進預算審查。9 月也是開學、自殺防治日、你自己排的「9 月超級月」，媒體時機對。資料來源時點也對：審計部決算審核報告與主計總處彙編都在夏天出來。</div></div>
+    <div class="c"><div class="m">12 月</div><div class="h">政見兌現體檢</div><div class="b">選後每年一次，設計書已定。九值判定由理事長下、推定跳票先函詢；資料層計畫裡的「116、117 年度財務路徑三分法」就是為了第一年不冤枉新任首長。第一次是 2027 年 12 月（上任滿一年），2026 年 12 月只出「承諾登錄版」：把回收的承諾書逐條入庫，不判定。</div></div>
+  </div>
+
+  <h3>跟議員合作的四種方式（都守同一條紀律：同一份給全部人）</h3>
+  <ol>
+    <li><strong>索資夥伴。</strong>知識庫有一批「函詢才拿得到」的缺口：學生輔導人力達標率、心衛社工密度、台北與新北心衛經費總額、準公共托育縣市別。議員有索資權，比民團函詢快得多。做法：把缺口做成一張「索資清單」，同時給該縣市各黨議員；誰拿到資料，知識庫在來源欄註記「由某議員索資取得」。這樣缺口被填、議員有功、知識庫維持中立。</li>
+    <li><strong>議會版數據卡。</strong>每縣市一頁：縣市值、全國值、國際值三層對照，地方可為性標記，口徑紅線。在定期會總質詢與預算審查前一個月寄給該縣市全體議員。這就是第三節產品 D 的地方版，資料從 wiki.db 直接生成，不另外寫。</li>
+    <li><strong>市長答詢入庫。</strong>市長在議會的答詢是 E1、E2 級證據，比媒體報導強。議員幫忙把答詢做成可判定的承諾（L2、L3），進資料層計畫裡的 commitment_units。長期來看，六都議會公報就是「地方版雙委員會」，可以用同一套 legislative-monitor 抽，設計書早就預留了 raw-sources/legislature/ 這個夾子。</li>
+    <li><strong>年度共同發布。</strong>9 月年帳可以邀跨黨派議員出席，但發布內容一字不改，不因誰出席而多放或少放一個縣市。</li>
+  </ol>
+
+  <div class="redline"><b>三條紅線。</b>不評等、不排名（理事長 6/12 拍板）。不為任何議員背書、不做議員評鑑（設計書 §3「不做議員選舉」）。2026-11-28 選舉前不啟動議員合作，因為議員選舉同一天，任何接觸都會被讀成助選；新議會 12/25 就職，2027 年第一次定期會前再開始。</div>
+
+  <h3>資料層要多的三樣小東西</h3>
+  <ul>
+    <li><strong>缺口登記表。</strong>欄位：指標、缺什麼、可向誰要（機關或議員）、狀態、取得日。這張表同時服務函詢與議員索資，也讓「查無」變成顯性資產，不是藏在各份報告裡。</li>
+    <li><strong>每縣市一頁的匯出腳本。</strong>從 wiki.db 讀，輸出 md 與 html，樣式跟現有 rebuild 產物一致。先做樣張給你看，不對外。</li>
+    <li><strong>議會公報來源夾。</strong>先收六都，只存原文與議事錄連結，不抽承諾；抽承諾等雙委員會那條管線穩了再複用。</li>
+  </ul>
+</section>
+
+<!-- ===================== 五 ===================== -->
+<section id="next">
+  <h2><span class="num">05</span>接下來兩個 session 的下一步</h2>
+  <p class="sub">依 8/30 裁決的分工：知識庫線做資料層，指揮中心線做候選人軌與行動。兩邊只用 ID 互鏈，誰都不碰對方的檔案。</p>
+
+  <div class="two">
+    <div class="sess kbline">
+      <div class="who">知識庫線 session</div>
+      <div class="cwd mono">cwd = 縣市長政見監督平台（資料層）</div>
+      <ol>
+        <li><strong>續跑 9/1 計畫，順序不動：P0 → P1 → P2。</strong>P0 的回收資料匯入測試先做，因為問卷首波 9/5 到 9/12 就要發，回來的表要接得住。</li>
+        <li><strong>P1 五張表落地時多加一張「缺口登記表」</strong>（第四節），欄位定了就順手建，不另開工。</li>
+        <li><strong>做「議會版數據卡」匯出腳本雛形</strong>：從 wiki.db 讀，每縣市一頁，先出 2 到 3 個縣市樣張給理事長看，不對外。</li>
+        <li><strong>雙委員會 B 表歸位</strong>：把本機 B 表搬成正式原始層（穩定 ID、公報卷期頁、逐字），補抽第 5 會期；只登錄不判定；順便實測 API 路徑，通不通都如實記。</li>
+        <li><strong>每一步照舊：</strong>rebuild 全綠才 commit、派 fresh 代理驗、關鍵處 Codex 異源複驗。</li>
+      </ol>
+      <div class="no">不做：候選人軌文件、任何判定值、任何對外發布、直接寫指揮中心的台帳。</div>
+    </div>
+    <div class="sess actline">
+      <div class="who">指揮中心線 session</div>
+      <div class="cwd mono">cwd = 國教盟 AI 倡議作業系統（行動層）</div>
+      <ol>
+        <li><strong>先還 8/31 月結的債。</strong>台帳表 B 那 28 列的「下次檢查」全部寫 2026-08-31，已經過期；跑一輪：AI 只記現況事實與證據，判定欄維持 pending_human，把要你裁的集中成一張短清單。</li>
+        <li><strong>9 月時點逐一盯：</strong>9/10 學輔法辦法預告期滿（表 A 第 1 列）、9/15 CMT003 回溯案複查日、9/5 到 9/12 問卷首波前的 P0 關卡（十一題 CURRENT 指向、正式法律審查、22 縣市正式版生成、29 項查核清單）。</li>
+        <li><strong>雙委員會產品選一個先做。</strong>建議 A「政府承諾總帳」第 1 到 5 會期版，目標 2026 年底。用「新議題標準路徑」開一頁階段 0（誰在管、窗口在哪、進場判斷），給理事長裁，不要直接建庫。</li>
+        <li><strong>把待裁事項合併成一批</strong>（第六節），照 G0 裁決第 6 項「單一每週審批批次」的做法，不要零星問。</li>
+        <li><strong>行程表加一條固定事項：</strong>每會期結束後一週內派工補抽 B 表。</li>
+      </ol>
+      <div class="no">不做：改資料層 DB、改 wiki.db、替理事長填任何判定值。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 六 ===================== -->
+<section id="decide">
+  <h2><span class="num">06</span>等你裁的五件事</h2>
+  <p class="sub">全部是 AI 不能代做的方向決定。裁了之後兩條 session 就能各自跑。</p>
+  <ol class="decide">
+    <li><div><strong>雙委員會第一個產品選哪個。</strong>建議 A 承諾總帳（第 1 到 5 會期版，2026 年底）；B 議題溫度表可以一起出，成本低。</div></li>
+    <li><div><strong>B 表要不要獨立成公開 repo。</strong>建議獨立，因為它日後要整包開放；不獨立就留在監督層原始資料夾，但要另加匯出腳本。</div></li>
+    <li><div><strong>年度出版節奏定不定：9 月數據年帳、12 月兌現體檢。</strong>定了才能反推資料採集的截止日。</div></li>
+    <li><div><strong>議員合作啟動時點。</strong>建議 2027 年第一次定期會前，以「索資清單」為第一個接觸點；選前一律不動。</div></li>
+    <li><div><strong>回收問卷的承諾要不要 2026 年 12 月先出「登錄版」。</strong>只登錄不判定，讓當選人上任第一天就知道自己承諾了什麼、我們會怎麼看。</div></li>
+  </ol>
+</section>
+
+<footer>
+  <p><b>已驗證</b>：本文引用的卡數、筆數、日期皆來自 2026-09-02 當天五個 repo 的實際檔案（HANDOFF、SESSION_HANDOVER、BUILD-LOG、追蹤台帳、SPEC、legislative-monitor 參考檔）。</p>
+  <p><b>沒驗</b>：本機 B 表的實際筆數與涵蓋會期（雲端讀不到本機，依 ground-truth 樣本與 3/7 抽取日推估）；立法院 API 可用性（雲端無法實測）；審計部與主計總處每年發布月份（依平台既有紀錄，未重新網查）。</p>
+  <p><b>取捨掉</b>：沒有替任何承諾填判定值；沒有提議新開任何知識庫；沒有更動任何既有檔案。本頁放在 daily-news repo 的分支上，未合併到 main 前不會出現在對外網站。</p>
+</footer>
+
+</div>
+</body>
+</html>
