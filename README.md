@@ -50,10 +50,10 @@
 
 | 類型 | 網址 |
 |------|------|
-| 今日日報 | https://weall888-jpg.github.io/daily-news/ |
-| 日報存檔 | https://weall888-jpg.github.io/daily-news/archive/daily/2026-03-11.html |
-| 週報 | https://weall888-jpg.github.io/daily-news/archive/weekly/2026-W11.html |
-| 月報 | https://weall888-jpg.github.io/daily-news/archive/monthly/2026-03.html |
+| 今日日報 | https://naer-tw.github.io/daily-news/ |
+| 日報存檔 | https://naer-tw.github.io/daily-news/archive/daily/2026-03-11.html |
+| 週報 | https://naer-tw.github.io/daily-news/archive/weekly/2026-W11.html |
+| 月報 | https://naer-tw.github.io/daily-news/archive/monthly/2026-03.html |
 
 ## 使用方式
 

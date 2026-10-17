@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>兒少與教育議題的國教盟日報 - 2026-10-17</title>
+<meta property="og:title" content="兒少與教育議題的國教盟日報 - 2026年10月17日">
+<meta property="og:description" content="每日 3 則台灣、2 則國際重大兒少與教育議題，附 AI 心得整理。國教行動聯盟。">
+<meta property="og:image" content="https://naer-tw.github.io/daily-news/og-image.png?v=2026-10-17">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://naer-tw.github.io/daily-news/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #5c1a30;
+  --primary-light: #7a2840;
+  --accent: #e8553d;
+  --accent-light: #f07060;
+  --accent-bg: #fef4f0;
+  --ink: #1a1a2e;
+  --ink-muted: #6b7280;
+  --bg: #faf9f7;
+  --card: #ffffff;
+  --border: #e5e3dc;
+  --border-strong: #1a1a2e;
+}
+[data-theme="dark"] {
+  --primary: #f07060; --primary-light: #f59090;
+  --accent: #f07060; --accent-bg: #2a1410;
+  --ink: #f1f5f9; --ink-muted: #94a3b8;
+  --bg: #0f172a; --card: #1e293b; --border: #334155; --border-strong: #f1f5f9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+.theme-toggle {
+  position: fixed; top: 20px; right: 20px;
+  background: var(--card); border: 1px solid var(--border);
+  width: 40px; height: 40px; border-radius: 999px;
+  cursor: pointer; font-size: 18px; z-index: 100;
+}
+header {
+  background: var(--card); border-bottom: 2px solid var(--primary);
+  padding: 40px 20px 32px; text-align: center;
+}
+header .badge {
+  display: inline-block; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px;
+}
+header h1 {
+  font-size: clamp(24px, 4vw, 36px); font-weight: 900;
+  letter-spacing: -0.01em; color: var(--primary);
+  margin: 0 0 12px; line-height: 1.3;
+}
+header .date {
+  font-size: 15px; color: var(--ink-muted);
+  font-variant-numeric: tabular-nums; margin-bottom: 20px;
+}
+nav {
+  display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+}
+nav a {
+  padding: 8px 18px; border: 1px solid var(--border);
+  border-radius: 999px; font-size: 14px; font-weight: 500;
+  color: var(--ink); text-decoration: none;
+  background: var(--bg); transition: all 0.15s;
+}
+nav a:hover, nav a.active {
+  background: var(--primary); color: white; border-color: var(--primary);
+}
+main {
+  max-width: 760px; margin: 0 auto; padding: 40px 20px 80px;
+}
+section { margin-bottom: 56px; }
+section h2 {
+  font-size: 22px; font-weight: 800; color: var(--primary);
+  margin: 0 0 24px; padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary);
+  letter-spacing: -0.005em;
+}
+section .section-desc {
+  font-size: 14px; color: var(--ink-muted);
+  margin: -16px 0 24px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  padding: 24px; margin-bottom: 16px; border-radius: 8px;
+  position: relative; transition: border-color 0.15s;
+}
+.card:hover { border-color: var(--accent); }
+.card .rank {
+  position: absolute; top: 20px; right: 24px;
+  font-size: 28px; font-weight: 900; color: var(--accent);
+  font-variant-numeric: tabular-nums; line-height: 1;
+}
+.card .title {
+  font-size: 19px; font-weight: 700; line-height: 1.4;
+  margin: 0 60px 12px 0; letter-spacing: -0.005em;
+}
+.card .title a {
+  color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.card .title a:hover { border-bottom-color: var(--accent); }
+.card .meta {
+  font-size: 13px; color: var(--ink-muted);
+  margin-bottom: 12px; display: flex; gap: 16px; flex-wrap: wrap;
+}
+.card .meta .score {
+  display: inline-block; padding: 2px 8px;
+  background: var(--accent-bg); color: var(--accent);
+  border-radius: 4px; font-size: 11px; font-weight: 600;
+}
+.card .summary {
+  font-size: 15px; color: var(--ink);
+  line-height: 1.75; opacity: 0.9;
+}
+.card .orig {
+  margin-top: 12px; padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 13px; color: var(--ink-muted);
+}
+.card .orig summary { cursor: pointer; opacity: 0.7; }
+.card .orig p { margin-top: 8px; font-style: italic; }
+.aabe-card { border-left: 3px solid var(--accent); }
+.empty-state {
+  background: var(--card); border: 1px dashed var(--border);
+  padding: 32px; text-align: center; border-radius: 8px;
+}
+.empty-state .empty-title {
+  font-size: 16px; font-weight: 700; color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+.empty-state .empty-desc {
+  font-size: 14px; color: var(--ink-muted);
+  line-height: 1.7; max-width: 480px; margin: 0 auto;
+}
+.ai-insight {
+  background: linear-gradient(135deg, #fef4f0 0%, #fff 100%);
+  border: 1px solid var(--accent); border-radius: 12px;
+  padding: 32px; margin-top: 32px;
+}
+[data-theme="dark"] .ai-insight {
+  background: linear-gradient(135deg, #2a1410 0%, var(--card) 100%);
+}
+.ai-insight h2 {
+  color: var(--accent); border-bottom-color: var(--accent);
+}
+.ai-insight .ai-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent);
+  border: 1px solid var(--accent); padding: 2px 8px;
+  border-radius: 4px; margin-bottom: 16px; text-transform: uppercase;
+}
+.ai-insight p {
+  font-size: 16px; line-height: 1.9;
+  margin-bottom: 14px;
+}
+.ai-insight p:last-child { margin-bottom: 0; }
+footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--ink-muted); font-size: 13px;
+  border-top: 1px solid var(--border);
+}
+footer a { color: var(--ink-muted); }
+@media print {
+  .theme-toggle, nav { display: none; }
+  .card { break-inside: avoid; }
+}
+@media (max-width: 600px) {
+  header { padding: 24px 16px; }
+  main { padding: 28px 14px 60px; }
+  .card { padding: 18px; }
+  .card .title { font-size: 17px; margin-right: 50px; }
+  .card .rank { font-size: 22px; top: 16px; right: 18px; }
+  .ai-insight { padding: 22px 18px; }
+}
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="切換深色模式">🌙</button>
+
+<header>
+  <div class="badge">每日 18:00 自動更新</div>
+  <h1>兒少與教育議題的國教盟日報</h1>
+  <div class="date">2026年10月17日（週六）</div>
+  <nav>
+    <a href="https://naer-tw.github.io/daily-news/" class="active">日報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/weekly/2026-W42.html">週報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/monthly/2026-10.html">月報</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="taiwan">
+  <h2>台灣重大議題</h2>
+  <div class="section-desc">過去 24 小時內，依議題重要性、政府/立法訊號、權威媒體加權，分數 ≥ 5 才入榜</div>
+  
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFBRNzBiQVVRSVhlM24ybkVhS0g4Q19pemJKYmduRjhnelBOcEZjVXpVUXpxYktNMm5lSWJDS08wTEhfVS1WaG1uNXNSWDJJb0U?oc=5" target="_blank" rel="noopener">教育部擬修法調升教保員薪資 台教產：私幼將面臨大跳槽 - 你的公共電視</a></h3>
+  <div class="meta"><span class="source">你的公共電視</span><span class="age age-fresh">4 小時前</span><span class="score">議題分數 8</span></div>
+  <p class="summary">教育部擬修法調升教保員薪資 台教產：私幼將面臨大跳槽 你的公共電視</p>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ab2E0SHozcFFvVXdWc2pHYmlPbVZ6a3JzZVhMQjA1VjFzQnkwaDBWWmFaSjJkZGtwejZhbGFCdk45TDNEekhETlFiT3hfSTQ?oc=5" target="_blank" rel="noopener">「吳寶春條款」衍伸亂象 教育部擬修法防洗學歷 - 你的公共電視</a></h3>
+  <div class="meta"><span class="source">你的公共電視</span><span class="age age-fresh">21 小時前</span><span class="score">議題分數 8</span></div>
+  <p class="summary">「吳寶春條款」衍伸亂象 教育部擬修法防洗學歷 你的公共電視</p>
+</article>
+
+<article class="card">
+  <div class="rank">#3</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBPSEgwRHJxdGZocW5zN2FocjJGTHdsM19QUkViZExtOGZDV29hQTJ5Yk44T1lyVFhmMzVGLUJQMWVfMEtxcHdOSUt2cVR1cDJVelNveVd3?oc=5" target="_blank" rel="noopener">公幼代理教師可領行政獎金 修法擬回溯自114年9月 | 青年日報 - LINE TODAY</a></h3>
+  <div class="meta"><span class="source">LINE TODAY</span><span class="age age-fresh">1 小時前</span><span class="score">議題分數 7</span></div>
+  <p class="summary">公幼代理教師可領行政獎金 修法擬回溯自114年9月 | 青年日報 LINE TODAY</p>
+</article>
+  
+<details class="extended">
+  <summary>延伸觀察（分數 3-4，未達 Top 3 門檻）— 共 5 則</summary>
+  <ul><li><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE90NWdPMmE1ZTRWYW45REtNdlF2VTNUOUVSVzMySWZKSEJFd25sNE5qcUVlTmFnclowUU9ZWXBjQ01RSldhUUE0NERjSGxaT3YwYkpMYTlnUlVkdmRKWUNUWkFHM1o5ZnfSAWdBVV95cUxPdDVnTzJhNWU0VmFuOURLTXZRdlUzVDlFUlczMklmSkhCRXdubDROanFFZU5hZ3JaMFFPWVlwY0NNUUpXYVFBNDREY0hsWk92MGJKTGE5Z1JVZHZkSllDVFpBRzNaOWZ3?oc=5" target="_blank" rel="noopener">百億海外圓夢計畫 台青赴英交流變逛校園 教部：督促執行方提供替代方案 - 世界新聞網</a><span class="ext-meta">世界新聞網 · <span style="all:unset" class="age age-fresh">3 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE80ZW9TZnE0RU1QWGhjWU1mMlo4ZndzbVFnNkM5WjA1cVN3T2FoaEF6bkZnT3ctM21haTV0a3h5U2pnX0puc2RzaFlwY21VeXRl0gFWQVVfeXFMT0RydnUzeEIyNjV6a0NRdWptYW0yUHNUaFA5dFVNV2JSb0JUR3JUY2EySVVhSGhIUlpiZzJuNVA0a2U3emJGT09zT2M5bFBSVlN6dW43Q1E?oc=5" target="_blank" rel="noopener">教育部青年海外圓夢計畫 行程與簡章不符 - UDN</a><span class="ext-meta">UDN · <span style="all:unset" class="age age-fresh">18 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1OWDI0VTgtLU1oRHcxVzlrck5fX2syRUFoZU1YT2JSaEJDVlgzRmw0TXpXQ25ZcVk3dUJXYXN5bXo2TjlKMlk5MmFLajg0eHBjbGc1cng3SdIBXEFVX3lxTE53R3loREI4d1hiWWk3TmNZaVNBVmVMeUwwYWR3T2ctWjFxTVl1ZXV4N3hSdXFTaUFzN1UxZmpma3Zha3cyTVI1b3gyZzJPa0FRay1MTjBDa3BJT28x?oc=5" target="_blank" rel="noopener">終結洗學歷亂象！　教育部擬修嚴「吳寶春條款」防堵政商名流走後門 - 鏡新聞</a><span class="ext-meta">鏡新聞 · <span style="all:unset" class="age age-fresh">17 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBZdjFQajN1aUw4Nk82ZEUzN1haUW9SclNodG1WcHN4OWVIN1BURUhVQ0RmNUE5bVd4aVRFc0ZpWWkzampiYWJ0VHBLSEJkeGV4V1lIbl9hU20?oc=5" target="_blank" rel="noopener">法國學生工會串聯抗議高物價 部分黃背心響應上街 - Taiwan News</a><span class="ext-meta">Taiwan News · <span style="all:unset" class="age age-fresh">3 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMi9wJBVV95cUxPNm5kRFNBbFdOSXN3a3I3MXRHcEhjOXhUS2dGN0E3Y3ZaYmxWRVJqVVhxckVvTERsWTJneFo3dGdxeTZPak11eFJPOVRXZDdUd3hCc1BOSGRhaXFwODFoQm84UjhYSW8zMTFpeWlIaTJtQ2NqeGprVHEtM0swd2tRZTh5ZE5TWVNEd21odVVTM2xFN2NiNEdENmJzam41YXZRSGdCdmVtcjNPTlo5X0M2M1hlbkNGTV9zNGtsN1VpXzVaR2F2aU5qeTZRQjQ1N0JaYnNfcWM0VFpYVjBvQzlaN0RSYklPRnlmZE8yWDBqVERVb1hhc3VfQlg5NGlPNFlkUFVuU1BQYjRiLTBUYW84NmxQT3JWa2xMblFPenZBME9oNE5XWEo4UW9zTUlxTWxOR25nRDhQMmlQMG9zTVMxeXJRQ3FEby03MTBra09EUF9BZ1kzdm5fQ0pPUFZCemN0MTFaSjRBWE01MF9UUDNvaV80Nl96ejA?oc=5" target="_blank" rel="noopener">晚婚、少子化浪潮下的不孕危機 從日常飲食重塑「好孕體質」 - Yahoo新聞</a><span class="ext-meta">Yahoo新聞 · <span style="all:unset" class="age age-fresh">7 小時前</span></span></li></ul>
+</details>
+</section>
+
+<section id="international">
+  <h2>國際重大議題</h2>
+  <div class="section-desc">每日精選 2 則，來源：BBC / Guardian / Google News / Straits Times</div>
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE94cDhpT3hpYVdWY3ZiMXhyYzhuMnJLVGJYbUxaSnJpNmRJWWluemw1cmtMVlVuSXZLbFpjOTUtRnVXU1J2blY0SXdVMmZZT0ViM2Iyallzd1hpTGJLZkxPTXF6OGREb0U?oc=5" target="_blank" rel="noopener">青年政策研究院開放2027年公共政策獎學金申請</a></h3>
+  <div class="meta"><span class="source">GoogleNewsEN / Global South Opportunities</span><span class="age age-fresh">15 小時前</span><span class="score">議題分數 7</span></div>
+  <p class="summary">青年政策研究院（YIP）宣布開放2027年公共政策獎學金計畫申請，提供全球南方國家青年參與政策研究的機會。</p>
+  <details class="orig"><summary>原文標題</summary><p>Institute for Youth in Policy Public (YIP) Policy Fellowship 2027 - Global South Opportunities</p></details>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNR1Z4aTVrOUpDbGVheUEySnM2S3lSRVlqTTNuVVBUbVhoTXRNMXE2ckJibHdTZlpNbmR4V3NWUnJDUU4ydFZySTZWbjVaMGJpV0JaNThnTXFmSlltZ2pCaHdkaFhvaXIyaUVFcHFjOXl1Qm1UMWdvUVlka19STFZBWFdJUVY2T3EwaUl6X1pXX1lna1ctVUJaRmFzcGJaZ09tNjJHSE9R?oc=5" target="_blank" rel="noopener">國際女童日：奈及利亞政府呼籲賦權女童創造未來</a></h3>
+  <div class="meta"><span class="source">GoogleNewsEN / Anambra State Government</span><span class="age age-fresh">13 小時前</span><span class="score">議題分數 7</span></div>
+  <p class="summary">奈及利亞阿南布拉州政府響應國際女童日，強調賦權女童教育與發展對社會未來的重要性。</p>
+  <details class="orig"><summary>原文標題</summary><p>INTERNATIONAL DAY OF THE GIRL CHILD: EMPOWERING GIRLS FOR A BRIGHTER FUTURE - Anambra State Government</p></details>
+</article>
+</section>
+
+<section id="aabe">
+  <h2>近 7 日國教盟媒體露出</h2>
+  <div class="section-desc">關鍵字：國教盟、國教行動聯盟、王瀚陽（Google News RSS 對小眾關鍵字有 ~2 日延遲，故採 7 日視窗）</div>
+  
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE0wSmlTSDJEdG1DWmw1a2RpQ0RNWUkzUVVOM0VKTXYtSFJuZ0ZObUpOVnY2cjBNVUN6UHk0YTEtTkMxandDWmQ4cEJYWGFpV1Qz0gFWQVVfeXFMUDhFN05pZm10TDZWQWdXWlpwcEhwdGhhaFI2NDJBTGs0OTctREN2TVpuNDdySmZRb2dYTnRLbGJRd0FyNHlodXlNSVN2LU8teVBpTlJfVWc?oc=5" target="_blank" rel="noopener">72團體推兒少10大承諾 邀三黨立委轉達全國縣市長參選人回應 - UDN</a></h3>
+  <div class="meta"><span class="source">UDN</span><span class="date">10/14</span></div>
+  <p class="summary">72團體推兒少10大承諾 邀三黨立委轉達全國縣市長參選人回應 UDN</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE4zVnJFSExGSUR1a1dQYmVaVXNJTHJxay03bEJKakx1aDRBOW5ZODEzcDUwNV9MN0dQNlcwNlQ2MHo5eDZXWUU3ZGpWR21fMjNyYTRV0gFYQVVfeXFMUC1KWVI2RThKWU41ZnRQbGtJaTE3V2h5ZEhlZ2VCSXMzNE9pc1pDWGtidXVxS20zTHRDdjZndUV0TDNxVGtPeEFONkVNZ25vb2hlUHBBdm0wSA?oc=5" target="_blank" rel="noopener">民團拋兒少承諾書要參選人簽署 朝野立委挺：地方政府別開空頭支票 - UDN</a></h3>
+  <div class="meta"><span class="source">UDN</span><span class="date">10/14</span></div>
+  <p class="summary">民團拋兒少承諾書要參選人簽署 朝野立委挺：地方政府別開空頭支票 UDN</p>
+</article>
+</section>
+
+<section id="candidates">
+  <h2>今天值得開題</h2>
+  <div class="section-desc">日報替理事長挑出的候選，請在 LINE 回「做＋部門／不做／觀察」</div>
+  
+<article class="card">
+  <h3 class="title">教育部擬修法調升教保員薪資，配合軍公教加薪再調高準公共幼兒園人員待遇</h3>
+  <div class="meta"><span class="source">建議 重大 · 家長部</span></div>
+  <p class="summary">涉及幼教政策重大調整，可能影響公私幼人才流動與準公共化政策成效，具政策倡議空間。</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFBRNzBiQVVRSVhlM24ybkVhS0g4Q19pemJKYmduRjhnelBOcEZjVXpVUXpxYktNMm5lSWJDS08wTEhfVS1WaG1uNXNSWDJJb0U?oc=5" target="_blank" rel="noopener">你的公共電視</a>、<a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBPcHMwWmdVV0xYbzk2akdWY1M2cHJQSFdHVG4zNUhpdVZKTG5ETnhWZU1xcjdyX1BiRGxfZ0I3bE16MnphYkl4eTFoWkJjazI1TVlWb1R6VUdfMVpfYU92SjJ1ejZ3OC01THfSAWpBVV95cUxQT3BzMFpnVVdMWG85NmpHVmNTNnByUEhXR1RuMzVIaXVWSkxuRE54VmVNcXI3cl9QYkRsX2dCN2xNejJ6YWJJeHkxaFpCY2syNU1ZVm9UelVHXzFaX2FPdkoydXo2dzgtNUx3?oc=5" target="_blank" rel="noopener">自由時報</a></p>
+</article>
+
+<article class="card">
+  <h3 class="title">「吳寶春條款」衍生亂象，教育部擬修法防堵政商名流洗學歷</h3>
+  <div class="meta"><span class="source">建議 一般 · 青年部</span></div>
+  <p class="summary">涉及高教入學公平性與學歷認證制度漏洞，關乎教育正義與青年權益保障。</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ab2E0SHozcFFvVXdWc2pHYmlPbVZ6a3JzZVhMQjA1VjFzQnkwaDBWWmFaSjJkZGtwejZhbGFCdk45TDNEekhETlFiT3hfSTQ?oc=5" target="_blank" rel="noopener">你的公共電視</a>、<a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1OWDI0VTgtLU1oRHcxVzlrck5fX2syRUFoZU1YT2JSaEJDVlgzRmw0TXpXQ25ZcVk3dUJXYXN5bXo2TjlKMlk5MmFLajg0eHBjbGc1cng3SdIBXEFVX3lxTE53R3loREI4d1hiWWk3TmNZaVNBVmVMeUwwYWR3T2ctWjFxTVl1ZXV4N3hSdXFTaUFzN1UxZmpma3Zha3cyTVI1b3gyZzJPa0FRay1MTjBDa3BJT28x?oc=5" target="_blank" rel="noopener">鏡新聞</a></p>
+</article>
+
+<article class="card">
+  <h3 class="title">公幼代理教師可領行政獎金，修法擬回溯自114年9月</h3>
+  <div class="meta"><span class="source">建議 一般 · 家長部</span></div>
+  <p class="summary">涉及代理教師勞動權益與待遇公平性，影響幼教人力穩定與教學品質。</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBPSEgwRHJxdGZocW5zN2FocjJGTHdsM19QUkViZExtOGZDV29hQTJ5Yk44T1lyVFhmMzVGLUJQMWVfMEtxcHdOSUt2cVR1cDJVelNveVd3?oc=5" target="_blank" rel="noopener">LINE TODAY</a>（只有一個來源）</p>
+</article>
+  
+<div class="empty-state">
+  <p class="empty-desc">目前每一題走到哪一步，請看<a href="https://claude.ai/artifact/UYGwjUYkBzJ4yGodUiHUGa" target="_blank" rel="noopener">快速倡議看板</a></p>
+</div>
+</section>
+
+<section class="ai-insight" id="insight">
+  <h2>國教盟小編心得整理</h2>
+  <div class="ai-badge">由 Claude Sonnet 4.5 協助整理</div>
+  <p>今日核心趨勢聚焦於教育部針對幼教與高教人事薪資的修法動作，包括教保員待遇調整、代理教師獎金發放，以及「吳寶春條款」防洗學歷修法。</p><p>跨議題串連方面，教保員薪資調升政策若未配套處理公私幼資源落差，恐加劇私幼經營困境；同時國際女童日倡議與國教盟近期推動的兒少十大承諾，皆呼應兒少權益保障的長期關注。</p><p>建議一：可考慮針對公私幼薪資落差與人才流動議題進行政策觀察，此涉及準公共化政策成效與幼教市場穩定性。建議二：值得持續追蹤代理教師權益保障修法進程，特別是行政獎金回溯適用的公平性與制度設計合理性，以回應基層教師長期關切。</p>
+</section>
+
+</main>
+
+<footer>
+  <p>本日報由國教行動聯盟（AABE）每日 18:00 自動生成 · 6 大議題類別 + 4 國際來源 + AI 觀察整理</p>
+  <p>網址：<a href="https://naer-tw.github.io/daily-news/">naer-tw.github.io/daily-news/</a></p>
+</footer>
+
+<script>
+function toggleTheme() {
+  var t = document.body.dataset.theme;
+  document.body.dataset.theme = (t === 'dark') ? 'light' : 'dark';
+  localStorage.setItem('theme', document.body.dataset.theme);
+  document.querySelector('.theme-toggle').textContent = document.body.dataset.theme === 'dark' ? '☀️' : '🌙';
+}
+(function() {
+  var saved = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.body.dataset.theme = saved;
+  document.querySelector('.theme-toggle').textContent = saved === 'dark' ? '☀️' : '🌙';
+})();
+</script>
+
+</body>
+</html>
