@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>兒少與教育議題的國教盟日報 - 2026-10-19</title>
+<meta property="og:title" content="兒少與教育議題的國教盟日報 - 2026年10月19日">
+<meta property="og:description" content="每日 3 則台灣、2 則國際重大兒少與教育議題，附 AI 心得整理。國教行動聯盟。">
+<meta property="og:image" content="https://naer-tw.github.io/daily-news/og-image.png?v=2026-10-19">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://naer-tw.github.io/daily-news/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #5c1a30;
+  --primary-light: #7a2840;
+  --accent: #e8553d;
+  --accent-light: #f07060;
+  --accent-bg: #fef4f0;
+  --ink: #1a1a2e;
+  --ink-muted: #6b7280;
+  --bg: #faf9f7;
+  --card: #ffffff;
+  --border: #e5e3dc;
+  --border-strong: #1a1a2e;
+}
+[data-theme="dark"] {
+  --primary: #f07060; --primary-light: #f59090;
+  --accent: #f07060; --accent-bg: #2a1410;
+  --ink: #f1f5f9; --ink-muted: #94a3b8;
+  --bg: #0f172a; --card: #1e293b; --border: #334155; --border-strong: #f1f5f9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+.theme-toggle {
+  position: fixed; top: 20px; right: 20px;
+  background: var(--card); border: 1px solid var(--border);
+  width: 40px; height: 40px; border-radius: 999px;
+  cursor: pointer; font-size: 18px; z-index: 100;
+}
+header {
+  background: var(--card); border-bottom: 2px solid var(--primary);
+  padding: 40px 20px 32px; text-align: center;
+}
+header .badge {
+  display: inline-block; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px;
+}
+header h1 {
+  font-size: clamp(24px, 4vw, 36px); font-weight: 900;
+  letter-spacing: -0.01em; color: var(--primary);
+  margin: 0 0 12px; line-height: 1.3;
+}
+header .date {
+  font-size: 15px; color: var(--ink-muted);
+  font-variant-numeric: tabular-nums; margin-bottom: 20px;
+}
+nav {
+  display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+}
+nav a {
+  padding: 8px 18px; border: 1px solid var(--border);
+  border-radius: 999px; font-size: 14px; font-weight: 500;
+  color: var(--ink); text-decoration: none;
+  background: var(--bg); transition: all 0.15s;
+}
+nav a:hover, nav a.active {
+  background: var(--primary); color: white; border-color: var(--primary);
+}
+main {
+  max-width: 760px; margin: 0 auto; padding: 40px 20px 80px;
+}
+section { margin-bottom: 56px; }
+section h2 {
+  font-size: 22px; font-weight: 800; color: var(--primary);
+  margin: 0 0 24px; padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary);
+  letter-spacing: -0.005em;
+}
+section .section-desc {
+  font-size: 14px; color: var(--ink-muted);
+  margin: -16px 0 24px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  padding: 24px; margin-bottom: 16px; border-radius: 8px;
+  position: relative; transition: border-color 0.15s;
+}
+.card:hover { border-color: var(--accent); }
+.card .rank {
+  position: absolute; top: 20px; right: 24px;
+  font-size: 28px; font-weight: 900; color: var(--accent);
+  font-variant-numeric: tabular-nums; line-height: 1;
+}
+.card .title {
+  font-size: 19px; font-weight: 700; line-height: 1.4;
+  margin: 0 60px 12px 0; letter-spacing: -0.005em;
+}
+.card .title a {
+  color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.card .title a:hover { border-bottom-color: var(--accent); }
+.card .meta {
+  font-size: 13px; color: var(--ink-muted);
+  margin-bottom: 12px; display: flex; gap: 16px; flex-wrap: wrap;
+}
+.card .meta .score {
+  display: inline-block; padding: 2px 8px;
+  background: var(--accent-bg); color: var(--accent);
+  border-radius: 4px; font-size: 11px; font-weight: 600;
+}
+.card .summary {
+  font-size: 15px; color: var(--ink);
+  line-height: 1.75; opacity: 0.9;
+}
+.card .orig {
+  margin-top: 12px; padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 13px; color: var(--ink-muted);
+}
+.card .orig summary { cursor: pointer; opacity: 0.7; }
+.card .orig p { margin-top: 8px; font-style: italic; }
+.aabe-card { border-left: 3px solid var(--accent); }
+.empty-state {
+  background: var(--card); border: 1px dashed var(--border);
+  padding: 32px; text-align: center; border-radius: 8px;
+}
+.empty-state .empty-title {
+  font-size: 16px; font-weight: 700; color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+.empty-state .empty-desc {
+  font-size: 14px; color: var(--ink-muted);
+  line-height: 1.7; max-width: 480px; margin: 0 auto;
+}
+.ai-insight {
+  background: linear-gradient(135deg, #fef4f0 0%, #fff 100%);
+  border: 1px solid var(--accent); border-radius: 12px;
+  padding: 32px; margin-top: 32px;
+}
+[data-theme="dark"] .ai-insight {
+  background: linear-gradient(135deg, #2a1410 0%, var(--card) 100%);
+}
+.ai-insight h2 {
+  color: var(--accent); border-bottom-color: var(--accent);
+}
+.ai-insight .ai-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent);
+  border: 1px solid var(--accent); padding: 2px 8px;
+  border-radius: 4px; margin-bottom: 16px; text-transform: uppercase;
+}
+.ai-insight p {
+  font-size: 16px; line-height: 1.9;
+  margin-bottom: 14px;
+}
+.ai-insight p:last-child { margin-bottom: 0; }
+footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--ink-muted); font-size: 13px;
+  border-top: 1px solid var(--border);
+}
+footer a { color: var(--ink-muted); }
+@media print {
+  .theme-toggle, nav { display: none; }
+  .card { break-inside: avoid; }
+}
+@media (max-width: 600px) {
+  header { padding: 24px 16px; }
+  main { padding: 28px 14px 60px; }
+  .card { padding: 18px; }
+  .card .title { font-size: 17px; margin-right: 50px; }
+  .card .rank { font-size: 22px; top: 16px; right: 18px; }
+  .ai-insight { padding: 22px 18px; }
+}
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="切換深色模式">🌙</button>
+
+<header>
+  <div class="badge">每日 18:00 自動更新</div>
+  <h1>兒少與教育議題的國教盟日報</h1>
+  <div class="date">2026年10月19日（週一）</div>
+  <nav>
+    <a href="https://naer-tw.github.io/daily-news/" class="active">日報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/weekly/2026-W43.html">週報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/monthly/2026-10.html">月報</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="taiwan">
+  <h2>台灣重大議題</h2>
+  <div class="section-desc">過去 24 小時內，依議題重要性、政府/立法訊號、權威媒體加權，分數 ≥ 5 才入榜</div>
+  
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFB5bEpNUFhCaFZEcDR2bnVCUndSMU1WN21KS1c1UTdhRDN4bnBENVh6QjFxdXZXbDQxdE9EMF9WVlByYkJIR2NoN19lc0twdWo4?oc=5" target="_blank" rel="noopener">1類老師加薪了！教育部修法「月領獎金最高2000元」，回溯114年8 月補發 - 風傳媒</a></h3>
+  <div class="meta"><span class="source">風傳媒</span><span class="age age-fresh">7 小時前</span><span class="score">議題分數 8</span></div>
+  <p class="summary">1類老師加薪了！教育部修法「月領獎金最高2000元」，回溯114年8 月補發 風傳媒</p>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3LWNuZnRPVkJ2RTljci1zS0NtUUkxcDBwc1BZSzA1LVlacGI0ZlFNM3JqUTZ2Q3pjZk9mZnB4UU1Qcjhfd1dKNFFwZ2hUckdpTFlPeXJR?oc=5" target="_blank" rel="noopener">從醫者到教育家 蔡長海創辦人40餘年育才築夢 榮獲教育部一等教育專業獎章 - 中央社 CNA</a></h3>
+  <div class="meta"><span class="source">中央社 CNA</span><span class="age age-fresh">7 小時前</span><span class="score">議題分數 7</span></div>
+  <p class="summary">從醫者到教育家 蔡長海創辦人40餘年育才築夢 榮獲教育部一等教育專業獎章 中央社 CNA</p>
+</article>
+
+<article class="card">
+  <div class="rank">#3</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE82QjlYeVdnZmlscUN5dUVHNWI0UEQ4SEcyYUVWQ0NEanREZTNfSXR4V3V4T0JlZ21mV19RU1hlQjJ1UUREWklJekJSTzNLNXZnVDNn0gFYQVVfeXFMTUo4ZTRORFBLNjlRT2Z0dVJneUF4ZWg2UjJLQnJ1c0tGZDIwRjZsdHo4OU4zYUJUdEU0eHREdXhEbFM2RHAzLTR6eFI1MnJ5eVlqV09HUy1mcw?oc=5" target="_blank" rel="noopener">影／蘇巧慧昔稱幼兒園「餵毒案」 李四川呼籲道歉 - UDN</a></h3>
+  <div class="meta"><span class="source">UDN</span><span class="age age-fresh">54 分前</span><span class="score">議題分數 6</span></div>
+  <p class="summary">影／蘇巧慧昔稱幼兒園「餵毒案」 李四川呼籲道歉 UDN</p>
+</article>
+  
+<details class="extended">
+  <summary>延伸觀察（分數 3-4，未達 Top 3 門檻）— 共 5 則</summary>
+  <ul><li><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1OeTE5eDBwWjRrUmJwX0haNXpRYmFZYklibjdvVXpwLTJNb0tjazZWRjRVNTRibDJGYlpraUtxU2tvRWNhTHVJUTBteVNfSmFlN21SN0hhbDVYQWxRdWtNYXhRd0pia1hfYUZtOW9xVdIBb0FVX3lxTE1OeTE5eDBwWjRrUmJwX0haNXpRYmFZYklibjdvVXpwLTJNb0tjazZWRjRVNTRibDJGYlpraUtxU2tvRWNhTHVJUTBteVNfSmFlN21SN0hhbDVYQWxRdWtNYXhRd0pia1hfYUZtOW9xVQ?oc=5" target="_blank" rel="noopener">莊競程簽署代理教師權益承諾書 支持考績獎金、公假排課進修及健康檢查 - 自由時報</a><span class="ext-meta">自由時報 · <span style="all:unset" class="age age-fresh">5 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tRy1LaHMtOUZYYWdTVWdDeGMxUE41Z0Jyb1lTeEQ3UG9ray1MSW9GMVh3TXM3dVBmZTVLZkZGQVV2U3Z5X2YxNFUtcF9XSGVpbjNqeXNn?oc=5" target="_blank" rel="noopener">AI賦能全校！亞大打造智慧校園創新新典範 - 中央社 CNA</a><span class="ext-meta">中央社 CNA · <span style="all:unset" class="age age-fresh">1 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE1zV21mV3pUSDBWVWw3OHoyVHN3dVlaUW1OdkFQWEZuU29WRk9FMnhvQWRteTRyZkVUb0QzNTBCU3JIcV9PY0pGR0p4RQ?oc=5" target="_blank" rel="noopener">教育部赴新加坡考察 AI 教育 借鏡師培制度與教學科技實務 - 樂聯網</a><span class="ext-meta">樂聯網 · <span style="all:unset" class="age age-fresh">1 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9Xbi1naWZpaVl1V2ZXdk94UlhyZmRWLVN1S1B1R1NXX3V0X0kxRjZTSjd4UjVnbnpJVjFmdndoTjVKcXp2TUlmdmswN0ZhWEFjQnJXadIBVEFVX3lxTE9Xbi1naWZpaVl1V2ZXdk94UlhyZmRWLVN1S1B1R1NXX3V0X0kxRjZTSjd4UjVnbnpJVjFmdndoTjVKcXp2TUlmdmswN0ZhWEFjQnJXaQ?oc=5" target="_blank" rel="noopener">北市第94處公托啟用！蔣萬安推「校校有公托」　年底拚108處、擴大育兒支持 | 政治 | CTWANT - CTWANT</a><span class="ext-meta">CTWANT · <span style="all:unset" class="age age-fresh">3 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMi6gJBVV95cUxNV0JIbnFFNjkzYUlfb2VhaEFMazZ1eEhFeWxTZDNVdUhIbU1kbzNkUnZiejhFYVlIdV85ZnBlRTRWdTZTajhqQVJxRVFLRk9LUlFqZ0N1ektFNDFHYjFOU1hXWklMZGJRNW1GMThyVjlPUU1kQXFSbkROUmlSUnA4V3k0TXpHbFFxbVU1R0Y1N2NaZG1WQnAyYUtsZ3pmRlNfV3N3RTkzRkVLODIwQW15UEJuTEp5UXZpNEdXcEt6OHQydUVka3JsS0FoMGt3U1EweHBDTjY3RDAtSFNMOVRUYjFIQjRqdG9XQ1pLOEhVUFRPcXhwdG5TRGlJYi1SVmo2QmJkZlRBbzB6RnI2MGNRWDVuS1NXRmNKSGlvaThTZGNZZHdJLXFBVWFnSFdOWXQ2b2pBZmNBN0FBa0pmeWszbnliNTZhZktiMDBGTFVVdGJWLXU4blVJWVBweUcwaURHNUJrR1M0NU9KUQ?oc=5" target="_blank" rel="noopener">教育部師培團赴新加坡考察 聚焦AI時代師資培育與教育科技 - 報新聞</a><span class="ext-meta">報新聞 · <span style="all:unset" class="age age-fresh">6 小時前</span></span></li></ul>
+</details>
+</section>
+
+<section id="international">
+  <h2>國際重大議題</h2>
+  <div class="section-desc">每日精選 2 則，來源：BBC / Guardian / Google News / Straits Times</div>
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNLXFrV29hekIwWjBrbGZLMG9XUGlibG5oLWV1bFluWE96RTRrRDhOVUZMSDlmcktDa2xXOU5YXzJsNFp0RHlRUGZSMGJ2aldPVTBPMjU4XzZ5X2VVc2xDWWdvMUM1UXVrbUJtX3dzWkZ2QnJjQnZXWGRCS1lCZHBmc2cwdm9RUG9ZVS1yd0tXUnNqMF9idEhNTnFGWmZxbE1IOU1tUUp0YjZEOHBQ0gGsAUFVX3lxTE0tcWtXb2F6QjBaMGtsZkswb1dQaWJsbmgtZXVsWW5YT3pFNGtEOE5VRkxIOWZyS0NrbFc5TlhfMmw0WnREeVFQZlIwYnZqV09VME8yNThfNnlfZVVzbENZZ28xQzVRdWttQm1fd3NaRnZCcmNCdldYZEJLWUJkcGZzZzB2b1FQb1lVLXJ3S1dSc2owX2J0SE1OcUZaZnFsTUg5TW1RSnRiNkQ4cFA?oc=5" target="_blank" rel="noopener">全球Z世代抗爭潮：從法國到阿根廷青年示威目標為何</a></h3>
+  <div class="meta"><span class="source">GoogleNewsEN / Newstrack English</span><span class="age age-fresh">22 小時前</span><span class="score">議題分數 9</span></div>
+  <p class="summary">全球Z世代抗爭潮：從法國到阿根廷青年示威目標為何 Newstrack English</p>
+  <details class="orig"><summary>原文標題</summary><p>The Global Gen Z Rebellion: Why Youth Are Protesting from France to Argentina and Who They Target - Newstrack English</p></details>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPaWEtRlZpZHVweFdmOE1idllGZVg3S1BBeTdxWHR0dkNYYmJpSHBxb0FlVnRWWG9Ic3RUTE1DTVFZX0hfc2M0U21RRzI1OVdoS3ZjQm4yaXpfS25FZGQ5NkRGZ0RlUnhLakhzZnJwdElQaTFmU2U3c19Pb1hvNXFYVzhnQ2NDWkZqdkdjck5tSkx4aGtsZ3FUSnlKTWM4N3RHc1ROTnpLLWhHdTRPRHZwM0NR?oc=5" target="_blank" rel="noopener">重視每個孩子：以色列Torah學院全人教育實踐</a></h3>
+  <div class="meta"><span class="source">GoogleNewsEN / The Times of Israel</span><span class="age age-fresh">11 小時前</span><span class="score">議題分數 7</span></div>
+  <p class="summary">重視每個孩子：以色列Torah學院全人教育實踐 The Times of Israel</p>
+  <details class="orig"><summary>原文標題</summary><p>A School That Notices: Inside Mizrahi Family Torah Academy’s Whole-Child Approach - The Times of Israel</p></details>
+</article>
+</section>
+
+<section id="aabe">
+  <h2>近 7 日國教盟媒體露出</h2>
+  <div class="section-desc">關鍵字：國教盟、國教行動聯盟、王瀚陽（Google News RSS 對小眾關鍵字有 ~2 日延遲，故採 7 日視窗）</div>
+  
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTFB4ajg0Rm1kMFBNZ3NwWEtMcm5Ec1d3ZEhiU0dSdTJlcTkyVTVIM3pDaS10RWRoREhBOEpBSTkyYWN5U2JiTG5kd3B2SldmZw?oc=5" target="_blank" rel="noopener">菸害防制法何時三讀？4萬青少年陷「喪屍煙彈」風險 國教盟：無法源查緝全白搭 | 黃天如 | 新聞 - 風傳媒</a></h3>
+  <div class="meta"><span class="source">風傳媒</span><span class="date">10/19</span></div>
+  <p class="summary">菸害防制法何時三讀？4萬青少年陷「喪屍煙彈」風險 國教盟：無法源查緝全白搭 | 黃天如 | 新聞 風傳媒</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBIUE1aSEN1T3JmWlNXZnhYLXhrWUhHRUd1ckJTVVc4VFFsbFpYWmdxX0hsUU16bDVJZWllbzNhNFBNZm0wQU9VaVg1T3pVMHJpVGxSMTJ3azY2Y1dneTZlMjRDVVAxUF9GeXNFbEt6akFoMzJCYzVVYmxYMjRxdw?oc=5" target="_blank" rel="noopener">電子煙回收桶滿月回收633公斤！國教盟轟修法卡關 籲本會期完成三讀 - 壹蘋新聞網</a></h3>
+  <div class="meta"><span class="source">壹蘋新聞網</span><span class="date">10/19</span></div>
+  <p class="summary">電子煙回收桶滿月回收633公斤！國教盟轟修法卡關 籲本會期完成三讀 壹蘋新聞網</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1DN2V2NmtVY2pqTndvTUl0MTBwR29GVXFhS2I4WTVMNmJ0VG9RUTJObklZZ2hMeUFBVUJaX2M0bnpzS2xFeVp5UkY4WUc3bVRucWlhLTNn?oc=5" target="_blank" rel="noopener">電子煙回收一個月達633公斤 4萬青少年陷成癮風險 民團籲菸防法速三讀 | 聯合新聞網 - LINE TODAY</a></h3>
+  <div class="meta"><span class="source">LINE TODAY</span><span class="date">10/19</span></div>
+  <p class="summary">電子煙回收一個月達633公斤 4萬青少年陷成癮風險 民團籲菸防法速三讀 | 聯合新聞網 LINE TODAY</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1EblRmLTQ5T2cxRlRWY0xNSjVmNHlBdWJtM3NNdTJyVlN4MHFKd1BPVkUxQWdoa0J3NnlSQjhTX0FrVm50QnFQMmhsM0w2VTc4UXBDaThhM3NHUTJ3V0xB?oc=5" target="_blank" rel="noopener">電子煙不能只靠回收國教盟籲速三讀持有入法| 生活 - 中央社 CNA</a></h3>
+  <div class="meta"><span class="source">中央社 CNA</span><span class="date">10/19</span></div>
+  <p class="summary">電子煙不能只靠回收國教盟籲速三讀持有入法| 生活 中央社 CNA</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9pSUdOcHBXZXpqNXVKcWRERFpRXzY5OS1FU2Ffa0tQU0syUmtjdF81X0xOLU9DSXVsYUJoMG9kSzRSMS1ZSXVxMHUzME52aGFnUGNSVDlB?oc=5" target="_blank" rel="noopener">民團籲速通過菸防法修正 讓青少年早日遠離電子煙危害 | 中央廣播電臺 - LINE TODAY</a></h3>
+  <div class="meta"><span class="source">LINE TODAY</span><span class="date">10/19</span></div>
+  <p class="summary">民團籲速通過菸防法修正 讓青少年早日遠離電子煙危害 | 中央廣播電臺 LINE TODAY</p>
+</article>
+</section>
+
+<section id="candidates">
+  <h2>今天值得開題</h2>
+  <div class="section-desc">日報替理事長挑出的候選，請在 LINE 回「做＋部門／不做／觀察」</div>
+  
+<article class="card">
+  <h3 class="title">新北幼兒園餵藥案遭蘇巧慧稱為「餵毒案」，李四川競辦要求道歉</h3>
+  <div class="meta"><span class="source">建議 一般 · 家長部</span></div>
+  <p class="summary">涉及幼兒園用藥管理與政治人物發言分際，但屬政治攻防性質，政策倡議空間有限</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE82QjlYeVdnZmlscUN5dUVHNWI0UEQ4SEcyYUVWQ0NEanREZTNfSXR4V3V4T0JlZ21mV19RU1hlQjJ1UUREWklJekJSTzNLNXZnVDNn0gFYQVVfeXFMTUo4ZTRORFBLNjlRT2Z0dVJneUF4ZWg2UjJLQnJ1c0tGZDIwRjZsdHo4OU4zYUJUdEU0eHREdXhEbFM2RHAzLTR6eFI1MnJ5eVlqV09HUy1mcw?oc=5" target="_blank" rel="noopener">UDN</a>（只有一個來源）</p>
+</article>
+
+<article class="card">
+  <h3 class="title">莊競程簽署代理教師權益承諾書，支持考績獎金、公假進修等權益</h3>
+  <div class="meta"><span class="source">建議 一般 · 家長部</span></div>
+  <p class="summary">代理教師權益保障涉及教育品質與勞動權益制度缺口，具政策倡議價值</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1OeTE5eDBwWjRrUmJwX0haNXpRYmFZYklibjdvVXpwLTJNb0tjazZWRjRVNTRibDJGYlpraUtxU2tvRWNhTHVJUTBteVNfSmFlN21SN0hhbDVYQWxRdWtNYXhRd0pia1hfYUZtOW9xVdIBb0FVX3lxTE1OeTE5eDBwWjRrUmJwX0haNXpRYmFZYklibjdvVXpwLTJNb0tjazZWRjRVNTRibDJGYlpraUtxU2tvRWNhTHVJUTBteVNfSmFlN21SN0hhbDVYQWxRdWtNYXhRd0pia1hfYUZtOW9xVQ?oc=5" target="_blank" rel="noopener">自由時報</a>（只有一個來源）</p>
+</article>
+
+<article class="card">
+  <h3 class="title">法國學生抗議因師資短缺、校舍破敗擴大為全國示威</h3>
+  <div class="meta"><span class="source">建議 重大 · 兩部門合寫</span></div>
+  <p class="summary">國際教育資源分配危機案例，可對照台灣少子化與教育投資政策，具借鏡意義</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE84M25Ddmt4bnZDZDB2NU9reFNUa2RNQ3F0Uzh6RGZOVUJoeUV4RWw0SWlrY0o5eDFPc1hKaGtfVXVRalRZWTRzbXV6T2J3Vk80ZmhBeVZB?oc=5" target="_blank" rel="noopener">LINE TODAY</a>、<a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE0tNjU0a3F5dUJ0VE8tQTBjcmJXMl90S0c0VXVFS0VlOUlwVmh5M0lEQzV2ZzZFcGFUVHhlMVIyYkhfcEpDWlhtRExMUUszNEFJUzVqM3RSbFBhQ3JNQ2NOdFRGc3h5ZzVkLWlQTVBTTQ?oc=5" target="_blank" rel="noopener">www.hkcna.hk</a></p>
+</article>
+  
+<div class="empty-state">
+  <p class="empty-desc">目前每一題走到哪一步，請看<a href="https://claude.ai/artifact/UYGwjUYkBzJ4yGodUiHUGa" target="_blank" rel="noopener">快速倡議看板</a></p>
+</div>
+</section>
+
+<section class="ai-insight" id="insight">
+  <h2>國教盟小編心得整理</h2>
+  <div class="ai-badge">由 Claude Sonnet 4.5 協助整理</div>
+  <p>今日核心趨勢聚焦於教師待遇改善與幼兒園事件爭議。教育部修法提高特定教師薪資獎金，同時幼兒園餵藥案政治爭議持續延燒。</p><p>跨議題串連方面，對照法國學生因師資短缺、校舍破敗引發全國示威，以及日本145所高中因少子化面臨關門，台灣在教師待遇與少子化應對上的政策調整顯得更具前瞻意義。國教盟近期在電子煙防制法修法倡議上已獲多家媒體報導，展現政策影響力。</p><p>建議一：可考慮關注代理教師權益保障議題，從考績獎金到健康檢查等面向，回應教育現場長期存在的制度缺口。建議二：值得追蹤法國學生示威背後的教育資源分配問題，作為台灣面對少子化與師資結構調整的國際借鏡。</p>
+</section>
+
+</main>
+
+<footer>
+  <p>本日報由國教行動聯盟（AABE）每日 18:00 自動生成 · 6 大議題類別 + 4 國際來源 + AI 觀察整理</p>
+  <p>網址：<a href="https://naer-tw.github.io/daily-news/">naer-tw.github.io/daily-news/</a></p>
+</footer>
+
+<script>
+function toggleTheme() {
+  var t = document.body.dataset.theme;
+  document.body.dataset.theme = (t === 'dark') ? 'light' : 'dark';
+  localStorage.setItem('theme', document.body.dataset.theme);
+  document.querySelector('.theme-toggle').textContent = document.body.dataset.theme === 'dark' ? '☀️' : '🌙';
+}
+(function() {
+  var saved = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.body.dataset.theme = saved;
+  document.querySelector('.theme-toggle').textContent = saved === 'dark' ? '☀️' : '🌙';
+})();
+</script>
+
+</body>
+</html>
