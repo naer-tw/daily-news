@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>兒少與教育議題的國教盟日報 - 2026-10-20</title>
+<meta property="og:title" content="兒少與教育議題的國教盟日報 - 2026年10月20日">
+<meta property="og:description" content="每日 3 則台灣、2 則國際重大兒少與教育議題，附 AI 心得整理。國教行動聯盟。">
+<meta property="og:image" content="https://naer-tw.github.io/daily-news/og-image.png?v=2026-10-20">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://naer-tw.github.io/daily-news/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #5c1a30;
+  --primary-light: #7a2840;
+  --accent: #e8553d;
+  --accent-light: #f07060;
+  --accent-bg: #fef4f0;
+  --ink: #1a1a2e;
+  --ink-muted: #6b7280;
+  --bg: #faf9f7;
+  --card: #ffffff;
+  --border: #e5e3dc;
+  --border-strong: #1a1a2e;
+}
+[data-theme="dark"] {
+  --primary: #f07060; --primary-light: #f59090;
+  --accent: #f07060; --accent-bg: #2a1410;
+  --ink: #f1f5f9; --ink-muted: #94a3b8;
+  --bg: #0f172a; --card: #1e293b; --border: #334155; --border-strong: #f1f5f9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+.theme-toggle {
+  position: fixed; top: 20px; right: 20px;
+  background: var(--card); border: 1px solid var(--border);
+  width: 40px; height: 40px; border-radius: 999px;
+  cursor: pointer; font-size: 18px; z-index: 100;
+}
+header {
+  background: var(--card); border-bottom: 2px solid var(--primary);
+  padding: 40px 20px 32px; text-align: center;
+}
+header .badge {
+  display: inline-block; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px;
+}
+header h1 {
+  font-size: clamp(24px, 4vw, 36px); font-weight: 900;
+  letter-spacing: -0.01em; color: var(--primary);
+  margin: 0 0 12px; line-height: 1.3;
+}
+header .date {
+  font-size: 15px; color: var(--ink-muted);
+  font-variant-numeric: tabular-nums; margin-bottom: 20px;
+}
+nav {
+  display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+}
+nav a {
+  padding: 8px 18px; border: 1px solid var(--border);
+  border-radius: 999px; font-size: 14px; font-weight: 500;
+  color: var(--ink); text-decoration: none;
+  background: var(--bg); transition: all 0.15s;
+}
+nav a:hover, nav a.active {
+  background: var(--primary); color: white; border-color: var(--primary);
+}
+main {
+  max-width: 760px; margin: 0 auto; padding: 40px 20px 80px;
+}
+section { margin-bottom: 56px; }
+section h2 {
+  font-size: 22px; font-weight: 800; color: var(--primary);
+  margin: 0 0 24px; padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary);
+  letter-spacing: -0.005em;
+}
+section .section-desc {
+  font-size: 14px; color: var(--ink-muted);
+  margin: -16px 0 24px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  padding: 24px; margin-bottom: 16px; border-radius: 8px;
+  position: relative; transition: border-color 0.15s;
+}
+.card:hover { border-color: var(--accent); }
+.card .rank {
+  position: absolute; top: 20px; right: 24px;
+  font-size: 28px; font-weight: 900; color: var(--accent);
+  font-variant-numeric: tabular-nums; line-height: 1;
+}
+.card .title {
+  font-size: 19px; font-weight: 700; line-height: 1.4;
+  margin: 0 60px 12px 0; letter-spacing: -0.005em;
+}
+.card .title a {
+  color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.card .title a:hover { border-bottom-color: var(--accent); }
+.card .meta {
+  font-size: 13px; color: var(--ink-muted);
+  margin-bottom: 12px; display: flex; gap: 16px; flex-wrap: wrap;
+}
+.card .meta .score {
+  display: inline-block; padding: 2px 8px;
+  background: var(--accent-bg); color: var(--accent);
+  border-radius: 4px; font-size: 11px; font-weight: 600;
+}
+.card .summary {
+  font-size: 15px; color: var(--ink);
+  line-height: 1.75; opacity: 0.9;
+}
+.card .orig {
+  margin-top: 12px; padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 13px; color: var(--ink-muted);
+}
+.card .orig summary { cursor: pointer; opacity: 0.7; }
+.card .orig p { margin-top: 8px; font-style: italic; }
+.aabe-card { border-left: 3px solid var(--accent); }
+.empty-state {
+  background: var(--card); border: 1px dashed var(--border);
+  padding: 32px; text-align: center; border-radius: 8px;
+}
+.empty-state .empty-title {
+  font-size: 16px; font-weight: 700; color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+.empty-state .empty-desc {
+  font-size: 14px; color: var(--ink-muted);
+  line-height: 1.7; max-width: 480px; margin: 0 auto;
+}
+.ai-insight {
+  background: linear-gradient(135deg, #fef4f0 0%, #fff 100%);
+  border: 1px solid var(--accent); border-radius: 12px;
+  padding: 32px; margin-top: 32px;
+}
+[data-theme="dark"] .ai-insight {
+  background: linear-gradient(135deg, #2a1410 0%, var(--card) 100%);
+}
+.ai-insight h2 {
+  color: var(--accent); border-bottom-color: var(--accent);
+}
+.ai-insight .ai-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent);
+  border: 1px solid var(--accent); padding: 2px 8px;
+  border-radius: 4px; margin-bottom: 16px; text-transform: uppercase;
+}
+.ai-insight p {
+  font-size: 16px; line-height: 1.9;
+  margin-bottom: 14px;
+}
+.ai-insight p:last-child { margin-bottom: 0; }
+footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--ink-muted); font-size: 13px;
+  border-top: 1px solid var(--border);
+}
+footer a { color: var(--ink-muted); }
+@media print {
+  .theme-toggle, nav { display: none; }
+  .card { break-inside: avoid; }
+}
+@media (max-width: 600px) {
+  header { padding: 24px 16px; }
+  main { padding: 28px 14px 60px; }
+  .card { padding: 18px; }
+  .card .title { font-size: 17px; margin-right: 50px; }
+  .card .rank { font-size: 22px; top: 16px; right: 18px; }
+  .ai-insight { padding: 22px 18px; }
+}
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="切換深色模式">🌙</button>
+
+<header>
+  <div class="badge">每日 18:00 自動更新</div>
+  <h1>兒少與教育議題的國教盟日報</h1>
+  <div class="date">2026年10月20日（週二）</div>
+  <nav>
+    <a href="https://naer-tw.github.io/daily-news/" class="active">日報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/weekly/2026-W43.html">週報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/monthly/2026-10.html">月報</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="taiwan">
+  <h2>台灣重大議題</h2>
+  <div class="section-desc">過去 24 小時內，依議題重要性、政府/立法訊號、權威媒體加權，分數 ≥ 5 才入榜</div>
+  
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE94cHlHOEllbUM2SmY2MGNWNEdHUVNIUk5TUUduazZnRk9VdEQ1c0MyNmZoSjBvdGlIUTg5S2RXLXhPTHhfZ1B2cmc1YkZ0VVo2a1VrbW9aOGx5ZlRNN1dHVTZDanBodVhiVFBsVXF3?oc=5" target="_blank" rel="noopener">教育部鬆綁幼兒園代理資格！高雄教師工會怒批：中央撤防線 - 中時新聞網</a></h3>
+  <div class="meta"><span class="source">中時新聞網</span><span class="age age-fresh">1 小時前</span><span class="score">議題分數 10</span></div>
+  <p class="summary">教育部鬆綁幼兒園代理資格！高雄教師工會怒批：中央撤防線 中時新聞網</p>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9PSC1kSDZjNl9tZVF3WEw5NUlwZkFJakxBSm9wTHMtWjVFRFZ3U2lzekZ4WmxWXzNqbE1QVVhJVXNQcm9ublNHMF9CQTJ4Ri1XWXRuSUplMW1DMklDTHV5aER4WDHSAWpBVV95cUxORlB2c1kwLW5ENzUxdDlOYnlKVEJkOXFyMlN2SThDMWVERTZ2QUhHbnpPeElVQ25od0U2QTlNZUZWR2gydmJLbmJFZFAyQU1jVmhVUGFIUHZyeE1IbXZoOF9fNXVvYU5paFBB?oc=5" target="_blank" rel="noopener">保母同住者有家暴前科需通報！衛福部預告草案 要求機構每月查核 - 自由時報</a></h3>
+  <div class="meta"><span class="source">自由時報</span><span class="age age-fresh">3 小時前</span><span class="score">議題分數 8</span></div>
+  <p class="summary">保母同住者有家暴前科需通報！衛福部預告草案 要求機構每月查核 自由時報</p>
+</article>
+
+<article class="card">
+  <div class="rank">#3</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5VdG9uXzh6M3B3eDRKdzRKeW5ZbUMyM3I0U3hVaTdid1VaYTFFdFlWbnBWNmo3ckJDVjg5OHdrMWt4dC1VNHZNajZ0d3gwUkNvTG5yM09Oc2Fvb3lQR04wZ9IBZkFVX3lxTFA2TnZ6cUE5dDVXbkxfdnFUcXdUWXlSandUaC0zYy03WU5nRDhBcC1GVlNja3hmNVRsUU9nMzItZzBPVUxvRTIyZUJxeTkzVXpCQTMxemZ6c2lTbnl3VWlUUG5oWUc0QQ?oc=5" target="_blank" rel="noopener">法國學生封鎖盧浮宮 馬克龍拒絕內政部長辭職 - 新唐人電視台</a></h3>
+  <div class="meta"><span class="source">新唐人電視台</span><span class="age age-fresh">22 小時前</span><span class="score">議題分數 7</span></div>
+  <p class="summary">法國學生封鎖盧浮宮 馬克龍拒絕內政部長辭職 新唐人電視台</p>
+</article>
+  
+<details class="extended">
+  <summary>延伸觀察（分數 3-4，未達 Top 3 門檻）— 共 5 則</summary>
+  <ul><li><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1FWE5ZdE96Zi1LWHVfT2hFanhiYjRMenRGRmRrOFp4VXF6eHFXdW9QdlZPelRicjNWa2ZRR0J0ek5ZODFTbWdYVWhrOHBzTWlZem4zcTl3VzRWczFkR1FKZGhfc0liaXhD?oc=5" target="_blank" rel="noopener">葛如鈞立委直言：沈伯洋別用教師騙選票.拿AI畫大餅 - 元丰傳媒</a><span class="ext-meta">元丰傳媒 · <span style="all:unset" class="age age-fresh">3 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1GaF9xNXhHWEdncGFrY3VYR1AwOWdPV05RX253bUd2V05wNUNNQU5mR1FFVktzeHlodzZTeF9WT2FGYzU4OGR5S3ZLM3M0Vjc3aXo3MFlHeHI?oc=5" target="_blank" rel="noopener">沈伯洋邀教師、公務員吐苦水葉元之酸：兩年立委突然間已知用火| 2026九合一選舉 - UDN</a><span class="ext-meta">UDN · <span style="all:unset" class="age age-fresh">4 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE45azdRVzRFcEUtZDJvVm1zdmRBWXhvS1liTHlRX2tPazNhVVFBMExPdk9DTlBjZlRHbjJuOC0xZ1NvMHpCdURfcC1lRkZLTWlIbE93SGhfdjcwTzUzOFdmZNIBYEFVX3lxTE45azdRVzRFcEUtZDJvVm1zdmRBWXhvS1liTHlRX2tPazNhVVFBMExPdk9DTlBjZlRHbjJuOC0xZ1NvMHpCdURfcC1lRkZLTWlIbE93SGhfdjcwTzUzOFdmZA?oc=5" target="_blank" rel="noopener">教團提代理教師權益 莊競程允諾3保障 - 自由時報</a><span class="ext-meta">自由時報 · <span style="all:unset" class="age age-fresh">12 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBuOGlsZERZRG9DRG1mRG5HZ1ZQRHpvZ1hUQTNUakJzYkViaGJSd2hXeF9JanJXWjgwSGRiMGF2QkE3b0xSR3hpY2l0bnNoUFZfZGpPZmZ6RWJnSnVxOFY5SzlrcEFvcVNhV1E?oc=5" target="_blank" rel="noopener">教保員2027大加薪「最高衝破8萬」！公私立幼兒園罕見同時崩潰？網全傻眼：這什麼地獄制度- 其他 - 旺得富理財網</a><span class="ext-meta">旺得富理財網 · <span style="all:unset" class="age age-fresh">3 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxNbVBLVGczNElCbHBGcnV1UnA4Z3JUN2p2Snc3Sk12T3I5WF9WT0RtcDhYRU4yakRjSWNIMFZRSng2aEgwVDNlX3YxZGVzNjNmZkZTT0Fra19qUTdvbjdZM2hwY2lGT2o2blRHVHl3R1I3RUY5OVROc2FJSjh4d192N1RfTXlzal94Y2c?oc=5" target="_blank" rel="noopener">沈伯洋邀教師吐苦水藍委揭露他992天僅2度教文會質詢- 政治新聞 - PChome Online 新聞</a><span class="ext-meta">PChome Online 新聞 · <span style="all:unset" class="age age-fresh">2 小時前</span></span></li></ul>
+</details>
+</section>
+
+<section id="international">
+  <h2>國際重大議題</h2>
+  <div class="section-desc">每日精選 2 則，來源：BBC / Guardian / Google News / Straits Times</div>
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPY0tmUkxCRnlRV3R4bDNaazFmSWwzSjdaeFpBREJoS3EzWU5VR0swMlRpazlXcTJkMmR4SkxHWFhmak1ISFN0NWFmakF0QTJ3OVNmV2piRmY0LXduNTRObG94b0FQUGRlWTc3TUs0UU9OZ3BrRlVJMmtVMy1qdnJEaTd1dFpVUVBSR0g1ZWIydklQamZwbHdYRdIBmAFBVV95cUxPY0tmUkxCRnlRV3R4bDNaazFmSWwzSjdaeFpBREJoS3EzWU5VR0swMlRpazlXcTJkMmR4SkxHWFhmak1ISFN0NWFmakF0QTJ3OVNmV2piRmY0LXduNTRObG94b0FQUGRlWTc3TUs0UU9OZ3BrRlVJMmtVMy1qdnJEaTd1dFpVUVBSR0g1ZWIydklQamZwbHdYRQ?oc=5" target="_blank" rel="noopener">迦納21歲青年與14歲女學生接任UNICEF與國際培幼會職務 響應國際女童日</a></h3>
+  <div class="meta"><span class="source">GoogleNewsEN / Modern Ghana</span><span class="age age-fresh">16 小時前</span><span class="score">議題分數 12</span></div>
+  <p class="summary">21歲青年行動者與14歲女學生分別接任UNICEF迦納代理負責人及國際培幼會迦納國家主任職務，以響應國際女童日。</p>
+  <details class="orig"><summary>原文標題</summary><p>21-Year-Old Activist, 14-Year-Old Schoolgirl Take Over as UNICEF Ghana OIC, Plan International Ghana Country Director to Mark International Day of the Girl - Modern Ghana</p></details>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxOa0pSbkN2XzcwMnZzT3ZZQm5DTHFmSWRJbGUwdzNJY3NYME9zblhMb1kzaGNHVmFCUkFRZDhvNlQ0RWM0NXpndGJRUXVOYlZ2Z2ppcWhlMmNmY1N6Y2tYRkdMejdvcVVXeHFwU3pEc1lxQWl0anVrQTBRQ3VkTzZsUlVVdWRyQ3lHRU9WWmxEXzF2MWhqbXNIU1FvdEdZa3k5aFNGQlg5TUVpZkVjMFNMZnZ0ZjlFM3VtZW5qYWdOOHZuM0NnUnRIYmtJbHZjSGM?oc=5" target="_blank" rel="noopener">UNICEF執行長籲孟加拉投資兒童並終結童婚</a></h3>
+  <div class="meta"><span class="source">GoogleNewsEN / UNICEF</span><span class="age age-fresh">3 小時前</span><span class="score">議題分數 10</span></div>
+  <p class="summary">UNICEF執行長呼籲孟加拉政府緊急投資兒童福祉，並採取措施終結童婚問題。</p>
+  <details class="orig"><summary>原文標題</summary><p>UNICEF Executive Director calls for urgent investment in children in Bangladesh and measures to end child marriage - UNICEF</p></details>
+</article>
+</section>
+
+<section id="aabe">
+  <h2>近 7 日國教盟媒體露出</h2>
+  <div class="section-desc">關鍵字：國教盟、國教行動聯盟、王瀚陽（Google News RSS 對小眾關鍵字有 ~2 日延遲，故採 7 日視窗）</div>
+  
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE0wSmlTSDJEdG1DWmw1a2RpQ0RNWUkzUVVOM0VKTXYtSFJuZ0ZObUpOVnY2cjBNVUN6UHk0YTEtTkMxandDWmQ4cEJYWGFpV1Qz0gFWQVVfeXFMUDhFN05pZm10TDZWQWdXWlpwcEhwdGhhaFI2NDJBTGs0OTctREN2TVpuNDdySmZRb2dYTnRLbGJRd0FyNHlodXlNSVN2LU8teVBpTlJfVWc?oc=5" target="_blank" rel="noopener">72團體推兒少10大承諾 邀三黨立委轉達全國縣市長參選人回應 - UDN</a></h3>
+  <div class="meta"><span class="source">UDN</span><span class="date">10/14</span></div>
+  <p class="summary">72團體推兒少10大承諾 邀三黨立委轉達全國縣市長參選人回應 UDN</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFBVSENad2h5RkZTWkFrLVhCbTc5QjFtelVpOXJBVnFYOXJGVU1lZ3lNTFB1THNCcmkxZlc5Wm0yN2Z4eUxwOW50WXpVZE40c3M?oc=5" target="_blank" rel="noopener">72民團提兒少十大承諾書 盼各縣市長參選人納施政核心 - 你的公共電視</a></h3>
+  <div class="meta"><span class="source">你的公共電視</span><span class="date">10/14</span></div>
+  <p class="summary">72民團提兒少十大承諾書 盼各縣市長參選人納施政核心 你的公共電視</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE50VkIySy1ncTJHSXJfRmtmUnJHcUtDcVJtNGh6NTFyN0VjZ21Yd1o5by05aXFxbXlnY05DMkxEZ2E1c0VndkhodHNFY0JmeVNGaWd1ZWF2c3RHcmM?oc=5" target="_blank" rel="noopener">電子煙不能只靠回收 國教盟籲速三讀持有入法 - 信吉衛視+</a></h3>
+  <div class="meta"><span class="source">信吉衛視+</span><span class="date">10/18</span></div>
+  <p class="summary">電子煙不能只靠回收 國教盟籲速三讀持有入法 信吉衛視+</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1oUk9Qc1dieS1BZDRHa25veWtqNUZ2aV9QMFpUR0RNQlp0TWZYTXNYZkJQdlMtVHRPd3VYdVRYendaYVFDV3dibEF1Mmc5QW9YTDh5R0ZadzFOYy1VWWQwTDYxN3cyaUNoMWc?oc=5" target="_blank" rel="noopener">電子煙回收633公斤國教盟估4萬青少使用- 其他 - 旺得富理財網</a></h3>
+  <div class="meta"><span class="source">旺得富理財網</span><span class="date">10/19</span></div>
+  <p class="summary">電子煙回收633公斤國教盟估4萬青少使用- 其他 旺得富理財網</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMi7gJBVV95cUxORDlOVmkwMjlUeHcwQXZ2SFktRkN3c1RwWmZWeGxSVFZFckFCOTQwZHloTWtabnhYYXFDaU5PTkR4cVh0dDhOMWRyMzJsUThGd0hsdXFMYnV3bF8tcUlyUmxzYjJ3TFMyVlVDVXI4blhSSUVtUWpwTzVHUzAxeWx0V1JRcG9LRVUyVzJveVFER0h4QTdiOGtnTjNxd0hmOG9vX3BhSDFLZXFCUHJuemdTZU1RTl9WWVhRY1AzeUo0NWJZQ1laT1RIbHk3ZVdTY04tUmZOOHZRT0QyT3k3Q2xMbWtvaGhhN202eE9aSGtnSG5aMllQdXA4QzkydkRwUm1DWDhtUzBJdDBOMV9fVHhUSjEtX0I0VGVYdXZsOE5scjlXaktlOVo5dHkwYXJGV3B1YmE0LUxaZk5qSFZ4WEN3VGtDQXN3YW91a1ZCRUdRYk1jei1hRWZoNndaVFFqMmQtZ1ZaaWRmbEhKeWVmR0E?oc=5" target="_blank" rel="noopener">菸害防制法何時三讀？4萬青少年陷「喪屍煙彈」風險 國教盟：無法源查緝全白搭 - Yahoo新聞</a></h3>
+  <div class="meta"><span class="source">Yahoo新聞</span><span class="date">10/19</span></div>
+  <p class="summary">菸害防制法何時三讀？4萬青少年陷「喪屍煙彈」風險 國教盟：無法源查緝全白搭 Yahoo新聞</p>
+</article>
+</section>
+
+<section id="candidates">
+  <h2>今天值得開題</h2>
+  <div class="section-desc">日報替理事長挑出的候選，請在 LINE 回「做＋部門／不做／觀察」</div>
+  
+<article class="card">
+  <h3 class="title">教育部擬鬆綁幼兒園代理人力資格，教師工會與台教產批衝擊幼教專業</h3>
+  <div class="meta"><span class="source">建議 重大 · 家長部</span></div>
+  <p class="summary">涉及幼教師資門檻政策變動，影響教保品質與兒少安全，有政策建言空間</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE94cHlHOEllbUM2SmY2MGNWNEdHUVNIUk5TUUduazZnRk9VdEQ1c0MyNmZoSjBvdGlIUTg5S2RXLXhPTHhfZ1B2cmc1YkZ0VVo2a1VrbW9aOGx5ZlRNN1dHVTZDanBodVhiVFBsVXF3?oc=5" target="_blank" rel="noopener">中時新聞網</a>、<a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE50c2RWeUc3VHpTbWxhdExLaVVSWk5VRVhNWmdpWkRJZVQzVXF6eXVJUjNMUzZtUExNVzVsdHlwWTEzZHFnTk5MaU5QejNSTC1RN0xBaWstLXNSZy14TDZtLTBOd2o1Y1R1QVhWNFhKUQ?oc=5" target="_blank" rel="noopener">知新聞</a></p>
+</article>
+
+<article class="card">
+  <h3 class="title">衛福部預告保母同住者有家暴前科需通報並禁止在家收托</h3>
+  <div class="meta"><span class="source">建議 一般 · 家長部</span></div>
+  <p class="summary">托育安全新制預告，可評估配套措施充足性及查核機制可行性</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9PSC1kSDZjNl9tZVF3WEw5NUlwZkFJakxBSm9wTHMtWjVFRFZ3U2lzekZ4WmxWXzNqbE1QVVhJVXNQcm9ublNHMF9CQTJ4Ri1XWXRuSUplMW1DMklDTHV5aER4WDHSAWpBVV95cUxORlB2c1kwLW5ENzUxdDlOYnlKVEJkOXFyMlN2SThDMWVERTZ2QUhHbnpPeElVQ25od0U2QTlNZUZWR2gydmJLbmJFZFAyQU1jVmhVUGFIUHZyeE1IbXZoOF9fNXVvYU5paFBB?oc=5" target="_blank" rel="noopener">自由時報</a>、<a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE1oVWRGSFA3aHIydWxPUTFKT0VscldtZjF0WE1kWERCaklFMXdXQTdSeDZUbV8tc0tQdXFzcnlZUjVlMVVWTDlIa0ttZWI0QUJJODE4bmI5UjU4ZUhuTExaRzFQWXpxUTBxX0tITTVR?oc=5" target="_blank" rel="noopener">中時新聞網</a></p>
+</article>
+
+<article class="card">
+  <h3 class="title">北投幼兒園女師虐待3名幼童遭起訴並終身禁任教保人員</h3>
+  <div class="meta"><span class="source">建議 重大 · 家長部</span></div>
+  <p class="summary">涉及幼童人身安全與教保人員不適任處理機制，可檢視現行退場與查核制度</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBSLTFsQXVMNUZnbkpZTjI0UVozWi12THhFUUYxanZ5bWNRcEtDY2pIeC1LcXktb0pwNFlVTnJsd2hBdnN1d1FaMzFsNHFTS3pWODJIdGxn?oc=5" target="_blank" rel="noopener">Mombaby 媽媽寶寶懷孕生活網</a>、<a href="https://news.google.com/rss/articles/CBMi7AJBVV95cUxPVlpFMVNOQlU2bm9YRVhDT3kxanN6Tnlua1dxNHBYa0QtTlBwNjBseXF0T3lVVEo5NUVuM2hWUEdNemlqOWo2ZVlPX2RIeXNCMUhyTWpORlJGanlfcktabGNuTDBUNndnMFRwZHdDTVRQeHFMYmExdVJrbm1pcXBlOTRJZEh2MGxEZ1BUU2ZUV3FQWVFnRm94dTNJTm0xTUdjMTFCT1lJV01sYWFPT0VncnZvblhzQ2p3dE4zazhvNGVKUmxKZDFfSm83eUMtVkgydVhWMGl4VVBuY0xvZ2R0U3NBb05HUEVfTE00TFh6YWVPRTNQZ0phVUFnc1pCZHRuRG1vR3lJei1kUnZBNVZrQjlBMlJlek95aXd3NGtvMmtwYWc5UjFDYmpLV1Z2X2ludFgwcXFXQmRsdlBfMHQ4ZXZscHJlMnZIWmJIQ0pfQVg2ZlE4N0hnNmpKRkJqQ2FJaXpHNjZmMlE2SXlI?oc=5" target="_blank" rel="noopener">Yahoo新聞</a></p>
+</article>
+  
+<div class="empty-state">
+  <p class="empty-desc">目前每一題走到哪一步，請看<a href="https://claude.ai/artifact/UYGwjUYkBzJ4yGodUiHUGa" target="_blank" rel="noopener">快速倡議看板</a></p>
+</div>
+</section>
+
+<section class="ai-insight" id="insight">
+  <h2>國教盟小編心得整理</h2>
+  <div class="ai-badge">由 Claude Sonnet 4.5 協助整理</div>
+  <p>今日新聞聚焦於幼兒園教保人力資格鬆綁爭議、保母同住者背景查核新制，以及北投幼兒園虐童案起訴等托育安全議題。</p><p>跨議題串連方面，教育部擬放寬幼兒園代理資格引發教師工會抗議，衛福部同步預告保母同住者家暴前科需通報，顯示中央在托育人力荒與兒少安全間拉扯。國際上UNICEF呼籲孟加拉終結童婚並投資兒童，與台灣兒少保護議題形成對照。國教盟本週持續推動電子煙持有入法及兒少十大承諾書倡議，媒體露出穩定。</p><p>建議一：可考慮就幼兒園代理資格鬆綁政策表態，從專業門檻與兒少安全平衡點切入，呼應教師工會與家長疑慮。<br>建議二：值得關注衛福部保母同住者查核新制預告內容，評估是否有強化空間或配套不足之處，作為未來政策建言參考。</p>
+</section>
+
+</main>
+
+<footer>
+  <p>本日報由國教行動聯盟（AABE）每日 18:00 自動生成 · 6 大議題類別 + 4 國際來源 + AI 觀察整理</p>
+  <p>網址：<a href="https://naer-tw.github.io/daily-news/">naer-tw.github.io/daily-news/</a></p>
+</footer>
+
+<script>
+function toggleTheme() {
+  var t = document.body.dataset.theme;
+  document.body.dataset.theme = (t === 'dark') ? 'light' : 'dark';
+  localStorage.setItem('theme', document.body.dataset.theme);
+  document.querySelector('.theme-toggle').textContent = document.body.dataset.theme === 'dark' ? '☀️' : '🌙';
+}
+(function() {
+  var saved = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.body.dataset.theme = saved;
+  document.querySelector('.theme-toggle').textContent = saved === 'dark' ? '☀️' : '🌙';
+})();
+</script>
+
+</body>
+</html>
