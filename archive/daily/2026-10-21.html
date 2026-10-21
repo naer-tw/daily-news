@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>兒少與教育議題的國教盟日報 - 2026-10-21</title>
+<meta property="og:title" content="兒少與教育議題的國教盟日報 - 2026年10月21日">
+<meta property="og:description" content="每日 3 則台灣、2 則國際重大兒少與教育議題，附 AI 心得整理。國教行動聯盟。">
+<meta property="og:image" content="https://naer-tw.github.io/daily-news/og-image.png?v=2026-10-21">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://naer-tw.github.io/daily-news/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #5c1a30;
+  --primary-light: #7a2840;
+  --accent: #e8553d;
+  --accent-light: #f07060;
+  --accent-bg: #fef4f0;
+  --ink: #1a1a2e;
+  --ink-muted: #6b7280;
+  --bg: #faf9f7;
+  --card: #ffffff;
+  --border: #e5e3dc;
+  --border-strong: #1a1a2e;
+}
+[data-theme="dark"] {
+  --primary: #f07060; --primary-light: #f59090;
+  --accent: #f07060; --accent-bg: #2a1410;
+  --ink: #f1f5f9; --ink-muted: #94a3b8;
+  --bg: #0f172a; --card: #1e293b; --border: #334155; --border-strong: #f1f5f9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+.theme-toggle {
+  position: fixed; top: 20px; right: 20px;
+  background: var(--card); border: 1px solid var(--border);
+  width: 40px; height: 40px; border-radius: 999px;
+  cursor: pointer; font-size: 18px; z-index: 100;
+}
+header {
+  background: var(--card); border-bottom: 2px solid var(--primary);
+  padding: 40px 20px 32px; text-align: center;
+}
+header .badge {
+  display: inline-block; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px;
+}
+header h1 {
+  font-size: clamp(24px, 4vw, 36px); font-weight: 900;
+  letter-spacing: -0.01em; color: var(--primary);
+  margin: 0 0 12px; line-height: 1.3;
+}
+header .date {
+  font-size: 15px; color: var(--ink-muted);
+  font-variant-numeric: tabular-nums; margin-bottom: 20px;
+}
+nav {
+  display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+}
+nav a {
+  padding: 8px 18px; border: 1px solid var(--border);
+  border-radius: 999px; font-size: 14px; font-weight: 500;
+  color: var(--ink); text-decoration: none;
+  background: var(--bg); transition: all 0.15s;
+}
+nav a:hover, nav a.active {
+  background: var(--primary); color: white; border-color: var(--primary);
+}
+main {
+  max-width: 760px; margin: 0 auto; padding: 40px 20px 80px;
+}
+section { margin-bottom: 56px; }
+section h2 {
+  font-size: 22px; font-weight: 800; color: var(--primary);
+  margin: 0 0 24px; padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary);
+  letter-spacing: -0.005em;
+}
+section .section-desc {
+  font-size: 14px; color: var(--ink-muted);
+  margin: -16px 0 24px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  padding: 24px; margin-bottom: 16px; border-radius: 8px;
+  position: relative; transition: border-color 0.15s;
+}
+.card:hover { border-color: var(--accent); }
+.card .rank {
+  position: absolute; top: 20px; right: 24px;
+  font-size: 28px; font-weight: 900; color: var(--accent);
+  font-variant-numeric: tabular-nums; line-height: 1;
+}
+.card .title {
+  font-size: 19px; font-weight: 700; line-height: 1.4;
+  margin: 0 60px 12px 0; letter-spacing: -0.005em;
+}
+.card .title a {
+  color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.card .title a:hover { border-bottom-color: var(--accent); }
+.card .meta {
+  font-size: 13px; color: var(--ink-muted);
+  margin-bottom: 12px; display: flex; gap: 16px; flex-wrap: wrap;
+}
+.card .meta .score {
+  display: inline-block; padding: 2px 8px;
+  background: var(--accent-bg); color: var(--accent);
+  border-radius: 4px; font-size: 11px; font-weight: 600;
+}
+.card .summary {
+  font-size: 15px; color: var(--ink);
+  line-height: 1.75; opacity: 0.9;
+}
+.card .orig {
+  margin-top: 12px; padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 13px; color: var(--ink-muted);
+}
+.card .orig summary { cursor: pointer; opacity: 0.7; }
+.card .orig p { margin-top: 8px; font-style: italic; }
+.aabe-card { border-left: 3px solid var(--accent); }
+.empty-state {
+  background: var(--card); border: 1px dashed var(--border);
+  padding: 32px; text-align: center; border-radius: 8px;
+}
+.empty-state .empty-title {
+  font-size: 16px; font-weight: 700; color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+.empty-state .empty-desc {
+  font-size: 14px; color: var(--ink-muted);
+  line-height: 1.7; max-width: 480px; margin: 0 auto;
+}
+.ai-insight {
+  background: linear-gradient(135deg, #fef4f0 0%, #fff 100%);
+  border: 1px solid var(--accent); border-radius: 12px;
+  padding: 32px; margin-top: 32px;
+}
+[data-theme="dark"] .ai-insight {
+  background: linear-gradient(135deg, #2a1410 0%, var(--card) 100%);
+}
+.ai-insight h2 {
+  color: var(--accent); border-bottom-color: var(--accent);
+}
+.ai-insight .ai-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent);
+  border: 1px solid var(--accent); padding: 2px 8px;
+  border-radius: 4px; margin-bottom: 16px; text-transform: uppercase;
+}
+.ai-insight p {
+  font-size: 16px; line-height: 1.9;
+  margin-bottom: 14px;
+}
+.ai-insight p:last-child { margin-bottom: 0; }
+footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--ink-muted); font-size: 13px;
+  border-top: 1px solid var(--border);
+}
+footer a { color: var(--ink-muted); }
+@media print {
+  .theme-toggle, nav { display: none; }
+  .card { break-inside: avoid; }
+}
+@media (max-width: 600px) {
+  header { padding: 24px 16px; }
+  main { padding: 28px 14px 60px; }
+  .card { padding: 18px; }
+  .card .title { font-size: 17px; margin-right: 50px; }
+  .card .rank { font-size: 22px; top: 16px; right: 18px; }
+  .ai-insight { padding: 22px 18px; }
+}
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="切換深色模式">🌙</button>
+
+<header>
+  <div class="badge">每日 18:00 自動更新</div>
+  <h1>兒少與教育議題的國教盟日報</h1>
+  <div class="date">2026年10月21日（週三）</div>
+  <nav>
+    <a href="https://naer-tw.github.io/daily-news/" class="active">日報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/weekly/2026-W43.html">週報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/monthly/2026-10.html">月報</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="taiwan">
+  <h2>台灣重大議題</h2>
+  <div class="section-desc">過去 24 小時內，依議題重要性、政府/立法訊號、權威媒體加權，分數 ≥ 5 才入榜</div>
+  
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE94S041THhkZ2JYaGcwTHRKRlVabmpxX0tQYnpXbFhOX2VaVjRQYndmdGRtVFFDUS1JZGwxVE5NalZaVzJhQUIzYUxWZXNsRHVTYU5objJMN1JRZnFPbTZMcnpB0gFiQVVfeXFMT3hLTjVMeGRnYlhoZzBMdEpGVVpuanFfS1BieldsWE5fZVpWNFBid2Z0ZG1UUUNRLUlkbDFUTk1qVlpXMmFBQjNhTFZlc2xEdVNhTmhuMkw3UlFmcU9tNkxyekE?oc=5" target="_blank" rel="noopener">全台9千疑似特教生　教育部「3招」急因應 - 鏡週刊Mirror Media</a></h3>
+  <div class="meta"><span class="source">鏡週刊Mirror Media</span><span class="age age-fresh">5 小時前</span><span class="score">議題分數 10</span></div>
+  <p class="summary">全台9千疑似特教生 教育部「3招」急因應 鏡週刊Mirror Media</p>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE14RHJFMHZtYkZRYnRVZ0QxaDAwTkY4T2NfeS1oNmZ1ZUhTTUpQTDliVDBzLVgxRE9WcWhsanlZQ2VyZEhhdWtQVFkwQmNNbE15YUE?oc=5" target="_blank" rel="noopener">王淺秋問立委成績單！沈伯洋：提逾百件草案、關心托育與交通 反擊翹班指控「質詢率94趴」 - 放言Fount Media</a></h3>
+  <div class="meta"><span class="source">放言Fount Media</span><span class="age age-fresh">36 分前</span><span class="score">議題分數 10</span></div>
+  <p class="summary">王淺秋問立委成績單！沈伯洋：提逾百件草案、關心托育與交通 反擊翹班指控「質詢率94趴」 放言Fount Media</p>
+</article>
+
+<article class="card">
+  <div class="rank">#3</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBrVzNUVTBiZ1F5Q05POTdNdlg4ME52MkxRNEtvRkdJWUpsUVI3ZDViT0NKOVY5aFlmYkRYQ2laXzdpZ2lxOUdnRlZBdlFyM2JfbzBMYWhn?oc=5" target="_blank" rel="noopener">改善普特融合教育人力 教育部：優先特教助理員專職化 | 中央廣播電臺 - LINE TODAY</a></h3>
+  <div class="meta"><span class="source">LINE TODAY</span><span class="age age-fresh">6 小時前</span><span class="score">議題分數 10</span></div>
+  <p class="summary">改善普特融合教育人力 教育部：優先特教助理員專職化 | 中央廣播電臺 LINE TODAY</p>
+</article>
+  
+<details class="extended">
+  <summary>延伸觀察（分數 3-4，未達 Top 3 門檻）— 共 5 則</summary>
+  <ul><li><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aUzJfOWkwSjcwdGVfS0laSU84VGNrY2RLTVFacTY1ZFZZdWJtMjZJelg0NDNpcHA1MUhUZ0NxdUREX09RY19Mc3dLd0FOZFZWZTgteG9pU1VkcDQ?oc=5" target="_blank" rel="noopener">考上正式教師反而減薪？教育部修幼教法規引發教團反彈：欠缺配套恐衝擊教保品質 - 翻轉教育</a><span class="ext-meta">翻轉教育 · <span style="all:unset" class="age age-fresh">8 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBzbjZ1dkE1WFNLS0NlVkZ4SUhwTkJXQjVfTWkxZlRGZHFRZmhocnUyR2tKVldPdVFWR0Y3UzRNSndmbmxWTHpiS09wZnNPOTNW0gFWQVVfeXFMTWRWQmZKOVpzOFZQTndVLVhEWnJWTGJJQmdJLXNOSkM3ZUVObXZ6eFVlcTBfWWlVLXZrbkpGRTUzeld2QnRTZ2NnMDhfSEpaRzI5cFYyQWc?oc=5" target="_blank" rel="noopener">普特融合衍生校園衝突 24名家長揚言集體離班…教育部擬指引提3方向 - UDN</a><span class="ext-meta">UDN · <span style="all:unset" class="age age-fresh">1 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9RMXZVOHREQm1Yck5sQ0tvMTlHTENCeUQ2bnJWRG9BeDk3cGhKMUUzc2hENkktQldOSGxaMUpUbWxJWDJkTGtoX19QY0Z1NVEwTkE?oc=5" target="_blank" rel="noopener">教師荒百日能解決？藍營籲沈伯洋先督促教育部 - 蕃新聞</a><span class="ext-meta">蕃新聞 · <span style="all:unset" class="age age-fresh">9 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE95NnFmTVcwV0hid09KdlV2dkhkeUZrMHpFVWdWWWFSZFpsdDNhcXZ5WVNhakc5V250UXJkV0x2ZnhsOGU1UlRudFVyU3c5V3Y2ZFE?oc=5" target="_blank" rel="noopener">麗湖托嬰中心啟用 蔣萬安：公托擴增至108處 - 蕃新聞</a><span class="ext-meta">蕃新聞 · <span style="all:unset" class="age age-fresh">21 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5PR0RFYXMxWHJkTUo4YjNSRzVrbllUajdBeUMwdmpfcHpNZmJQckh2bm1KbVlSRFN3QUxhUWc2cUJmWUN3SHEwUFVqMnlRZnhHZzhVdFFWZGJYazJDMXFrMA?oc=5" target="_blank" rel="noopener">抗議高生活成本！希臘學生與公務員發起示威 - 民視新聞網</a><span class="ext-meta">民視新聞網 · <span style="all:unset" class="age age-fresh">1 小時前</span></span></li></ul>
+</details>
+</section>
+
+<section id="international">
+  <h2>國際重大議題</h2>
+  <div class="section-desc">每日精選 2 則，來源：BBC / Guardian / Google News / Straits Times</div>
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE96QW1teS14eVZPOTd0UWt3X0FxODFtUTFyQU00alRjTU12ZTBMNmZfeWtNQmhTcFVWemdTbjZVME5vNGhONTVHUzZVSXVEdEQ5cEVYcFp3aw?oc=5" target="_blank" rel="noopener">孟加拉：UNICEF主任呼籲終結童婚</a></h3>
+  <div class="meta"><span class="source">GoogleNewsEN / Welcome to the United Nations</span><span class="age age-fresh">15 小時前</span><span class="score">議題分數 10</span></div>
+  <p class="summary">聯合國兒童基金會執行主任訪問孟加拉，呼籲該國終結童婚問題，強調保障兒童權益的急迫性。</p>
+  <details class="orig"><summary>原文標題</summary><p>Bangladesh: UNICEF chief calls for an end to child marriage - Welcome to the United Nations</p></details>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQRGxRSl9sSDdFZmlfNURGQk05X3BfaUprRnlPZFNxNk5HMzNpWGNlMmUyTFVLLVZPQWlvRGVoOWo4WWNKcjN3WFRJTVBzczlsMEdBZXlyeG42UGN5cF9TaEFxVEFWZy1HaTl5OXdZdVh6VUJWVmxLX0c2ZmtxS3lCRWt2b0duUktIV2ZmM1hmam9Kd0JzTUJYR2V0VlNXa0h4YVg3em5ibk56dmJwb0Vpd09EbUtYZTdfMjB0Zg?oc=5" target="_blank" rel="noopener">UNICEF主任籲孟加拉加速投資兒童並終結童婚</a></h3>
+  <div class="meta"><span class="source">GoogleNewsEN / UNICEF</span><span class="age age-fresh">18 小時前</span><span class="score">議題分數 10</span></div>
+  <p class="summary">聯合國兒童基金會執行主任呼籲孟加拉政府緊急投資兒童福祉，並採取具體措施終結童婚現象。</p>
+  <details class="orig"><summary>原文標題</summary><p>UNICEF Executive Director calls for urgent investment in children in Bangladesh and measures to end child marriage - UNICEF</p></details>
+</article>
+</section>
+
+<section id="aabe">
+  <h2>近 7 日國教盟媒體露出</h2>
+  <div class="section-desc">關鍵字：國教盟、國教行動聯盟、王瀚陽（Google News RSS 對小眾關鍵字有 ~2 日延遲，故採 7 日視窗）</div>
+  
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9xbk5TYW9zMXlCTTNPMUJHT1UweU5OLXA0N1oxSDZsUjN4VGJtazlHNlYwZ01DVWw4aDhaTksxRjBybzhRalJWVkJ6eDFYQWJPNGZrRENPWFhMVlEzakJ4UUI1MmhMVk0wNi1Mc1BYWQ?oc=5" target="_blank" rel="noopener">教育部補助進用1600名特教助理員 國教盟：應公開實際人力安排 - 知新聞</a></h3>
+  <div class="meta"><span class="source">知新聞</span><span class="date">10/21</span></div>
+  <p class="summary">教育部補助進用1600名特教助理員 國教盟：應公開實際人力安排 知新聞</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9pRENuaGJCMnRHTkNkVDdKUTBxdlNZdnY0bm9EaFZCWWppTFlHNEg1UWhWMU11SGlTQnhXUU1CUlpiYmlwM0RYb05CQnVzdEQxS1VIWVln0gFWQVVfeXFMT2lEQ25oYkIydEdOQ2RUN0pRMHF2U1l2djRub0RoVkJZamlMWUc0SDVRaFYxTXVIaVNCeFdRTUJSWmJiaXAzRFhvTkJCdXN0RDFLVUhZWWc?oc=5" target="_blank" rel="noopener">普特融合檢討 全國「疑似生」約9千人 國教盟籲公開特教人力到位情形 - UDN</a></h3>
+  <div class="meta"><span class="source">UDN</span><span class="date">10/21</span></div>
+  <p class="summary">普特融合檢討 全國「疑似生」約9千人 國教盟籲公開特教人力到位情形 UDN</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1OOEZSSlF6X3dHbEQ2dGFqNF9fc0dLQ2ZqWm1qUUhZQm1JZmlDT1VTa1Q5TGRkRUxpNWdIUmluSERPSnFYUVB0QzFCUU11Rk1KTmNMU1cwbEE5ay12T2duQWln0gFiQVVfeXFMTU44RlJKUXpfd0dsRDZ0YWo0X19zR0tDZmpabWpRSFlCbUlmaUNPVVNrVDlMZGRFTGk1Z0hSaW5IRE9KcVhRUHRDMUJRTXVGTUpOY0xTVzBsQTlrLXZPZ25BaWc?oc=5" target="_blank" rel="noopener">隱形障礙生破8萬占6成　校園特教缺口爆發 - 鏡週刊Mirror Media</a></h3>
+  <div class="meta"><span class="source">鏡週刊Mirror Media</span><span class="date">10/21</span></div>
+  <p class="summary">隱形障礙生破8萬占6成 校園特教缺口爆發 鏡週刊Mirror Media</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE50VkIySy1ncTJHSXJfRmtmUnJHcUtDcVJtNGh6NTFyN0VjZ21Yd1o5by05aXFxbXlnY05DMkxEZ2E1c0VndkhodHNFY0JmeVNGaWd1ZWF2c3RHcmM?oc=5" target="_blank" rel="noopener">電子煙不能只靠回收 國教盟籲速三讀持有入法 - 信吉衛視+</a></h3>
+  <div class="meta"><span class="source">信吉衛視+</span><span class="date">10/18</span></div>
+  <p class="summary">電子煙不能只靠回收 國教盟籲速三讀持有入法 信吉衛視+</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1oUk9Qc1dieS1BZDRHa25veWtqNUZ2aV9QMFpUR0RNQlp0TWZYTXNYZkJQdlMtVHRPd3VYdVRYendaYVFDV3dibEF1Mmc5QW9YTDh5R0ZadzFOYy1VWWQwTDYxN3cyaUNoMWc?oc=5" target="_blank" rel="noopener">電子煙回收633公斤國教盟估4萬青少使用- 其他 - 旺得富理財網</a></h3>
+  <div class="meta"><span class="source">旺得富理財網</span><span class="date">10/19</span></div>
+  <p class="summary">電子煙回收633公斤國教盟估4萬青少使用- 其他 旺得富理財網</p>
+</article>
+</section>
+
+<section id="candidates">
+  <h2>今天值得開題</h2>
+  <div class="section-desc">日報替理事長挑出的候選，請在 LINE 回「做＋部門／不做／觀察」</div>
+  
+<article class="card">
+  <h3 class="title">全台9千名疑似特教生因家長拒絕鑑定卡關，教育部提三招因應包括助理員專職化</h3>
+  <div class="meta"><span class="source">建議 重大 · 家長部</span></div>
+  <p class="summary">涉及特教資源配置與家長權益衝突，疑似生鑑定機制存在制度缺口，影響普特融合教育推動</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE94S041THhkZ2JYaGcwTHRKRlVabmpxX0tQYnpXbFhOX2VaVjRQYndmdGRtVFFDUS1JZGwxVE5NalZaVzJhQUIzYUxWZXNsRHVTYU5objJMN1JRZnFPbTZMcnpB0gFiQVVfeXFMT3hLTjVMeGRnYlhoZzBMdEpGVVpuanFfS1BieldsWE5fZVpWNFBid2Z0ZG1UUUNRLUlkbDFUTk1qVlpXMmFBQjNhTFZlc2xEdVNhTmhuMkw3UlFmcU9tNkxyekE?oc=5" target="_blank" rel="noopener">鏡週刊Mirror Media</a>、<a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTE1kRkZCVEg1T0hqa1FKYjBncE5LQmc0SVMzT0k4aW9IN1RZcXo3SmlwS2Z6aTRoSVh5N0JxY0pWbEpVeTdfZ3FSVkZoNXLSAUxBVV95cUxNZEZGQlRINU9IamtRSmIwZ3BOS0JnNElTM09JOGlvSDdUWXF6N0ppcEtmemk0aElYeTdCcWNKVmxKVXk3X2dxUlZGaDVy?oc=5" target="_blank" rel="noopener">三立新聞</a></p>
+</article>
+
+<article class="card">
+  <h3 class="title">教育部預告修正幼教法規，代理教師資格鬆綁與調薪方案引發教團反彈，憂衝擊教保品質</h3>
+  <div class="meta"><span class="source">建議 一般 · 家長部</span></div>
+  <p class="summary">幼教師資穩定性與薪資制度涉及教保品質，代理資格鬆綁可能影響學前教育專業性</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aUzJfOWkwSjcwdGVfS0laSU84VGNrY2RLTVFacTY1ZFZZdWJtMjZJelg0NDNpcHA1MUhUZ0NxdUREX09RY19Mc3dLd0FOZFZWZTgteG9pU1VkcDQ?oc=5" target="_blank" rel="noopener">翻轉教育</a>、<a href="https://news.google.com/rss/articles/CBMiugJBVV95cUxPNXRHQVZWdC1xb1A3ajB3UWJwaTdZMnRmVkRPRlNVSjJkSHJWamFVck1vVWQ1eGc5Z0R6TmI4czRSVnhWMnR0MmVsVWlFN2kzSHRKdUo4WENHNERMMzYyaXJDVlRiN0h6S25XamRsXzcyejJpMW9ITU5UU1dyN1JPVmlXcHNsbGhNa3dCc2EyNklJYURMeFB5M3FPdVVGWGZacU9VNVhQSFBsZjlvTWp4X19QVDdPVm51cUVOZm5BWVF1ZWNnQmlDbzY3UDRKQWRCNkU0V1hXNy1TQ2ZaRTFfcVZuNFJyV2UtYS1NdHhaSHo2enJRby1QdFhTa08ybDVhS0xCVllSMHE3eU1tQk5mZ3dRdlFaX0VBaDEtdFExblFYQ3l6Y244VERNelEwVE0wUHRYQTRMd0E0dw?oc=5" target="_blank" rel="noopener">Yahoo新聞</a></p>
+</article>
+
+<article class="card">
+  <h3 class="title">普特融合缺人力引發校園衝突，24名家長揚言集體離班，教育部擬定指引提三方向</h3>
+  <div class="meta"><span class="source">建議 重大 · 家長部</span></div>
+  <p class="summary">特教人力不足導致家長與學校衝突升級，涉及普通班家長權益與特教生受教權平衡問題</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBzbjZ1dkE1WFNLS0NlVkZ4SUhwTkJXQjVfTWkxZlRGZHFRZmhocnUyR2tKVldPdVFWR0Y3UzRNSndmbmxWTHpiS09wZnNPOTNW0gFWQVVfeXFMTWRWQmZKOVpzOFZQTndVLVhEWnJWTGJJQmdJLXNOSkM3ZUVObXZ6eFVlcTBfWWlVLXZrbkpGRTUzeld2QnRTZ2NnMDhfSEpaRzI5cFYyQWc?oc=5" target="_blank" rel="noopener">UDN</a>（只有一個來源）</p>
+</article>
+  
+<div class="empty-state">
+  <p class="empty-desc">目前每一題走到哪一步，請看<a href="https://claude.ai/artifact/UYGwjUYkBzJ4yGodUiHUGa" target="_blank" rel="noopener">快速倡議看板</a></p>
+</div>
+</section>
+
+<section class="ai-insight" id="insight">
+  <h2>國教盟小編心得整理</h2>
+  <div class="ai-badge">由 Claude Sonnet 4.5 協助整理</div>
+  <p>今日核心趨勢聚焦於普特融合教育人力缺口，教育部宣布三招因應全台9千名疑似特教生，包括助理員專職化、增聘至1600人、減輕教師文書負擔等措施。</p><p>跨議題串連方面，特教助理員專職化與幼教代理教師資格鬆綁同步出現，反映教育人力荒問題從特教延伸至幼教；對照孟加拉UNICEF呼籲終結童婚，兒少權益保障已成跨國共同挑戰，台灣在特教資源配置上仍有制度性缺口待補。</p><p>建議一：可考慮就特教助理員專職化與正式納編議題持續追蹤，教育部雖承諾增聘但未回應編制問題，涉及人力穩定性與專業發展。<br>建議二：值得關注幼教法規修正引發的減薪爭議，代理資格鬆綁可能影響教保品質，與國教盟長期關注的師資穩定性議題相關。</p>
+</section>
+
+</main>
+
+<footer>
+  <p>本日報由國教行動聯盟（AABE）每日 18:00 自動生成 · 6 大議題類別 + 4 國際來源 + AI 觀察整理</p>
+  <p>網址：<a href="https://naer-tw.github.io/daily-news/">naer-tw.github.io/daily-news/</a></p>
+</footer>
+
+<script>
+function toggleTheme() {
+  var t = document.body.dataset.theme;
+  document.body.dataset.theme = (t === 'dark') ? 'light' : 'dark';
+  localStorage.setItem('theme', document.body.dataset.theme);
+  document.querySelector('.theme-toggle').textContent = document.body.dataset.theme === 'dark' ? '☀️' : '🌙';
+}
+(function() {
+  var saved = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.body.dataset.theme = saved;
+  document.querySelector('.theme-toggle').textContent = saved === 'dark' ? '☀️' : '🌙';
+})();
+</script>
+
+</body>
+</html>
