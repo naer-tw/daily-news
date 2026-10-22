@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>兒少與教育議題的國教盟日報 - 2026-10-22</title>
+<meta property="og:title" content="兒少與教育議題的國教盟日報 - 2026年10月22日">
+<meta property="og:description" content="每日 3 則台灣、2 則國際重大兒少與教育議題，附 AI 心得整理。國教行動聯盟。">
+<meta property="og:image" content="https://naer-tw.github.io/daily-news/og-image.png?v=2026-10-22">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://naer-tw.github.io/daily-news/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #5c1a30;
+  --primary-light: #7a2840;
+  --accent: #e8553d;
+  --accent-light: #f07060;
+  --accent-bg: #fef4f0;
+  --ink: #1a1a2e;
+  --ink-muted: #6b7280;
+  --bg: #faf9f7;
+  --card: #ffffff;
+  --border: #e5e3dc;
+  --border-strong: #1a1a2e;
+}
+[data-theme="dark"] {
+  --primary: #f07060; --primary-light: #f59090;
+  --accent: #f07060; --accent-bg: #2a1410;
+  --ink: #f1f5f9; --ink-muted: #94a3b8;
+  --bg: #0f172a; --card: #1e293b; --border: #334155; --border-strong: #f1f5f9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+.theme-toggle {
+  position: fixed; top: 20px; right: 20px;
+  background: var(--card); border: 1px solid var(--border);
+  width: 40px; height: 40px; border-radius: 999px;
+  cursor: pointer; font-size: 18px; z-index: 100;
+}
+header {
+  background: var(--card); border-bottom: 2px solid var(--primary);
+  padding: 40px 20px 32px; text-align: center;
+}
+header .badge {
+  display: inline-block; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px;
+}
+header h1 {
+  font-size: clamp(24px, 4vw, 36px); font-weight: 900;
+  letter-spacing: -0.01em; color: var(--primary);
+  margin: 0 0 12px; line-height: 1.3;
+}
+header .date {
+  font-size: 15px; color: var(--ink-muted);
+  font-variant-numeric: tabular-nums; margin-bottom: 20px;
+}
+nav {
+  display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+}
+nav a {
+  padding: 8px 18px; border: 1px solid var(--border);
+  border-radius: 999px; font-size: 14px; font-weight: 500;
+  color: var(--ink); text-decoration: none;
+  background: var(--bg); transition: all 0.15s;
+}
+nav a:hover, nav a.active {
+  background: var(--primary); color: white; border-color: var(--primary);
+}
+main {
+  max-width: 760px; margin: 0 auto; padding: 40px 20px 80px;
+}
+section { margin-bottom: 56px; }
+section h2 {
+  font-size: 22px; font-weight: 800; color: var(--primary);
+  margin: 0 0 24px; padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary);
+  letter-spacing: -0.005em;
+}
+section .section-desc {
+  font-size: 14px; color: var(--ink-muted);
+  margin: -16px 0 24px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  padding: 24px; margin-bottom: 16px; border-radius: 8px;
+  position: relative; transition: border-color 0.15s;
+}
+.card:hover { border-color: var(--accent); }
+.card .rank {
+  position: absolute; top: 20px; right: 24px;
+  font-size: 28px; font-weight: 900; color: var(--accent);
+  font-variant-numeric: tabular-nums; line-height: 1;
+}
+.card .title {
+  font-size: 19px; font-weight: 700; line-height: 1.4;
+  margin: 0 60px 12px 0; letter-spacing: -0.005em;
+}
+.card .title a {
+  color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.card .title a:hover { border-bottom-color: var(--accent); }
+.card .meta {
+  font-size: 13px; color: var(--ink-muted);
+  margin-bottom: 12px; display: flex; gap: 16px; flex-wrap: wrap;
+}
+.card .meta .score {
+  display: inline-block; padding: 2px 8px;
+  background: var(--accent-bg); color: var(--accent);
+  border-radius: 4px; font-size: 11px; font-weight: 600;
+}
+.card .summary {
+  font-size: 15px; color: var(--ink);
+  line-height: 1.75; opacity: 0.9;
+}
+.card .orig {
+  margin-top: 12px; padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 13px; color: var(--ink-muted);
+}
+.card .orig summary { cursor: pointer; opacity: 0.7; }
+.card .orig p { margin-top: 8px; font-style: italic; }
+.aabe-card { border-left: 3px solid var(--accent); }
+.empty-state {
+  background: var(--card); border: 1px dashed var(--border);
+  padding: 32px; text-align: center; border-radius: 8px;
+}
+.empty-state .empty-title {
+  font-size: 16px; font-weight: 700; color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+.empty-state .empty-desc {
+  font-size: 14px; color: var(--ink-muted);
+  line-height: 1.7; max-width: 480px; margin: 0 auto;
+}
+.ai-insight {
+  background: linear-gradient(135deg, #fef4f0 0%, #fff 100%);
+  border: 1px solid var(--accent); border-radius: 12px;
+  padding: 32px; margin-top: 32px;
+}
+[data-theme="dark"] .ai-insight {
+  background: linear-gradient(135deg, #2a1410 0%, var(--card) 100%);
+}
+.ai-insight h2 {
+  color: var(--accent); border-bottom-color: var(--accent);
+}
+.ai-insight .ai-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent);
+  border: 1px solid var(--accent); padding: 2px 8px;
+  border-radius: 4px; margin-bottom: 16px; text-transform: uppercase;
+}
+.ai-insight p {
+  font-size: 16px; line-height: 1.9;
+  margin-bottom: 14px;
+}
+.ai-insight p:last-child { margin-bottom: 0; }
+footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--ink-muted); font-size: 13px;
+  border-top: 1px solid var(--border);
+}
+footer a { color: var(--ink-muted); }
+@media print {
+  .theme-toggle, nav { display: none; }
+  .card { break-inside: avoid; }
+}
+@media (max-width: 600px) {
+  header { padding: 24px 16px; }
+  main { padding: 28px 14px 60px; }
+  .card { padding: 18px; }
+  .card .title { font-size: 17px; margin-right: 50px; }
+  .card .rank { font-size: 22px; top: 16px; right: 18px; }
+  .ai-insight { padding: 22px 18px; }
+}
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="切換深色模式">🌙</button>
+
+<header>
+  <div class="badge">每日 18:00 自動更新</div>
+  <h1>兒少與教育議題的國教盟日報</h1>
+  <div class="date">2026年10月22日（週四）</div>
+  <nav>
+    <a href="https://naer-tw.github.io/daily-news/" class="active">日報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/weekly/2026-W43.html">週報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/monthly/2026-10.html">月報</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="taiwan">
+  <h2>台灣重大議題</h2>
+  <div class="section-desc">過去 24 小時內，依議題重要性、政府/立法訊號、權威媒體加權，分數 ≥ 5 才入榜</div>
+  
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE1RaGRNX1p0X1MtSmJQRmVPeEhZc2NhcjdGSlZuVGlfRVZyMDYwOUQtN0l0dTg3R3dJamZTUFBTNjhLb2dubWtUZVpjSmRIT2Nf0gFWQVVfeXFMTzNrdGRCdFItbF9xRm15TFUyNER0U1hsZWM3Q0p2VGlyZEZfVXRWU1hWZjZFa0QzdnhsMjd6bHBveGhZSVU5cTlqTDNZNGhZd0pXWmdnR1E?oc=5" target="_blank" rel="noopener">防制新興毒品入侵 教育部長：校園唾液快篩待修法上路 - UDN</a></h3>
+  <div class="meta"><span class="source">UDN</span><span class="age age-fresh">6 小時前</span><span class="score">議題分數 12</span></div>
+  <p class="summary">防制新興毒品入侵 教育部長：校園唾液快篩待修法上路 UDN</p>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiggNBVV95cUxORzZPOXpyRE9sMG14V29aRi1zVG5yWWRIVzAwbFoxVTJmNzVNd1JJV05rQ2pXV2RYaWxXNnctYmlaVnBVQjd1bTM1aE9aVFJfbXlZWVFicjNrZ1pvOTFCbEt0blhvaFJSNlA5Vk1fbjF1dkNtU0xKLVR0aUt6LXg1UmVqN3M0cHlDME9wTmJ5RGxQN3pfd3NEQ2hXYmtkem1hb1d3SzdHNUZINWx6MDhMaml3YjNKSE8tUEwteUg3RVRCWFNzelBfcmIxMFV1U0xkVHdOZFJfcW03TlhxMF9rd1JzajBoSzNqOVVMRXZpN1FIUEZOYU16aFptekNJQVJ2QWhqSzRsLTgtQVZPVVBWY3VUbTZUUXBNZUl2YmJ6YjVWTW15cy1NRDJmdDVPbG1aM0o5UmFtN0RsbTJpYjMwbVN5NTdNMUc0UmQwV1BiS2tJd2ExRFBlNDdoQ0JXOVFRMGJDQVR5Ym9hV2xVQWl4Tmk4cHM1MGFxdHZEUUF6Y0ZXQQ?oc=5" target="_blank" rel="noopener">教育部擬在校園引入唾液快篩 鄭英耀：毒危條例修法後上路 - Yahoo新聞</a></h3>
+  <div class="meta"><span class="source">Yahoo新聞</span><span class="age age-fresh">2 小時前</span><span class="score">議題分數 8</span></div>
+  <p class="summary">教育部擬在校園引入唾液快篩 鄭英耀：毒危條例修法後上路 Yahoo新聞</p>
+</article>
+
+<article class="card">
+  <div class="rank">#3</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxOaTdmM3lMRzdrUzVoNmltaHJ3bVNxRHNSaURkcVMzbngxV0ZPaWhSTWJfNzZBS0oxejZ0aDlldGNBNi1zTmdXSlU3d0E5VVlnZXlXS1BvZWk3OE5LaTVldG01c1Y0alE2VGlKR3VyTXNfNzhmYUlHOFFQd3RuNWoyRXFPclgyVmljSVJLNA?oc=5" target="_blank" rel="noopener">校園引入唾液快篩 教育部：只等修法通過 - PChome Online 新聞</a></h3>
+  <div class="meta"><span class="source">PChome Online 新聞</span><span class="age age-fresh">6 小時前</span><span class="score">議題分數 8</span></div>
+  <p class="summary">校園引入唾液快篩 教育部：只等修法通過 PChome Online 新聞</p>
+</article>
+  
+<details class="extended">
+  <summary>延伸觀察（分數 3-4，未達 Top 3 門檻）— 共 5 則</summary>
+  <ul><li><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5IVW1BeC00dTRsN3plZ2FvM256VkhzOTRWNWhDcFdFb0pscmYyNVdtancxd1VRbmVXUDRDVzBXbkVNZ2VleVl4VHJISnp3ZWM50gFWQVVfeXFMT1llWFFRMG1HbWRuRTQ1QjZLekMwRG1EX2FYd2txMW5PZFRINVczVkJEc0ZkRjFCVE4yZnBpb0M1X2dSYXlhQk12VVVOTE1GNXJnd2Mzemc?oc=5" target="_blank" rel="noopener">教師超鐘點、跨科教學 立委送教長「極度疲憊」T恤：親身感受一線辛苦 - UDN</a><span class="ext-meta">UDN · <span style="all:unset" class="age age-fresh">4 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE14R2JhTll2dG94c1FIOXUtSTR0N2dYRkM0eG1JbUdqQmZhMDRGUTVYblJ2RDJlQ2NYaTd1Sm1mLWNvT2JwRTFvUm41WmM4dVU?oc=5" target="_blank" rel="noopener">兒少權益推動委員會舉行會議 檢視兒少安全政策缺口提改革 - 你的公共電視</a><span class="ext-meta">你的公共電視 · <span style="all:unset" class="age age-fresh">21 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1MQ1VlYWM1YkhUVExwUW5qSi1Cd09walZ3ZzlrNU56dFlxZ01uUTc1aGZhbmwxcGZhdmJXYVZRemYyVkVRVkFBaTBzc3JrZTQ?oc=5" target="_blank" rel="noopener">教團抗議籲廢除校事會議 批新制欠程序保障、權責不分 - 你的公共電視</a><span class="ext-meta">你的公共電視 · <span style="all:unset" class="age age-fresh">2 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ndVVVSXZhZGhBeDNNSU54a3VoeUZuaVF5VWYtdXp4ODBFMGtPVDh2bVdHcHhCSEVkcC1GUnR2cjlIY1JwS3Zyb3hneWVyNmdjOWQ3NlBQZHA?oc=5" target="_blank" rel="noopener">9大教師工會抗議校事會議未廢 鄭英耀：改革後案件量有下降 - 梅花新聞網</a><span class="ext-meta">梅花新聞網 · <span style="all:unset" class="age age-fresh">2 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tb0diVjhiLU84anhMLXNyUHE3YjMzWFJmUmd6aFNuR2ZaTDRGT2o3clZONWFhTzM3M3BrNTRsNUVtMjI0NXdZV0V5bURFVE84cTlTRTdoYXlGUdIBX0FVX3lxTE5LWElQTC1mc0d0WEJFN1R5Zl9pZFRrbFVBUXFTQ2tYRmFzeVNmVjBVMTUtS29QaFVNZUUtcWpYT05pYVVqSDlIbmhReDVZdVB0RWZRSWhXUzNOd1J4eFdR?oc=5" target="_blank" rel="noopener">兒少網路安全受關注　衛福部：擬加強規範 - 經濟日報</a><span class="ext-meta">經濟日報 · <span style="all:unset" class="age age-fresh">22 小時前</span></span></li></ul>
+</details>
+</section>
+
+<section id="international">
+  <h2>國際重大議題</h2>
+  <div class="section-desc">每日精選 2 則，來源：BBC / Guardian / Google News / Straits Times</div>
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxONmRQbkZrU21NUzluUkNadVJBY1R3SkxBNGtjeDJpOEU5dUttNGpuZUQzVE1YYkRNNG5sWkFINjc1R0F6RUZSeXJJekRPdzNHbWdOdW41YmRTMi1laWtpVmZ0UlhRN083OHo3Um16bFRncmJjbWJmT1MzdUxWMy1VMDhmVzhTMGp1UlJkdGgtZ3lzZkNnXzhPZEdYSVBNUHdEU3NZaXpuTVltdm40T3h2RTVNWVZuY2FCLVBsZQ?oc=5" target="_blank" rel="noopener">孟加拉近半年輕女性受童婚影響 聯合國兒童基金會示警</a></h3>
+  <div class="meta"><span class="source">GoogleNewsEN / Herald Malaysia Online</span><span class="age age-fresh">4 小時前</span><span class="score">議題分數 10</span></div>
+  <p class="summary">聯合國兒童基金會警告，孟加拉近半數年輕女性受童婚影響。</p>
+  <details class="orig"><summary>原文標題</summary><p>Child marriage affects nearly half of young women in Bangladesh, UNICEF warns - Herald Malaysia Online</p></details>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYnJ3ZG9jRUZ2cS04dW9UTV9lbGZLLXBxclptckE5bGZCUTQ2VXNuZ3UtR0MxbWVNMFkyNFptemczZzhvcWZDSXVQaEpheUhvQ0tLVE13TDJLeklrWUZZcW5tbHNXYTYxRTBlVUpKcFJ2ZWpkMVJuM3RRemJXaXpxWFgwMGFEUU1LTVlDRzlOaHRaRXlmS0RfcjZzYUVBVkVBVmNwN2VfMTZDUzNJTXFyZEJrT1FxamtjYmxQNUhjV25XSnBpNnc3YQ?oc=5" target="_blank" rel="noopener">獅子山學習評估報告：呼籲加速行動確保每位兒童受教權</a></h3>
+  <div class="meta"><span class="source">GoogleNewsEN / Unicef</span><span class="age age-fresh">16 小時前</span><span class="score">議題分數 10</span></div>
+  <p class="summary">最新全國學習評估呼籲採取加速行動，確保獅子山每位兒童都能有效學習。</p>
+  <details class="orig"><summary>原文標題</summary><p>New national learning assessments call for accelerated action so every child in Sierra Leone can learn - Unicef</p></details>
+</article>
+</section>
+
+<section id="aabe">
+  <h2>近 7 日國教盟媒體露出</h2>
+  <div class="section-desc">關鍵字：國教盟、國教行動聯盟、王瀚陽（Google News RSS 對小眾關鍵字有 ~2 日延遲，故採 7 日視窗）</div>
+  
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9xbk5TYW9zMXlCTTNPMUJHT1UweU5OLXA0N1oxSDZsUjN4VGJtazlHNlYwZ01DVWw4aDhaTksxRjBybzhRalJWVkJ6eDFYQWJPNGZrRENPWFhMVlEzakJ4UUI1MmhMVk0wNi1Mc1BYWQ?oc=5" target="_blank" rel="noopener">教育部補助進用1600名特教助理員 國教盟：應公開實際人力安排 - 知新聞</a></h3>
+  <div class="meta"><span class="source">知新聞</span><span class="date">10/21</span></div>
+  <p class="summary">教育部補助進用1600名特教助理員 國教盟：應公開實際人力安排 知新聞</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE1uekZRU0tMSFU3NjAtREZaLWVLakVhWnJTX2tyOXlDak1PRERTODNQNVdPOVVrOEcxU2lrSTNjZnR1eUxsZEp4aE9oZ3Ryc2FX?oc=5" target="_blank" rel="noopener">台中特教生遭捆綁座椅國教盟籲加強教師專業支持| 文教新訊| 文教 - UDN</a></h3>
+  <div class="meta"><span class="source">UDN</span><span class="date">10/21</span></div>
+  <p class="summary">台中特教生遭捆綁座椅國教盟籲加強教師專業支持| 文教新訊| 文教 UDN</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE9nZ1lvc3VQZXRIVW44cy1CVzU4TEVSTmtkOUc3WTBOeUgyMWlhT1VlOWFnZzNQcHJFUFc0RFF6bWt4R29sWXpJUFBuSTJ4NG1G0gFWQVVfeXFMT2lEQ25oYkIydEdOQ2RUN0pRMHF2U1l2djRub0RoVkJZamlMWUc0SDVRaFYxTXVIaVNCeFdRTUJSWmJiaXAzRFhvTkJCdXN0RDFLVUhZWWc?oc=5" target="_blank" rel="noopener">普特融合檢討 全國「疑似生」約9千人…國教盟籲公開特教人力到位情形 - UDN</a></h3>
+  <div class="meta"><span class="source">UDN</span><span class="date">10/21</span></div>
+  <p class="summary">普特融合檢討 全國「疑似生」約9千人…國教盟籲公開特教人力到位情形 UDN</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE54eFU4d3RtVFBtMTFWNmlMTUNsZTVEc2hOM1IydjI0QzdlbHoyS3RQVHF3c2xMak1oeEU2VTlGTjNlQW9rTTZUWFhzLUUzSHowb19LSGVKOGpRSjNMbHc?oc=5" target="_blank" rel="noopener">隱形障礙生破8萬占6成 校園特教缺口爆發 - 鏡週刊Mirror Media</a></h3>
+  <div class="meta"><span class="source">鏡週刊Mirror Media</span><span class="date">10/21</span></div>
+  <p class="summary">隱形障礙生破8萬占6成 校園特教缺口爆發 鏡週刊Mirror Media</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTFA0bVQtUmN5SFpxb1ZIYllxX1NOeWk2YVlMRVRNaklGUTY1aExremZGYTFkMnNqMEp2Y3V1REkxM1FtTUxaYlhzbdIBTEFVX3lxTE82dFp0eHNhUU9DN09xRjJEczJHRDNVVmhxblZjeldTSF9NTFN2OWFaWU53WlgyTUlOcHBrV3FQYzQ2OUwtSEZNX05NVTA?oc=5" target="_blank" rel="noopener">「隱形障礙」學生破8萬人！校園特教缺口爆發　民團開砲喊話教育部 - 三立新聞</a></h3>
+  <div class="meta"><span class="source">三立新聞</span><span class="date">10/21</span></div>
+  <p class="summary">「隱形障礙」學生破8萬人！校園特教缺口爆發 民團開砲喊話教育部 三立新聞</p>
+</article>
+</section>
+
+<section id="candidates">
+  <h2>今天值得開題</h2>
+  <div class="section-desc">日報替理事長挑出的候選，請在 LINE 回「做＋部門／不做／觀察」</div>
+  
+<article class="card">
+  <h3 class="title">教育部長宣布待毒危條例修法後將在校園引入唾液快篩</h3>
+  <div class="meta"><span class="source">建議 重大 · 家長部</span></div>
+  <p class="summary">涉及校園毒品防制政策與學生隱私權、家長知情同意權等制度性議題</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE1RaGRNX1p0X1MtSmJQRmVPeEhZc2NhcjdGSlZuVGlfRVZyMDYwOUQtN0l0dTg3R3dJamZTUFBTNjhLb2dubWtUZVpjSmRIT2Nf0gFWQVVfeXFMTzNrdGRCdFItbF9xRm15TFUyNER0U1hsZWM3Q0p2VGlyZEZfVXRWU1hWZjZFa0QzdnhsMjd6bHBveGhZSVU5cTlqTDNZNGhZd0pXWmdnR1E?oc=5" target="_blank" rel="noopener">UDN</a>、<a href="https://news.google.com/rss/articles/CBMiggNBVV95cUxORzZPOXpyRE9sMG14V29aRi1zVG5yWWRIVzAwbFoxVTJmNzVNd1JJV05rQ2pXV2RYaWxXNnctYmlaVnBVQjd1bTM1aE9aVFJfbXlZWVFicjNrZ1pvOTFCbEt0blhvaFJSNlA5Vk1fbjF1dkNtU0xKLVR0aUt6LXg1UmVqN3M0cHlDME9wTmJ5RGxQN3pfd3NEQ2hXYmtkem1hb1d3SzdHNUZINWx6MDhMaml3YjNKSE8tUEwteUg3RVRCWFNzelBfcmIxMFV1U0xkVHdOZFJfcW03TlhxMF9rd1JzajBoSzNqOVVMRXZpN1FIUEZOYU16aFptekNJQVJ2QWhqSzRsLTgtQVZPVVBWY3VUbTZUUXBNZUl2YmJ6YjVWTW15cy1NRDJmdDVPbG1aM0o5UmFtN0RsbTJpYjMwbVN5NTdNMUc0UmQwV1BiS2tJd2ExRFBlNDdoQ0JXOVFRMGJDQVR5Ym9hV2xVQWl4Tmk4cHM1MGFxdHZEUUF6Y0ZXQQ?oc=5" target="_blank" rel="noopener">Yahoo新聞</a></p>
+</article>
+
+<article class="card">
+  <h3 class="title">九大教師工會抗議校事會議制度欠缺程序保障且權責不分</h3>
+  <div class="meta"><span class="source">建議 一般 · 家長部</span></div>
+  <p class="summary">教師權益保障制度影響教學品質與學生受教權，涉及行政程序正當性</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1MQ1VlYWM1YkhUVExwUW5qSi1Cd09walZ3ZzlrNU56dFlxZ01uUTc1aGZhbmwxcGZhdmJXYVZRemYyVkVRVkFBaTBzc3JrZTQ?oc=5" target="_blank" rel="noopener">你的公共電視</a>、<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ndVVVSXZhZGhBeDNNSU54a3VoeUZuaVF5VWYtdXp4ODBFMGtPVDh2bVdHcHhCSEVkcC1GUnR2cjlIY1JwS3Zyb3hneWVyNmdjOWQ3NlBQZHA?oc=5" target="_blank" rel="noopener">梅花新聞網</a></p>
+</article>
+
+<article class="card">
+  <h3 class="title">立委送教育部長「極度疲憊」T恤抗議教師超鐘點與跨科教學問題</h3>
+  <div class="meta"><span class="source">建議 一般 · 家長部</span></div>
+  <p class="summary">教師勞動條件過勞直接影響教學品質，反映師資配置與課程安排政策缺口</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5IVW1BeC00dTRsN3plZ2FvM256VkhzOTRWNWhDcFdFb0pscmYyNVdtancxd1VRbmVXUDRDVzBXbkVNZ2VleVl4VHJISnp3ZWM50gFWQVVfeXFMT1llWFFRMG1HbWRuRTQ1QjZLekMwRG1EX2FYd2txMW5PZFRINVczVkJEc0ZkRjFCVE4yZnBpb0M1X2dSYXlhQk12VVVOTE1GNXJnd2Mzemc?oc=5" target="_blank" rel="noopener">UDN</a>、<a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE5WVWRPS3pmWWFDaDVMa2FFN29VR2ltQ3Fkb1FpUThLbzNQWFJvR0lwajBDc3RmWjNiZWtzUVhKTEJ6TTBzMjkzT0ZHTHU4N0hTbWVfbGVWaWRzbG5W0gFiQVVfeXFMTjBXcWxMRkl6WUFSTmFLZ0FZcW1HNXcteDV5R3JNZHRKTVBqNllKV3RiUTdkcHkwXzd4S1c4QXdmTFhwdUdvVnE5TUtFWFdWUFBZWGZvdFNUV2ZPWlRKWm45SGc?oc=5" target="_blank" rel="noopener">鏡週刊Mirror Media</a></p>
+</article>
+  
+<div class="empty-state">
+  <p class="empty-desc">目前每一題走到哪一步，請看<a href="https://claude.ai/artifact/UYGwjUYkBzJ4yGodUiHUGa" target="_blank" rel="noopener">快速倡議看板</a></p>
+</div>
+</section>
+
+<section class="ai-insight" id="insight">
+  <h2>國教盟小編心得整理</h2>
+  <div class="ai-badge">由 Claude Sonnet 4.5 協助整理</div>
+  <p>今日新聞聚焦校園毒品防制與教師權益兩大主軸。教育部長鄭英耀宣布待毒危條例修法後將在校園引入唾液快篩，同時面對九大教師工會抗議校事會議制度、以及教師超鐘點與跨科教學過勞問題。</p><p>跨議題串連方面，國內校園安全與教師勞動條件議題與國際趨勢對照明顯。孟加拉近半數年輕女性受童婚影響、獅子山學習評估顯示教育品質危機，均反映兒少權益保障需要制度性支持；希臘數千師生上街抗議教育與薪資問題，與台灣教師過勞處境形成呼應。</p><p>建議一：可考慮關注校園唾液快篩政策的學生隱私權保障與程序正當性，修法過程中家長知情同意權應納入討論。<br>建議二：值得追蹤教師工會抗議校事會議與超鐘點現象的後續發展，教師勞動條件直接影響教學品質與學生受教權。</p>
+</section>
+
+</main>
+
+<footer>
+  <p>本日報由國教行動聯盟（AABE）每日 18:00 自動生成 · 6 大議題類別 + 4 國際來源 + AI 觀察整理</p>
+  <p>網址：<a href="https://naer-tw.github.io/daily-news/">naer-tw.github.io/daily-news/</a></p>
+</footer>
+
+<script>
+function toggleTheme() {
+  var t = document.body.dataset.theme;
+  document.body.dataset.theme = (t === 'dark') ? 'light' : 'dark';
+  localStorage.setItem('theme', document.body.dataset.theme);
+  document.querySelector('.theme-toggle').textContent = document.body.dataset.theme === 'dark' ? '☀️' : '🌙';
+}
+(function() {
+  var saved = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.body.dataset.theme = saved;
+  document.querySelector('.theme-toggle').textContent = saved === 'dark' ? '☀️' : '🌙';
+})();
+</script>
+
+</body>
+</html>
