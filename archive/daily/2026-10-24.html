@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>兒少與教育議題的國教盟日報 - 2026-10-24</title>
+<meta property="og:title" content="兒少與教育議題的國教盟日報 - 2026年10月24日">
+<meta property="og:description" content="每日 3 則台灣、2 則國際重大兒少與教育議題，附 AI 心得整理。國教行動聯盟。">
+<meta property="og:image" content="https://naer-tw.github.io/daily-news/og-image.png?v=2026-10-24">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://naer-tw.github.io/daily-news/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #5c1a30;
+  --primary-light: #7a2840;
+  --accent: #e8553d;
+  --accent-light: #f07060;
+  --accent-bg: #fef4f0;
+  --ink: #1a1a2e;
+  --ink-muted: #6b7280;
+  --bg: #faf9f7;
+  --card: #ffffff;
+  --border: #e5e3dc;
+  --border-strong: #1a1a2e;
+}
+[data-theme="dark"] {
+  --primary: #f07060; --primary-light: #f59090;
+  --accent: #f07060; --accent-bg: #2a1410;
+  --ink: #f1f5f9; --ink-muted: #94a3b8;
+  --bg: #0f172a; --card: #1e293b; --border: #334155; --border-strong: #f1f5f9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+.theme-toggle {
+  position: fixed; top: 20px; right: 20px;
+  background: var(--card); border: 1px solid var(--border);
+  width: 40px; height: 40px; border-radius: 999px;
+  cursor: pointer; font-size: 18px; z-index: 100;
+}
+header {
+  background: var(--card); border-bottom: 2px solid var(--primary);
+  padding: 40px 20px 32px; text-align: center;
+}
+header .badge {
+  display: inline-block; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px;
+}
+header h1 {
+  font-size: clamp(24px, 4vw, 36px); font-weight: 900;
+  letter-spacing: -0.01em; color: var(--primary);
+  margin: 0 0 12px; line-height: 1.3;
+}
+header .date {
+  font-size: 15px; color: var(--ink-muted);
+  font-variant-numeric: tabular-nums; margin-bottom: 20px;
+}
+nav {
+  display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+}
+nav a {
+  padding: 8px 18px; border: 1px solid var(--border);
+  border-radius: 999px; font-size: 14px; font-weight: 500;
+  color: var(--ink); text-decoration: none;
+  background: var(--bg); transition: all 0.15s;
+}
+nav a:hover, nav a.active {
+  background: var(--primary); color: white; border-color: var(--primary);
+}
+main {
+  max-width: 760px; margin: 0 auto; padding: 40px 20px 80px;
+}
+section { margin-bottom: 56px; }
+section h2 {
+  font-size: 22px; font-weight: 800; color: var(--primary);
+  margin: 0 0 24px; padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary);
+  letter-spacing: -0.005em;
+}
+section .section-desc {
+  font-size: 14px; color: var(--ink-muted);
+  margin: -16px 0 24px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  padding: 24px; margin-bottom: 16px; border-radius: 8px;
+  position: relative; transition: border-color 0.15s;
+}
+.card:hover { border-color: var(--accent); }
+.card .rank {
+  position: absolute; top: 20px; right: 24px;
+  font-size: 28px; font-weight: 900; color: var(--accent);
+  font-variant-numeric: tabular-nums; line-height: 1;
+}
+.card .title {
+  font-size: 19px; font-weight: 700; line-height: 1.4;
+  margin: 0 60px 12px 0; letter-spacing: -0.005em;
+}
+.card .title a {
+  color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.card .title a:hover { border-bottom-color: var(--accent); }
+.card .meta {
+  font-size: 13px; color: var(--ink-muted);
+  margin-bottom: 12px; display: flex; gap: 16px; flex-wrap: wrap;
+}
+.card .meta .score {
+  display: inline-block; padding: 2px 8px;
+  background: var(--accent-bg); color: var(--accent);
+  border-radius: 4px; font-size: 11px; font-weight: 600;
+}
+.card .summary {
+  font-size: 15px; color: var(--ink);
+  line-height: 1.75; opacity: 0.9;
+}
+.card .orig {
+  margin-top: 12px; padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 13px; color: var(--ink-muted);
+}
+.card .orig summary { cursor: pointer; opacity: 0.7; }
+.card .orig p { margin-top: 8px; font-style: italic; }
+.aabe-card { border-left: 3px solid var(--accent); }
+.empty-state {
+  background: var(--card); border: 1px dashed var(--border);
+  padding: 32px; text-align: center; border-radius: 8px;
+}
+.empty-state .empty-title {
+  font-size: 16px; font-weight: 700; color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+.empty-state .empty-desc {
+  font-size: 14px; color: var(--ink-muted);
+  line-height: 1.7; max-width: 480px; margin: 0 auto;
+}
+.ai-insight {
+  background: linear-gradient(135deg, #fef4f0 0%, #fff 100%);
+  border: 1px solid var(--accent); border-radius: 12px;
+  padding: 32px; margin-top: 32px;
+}
+[data-theme="dark"] .ai-insight {
+  background: linear-gradient(135deg, #2a1410 0%, var(--card) 100%);
+}
+.ai-insight h2 {
+  color: var(--accent); border-bottom-color: var(--accent);
+}
+.ai-insight .ai-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent);
+  border: 1px solid var(--accent); padding: 2px 8px;
+  border-radius: 4px; margin-bottom: 16px; text-transform: uppercase;
+}
+.ai-insight p {
+  font-size: 16px; line-height: 1.9;
+  margin-bottom: 14px;
+}
+.ai-insight p:last-child { margin-bottom: 0; }
+footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--ink-muted); font-size: 13px;
+  border-top: 1px solid var(--border);
+}
+footer a { color: var(--ink-muted); }
+@media print {
+  .theme-toggle, nav { display: none; }
+  .card { break-inside: avoid; }
+}
+@media (max-width: 600px) {
+  header { padding: 24px 16px; }
+  main { padding: 28px 14px 60px; }
+  .card { padding: 18px; }
+  .card .title { font-size: 17px; margin-right: 50px; }
+  .card .rank { font-size: 22px; top: 16px; right: 18px; }
+  .ai-insight { padding: 22px 18px; }
+}
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="切換深色模式">🌙</button>
+
+<header>
+  <div class="badge">每日 18:00 自動更新</div>
+  <h1>兒少與教育議題的國教盟日報</h1>
+  <div class="date">2026年10月24日（週六）</div>
+  <nav>
+    <a href="https://naer-tw.github.io/daily-news/" class="active">日報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/weekly/2026-W43.html">週報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/monthly/2026-10.html">月報</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="taiwan">
+  <h2>台灣重大議題</h2>
+  <div class="section-desc">過去 24 小時內，依議題重要性、政府/立法訊號、權威媒體加權，分數 ≥ 5 才入榜</div>
+  
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBWbEFHb015WmNmUG5xU21oODN1ZXF0ejgycjV5OFJaT3NiRnZ5OEsxWXBVSHlGRkg1Ync1SmJJTDVjM1ZSMmhKX3pNalFKSTF6cUFGNEYxX2JfNy1VVmszSENoRkcya3F5alHSAW9BVV95cUxOSEFEZFdIakY0R1NSTWxMeEt5d1A2a1ZiNmRYR1Fsa3R5MlkwWmxhOHQxdVFyLWNIMmJsLXZleVo3VHVTOUlIcnY3LWFNMGxxR0J1UTFGTFdjMGFnQ2hUVVI2TS1Cc3Buakk2T19zWlU?oc=5" target="_blank" rel="noopener">蔣萬安防颱戴眼鏡喊難眠 吳靜怡狠譏：兒虐案時都睡很好？ - 自由時報</a></h3>
+  <div class="meta"><span class="source">自由時報</span><span class="age age-fresh">1 小時前</span><span class="score">議題分數 10</span></div>
+  <p class="summary">蔣萬安防颱戴眼鏡喊難眠 吳靜怡狠譏：兒虐案時都睡很好？ 自由時報</p>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1SMlMtbkFiZThnWlNFc0tXTURBUVVLU3JFQjhFOHRaUVM1Q1FRT1lhZUViTGtHZnFJdGljM1RjLTF4ZXN0VUFPc0J5U0FNanhpSXlhSVhJNHJxelA4bVdJ?oc=5" target="_blank" rel="noopener">AI衝擊閱讀教育 學界倡批判思考不再只「找答案」 - 中央社 CNA</a></h3>
+  <div class="meta"><span class="source">中央社 CNA</span><span class="age age-fresh">7 小時前</span><span class="score">議題分數 7</span></div>
+  <p class="summary">AI衝擊閱讀教育 學界倡批判思考不再只「找答案」 中央社 CNA</p>
+</article>
+
+<article class="card">
+  <div class="rank">#3</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiQkFVX3lxTFBrV2dJb3hLN1RDUWlRV3NkSmtpYUFDSVd2Z2NDaVFyRzBxSWtjdjVidDAtNXVEejZRaGNsSEY3LW9NZw?oc=5" target="_blank" rel="noopener">IEP數位化喊兩年仍未落實!葛如鈞促特教納入AI預算 - 墨新聞-MORE News</a></h3>
+  <div class="meta"><span class="source">墨新聞-MORE News</span><span class="age age-fresh">14 小時前</span><span class="score">議題分數 5</span></div>
+  <p class="summary">IEP數位化喊兩年仍未落實!葛如鈞促特教納入AI預算 墨新聞-MORE News</p>
+</article>
+  
+<details class="extended">
+  <summary>延伸觀察（分數 3-4，未達 Top 3 門檻）— 共 5 則</summary>
+  <ul><li><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5MLWp3bHppU0djd2hQTlBka0p5MlRqUTRTZ3hFUHptVnhaNGJwVDBmZjczbERNUlhYYWtXUUx1VW1QSkZxZzBEcDdOOXozb0ZrUzBCX1NzRDUyTy1fWVM0ZEFBYXExcUw1YjY4RENn?oc=5" target="_blank" rel="noopener">運動場域結合在地需求 國教署推校園體育設施多元運用 - 國立教育廣播電台</a><span class="ext-meta">國立教育廣播電台 · <span style="all:unset" class="age age-fresh">4 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE5nZW1DQVJZQWtTYW5ZNXVQVURqcUNMY0FlV0tST1FyUzFsTjlkWkRFVlJzNHJTZnJDMDNmc21rdUJpQkFhRUlrNlZCdF9VZw?oc=5" target="_blank" rel="noopener">楊金寶觀點：公開呼籲托育幼教夥伴接住孩子守護親師─審慎發言智慧投票 | 楊金寶 | 評論 - 風傳媒</a><span class="ext-meta">風傳媒 · <span style="all:unset" class="age age-fresh">11 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMilARBVV95cUxPWWVsa3FVelVNbF9mYjFBdWFYWHE2blU4X3EtSjVHZjkwZXhhZDl3YXR4N3d4Vlg0cDRnc043YVdteFVXMWxQcWpFU2FTV0FlUDBPOTFGZUNPT0VuSncxUVRHNEdCZHM0ODhsNC1Ka1pnbkxzT1dTTmF5Y1g0T3dLX3oxemFicVlKZzBsYWY5YU1Ea040X05WTEpaSWwySzAtNW1qVWgyTGh0MmNWa013NEhsbDhpNHZCa1g3MmstOVk5MzB3c2RsU184cWMyeVdEVFAxRGVoV0NLdWdKM3hwQ3ExclNKSmFRSjFtZE8tSkFtVGprQWRpbWxTcGpuV1N5RmwzaUZpc2REVkUyUUVzVE1kRlhabTdyNF9QQXRqV1RwMF9DMFFFX3V3Y3lKMGE4VTRIWlFIRnZHdkJGeXF4UFpLVlduT0dhRFpFbEtocGRUMXNqU0tIZGxFOVFVcU8yQU95T1dBZFlKdkpnRk1kNVozbkQtQWh2c2o5TzVxaVVpcmJfNUVZVjFIOXZMRkhwYTVQdENucFAzdnVhX0d5R3Z3a294aGNnXzI0ZmhSYzZkMHdKbWpnZjdNM3dZTmtPb2ZmaWJ2X1VCd2o4QzZLNDRqN0U1c0E4Z3lRbGVnWXg3S1JIYVVBc3F5cGo2R2xESFlSb2FJc213bVJJcTI2MUE0eHFEOFZPQzVZTXY3TFZHaXJw?oc=5" target="_blank" rel="noopener">警方辦反恐教育專題展覽 介紹多宗已審結國安案件籲市民要居安思危 - 堅料網</a><span class="ext-meta">堅料網 · <span style="all:unset" class="age age-fresh">3 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9Fa0xGVk5LNG5fak9Kc1lrM1Y4UnBDc0FXd05MV0Q0d3pWVm1UV3Z6SXJzX3BuNnBheEUtRlFvS0RVVkR0VXVnWnZ0SklxUHhIbHBUajQ2Qm1ad21kYWJPT1RKb05SSnpnSFhINERzUEk2MzVmQklzUjJrekJvMUk?oc=5" target="_blank" rel="noopener">青探號輔導員善用AI陪伴迷惘青少年重返校園 - 教育部全球資訊網</a><span class="ext-meta">教育部全球資訊網 · <span style="all:unset" class="age age-fresh">5 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQVzc3NXRYS3dhRkRrY0NBb3hiV3ZnMTRNb1IxQVRjUFBsRS1FdVRicmt5dDZQRmtFOFA4UnZObUdfOGFseXNVWkpmWDZQT2E5NFNGUDl6THN2T2RQdzFlai1uUUU3XzhLZWxYUWh2cUExcmIwLTU1Y192MWFJbUozdNIBX0FVX3lxTE8zVzl0QTNIMm9fT1VDbzBadzQ2R05kaVdMWUttZFRpT05yM2s4aU1CNjJTTUpIaVF3OXlGRGNMRVR3QWt3SU5vWExvbXd6NE9ZX0hZc3BNQUt6MjFKOE4w?oc=5" target="_blank" rel="noopener">搶救少子化　行庫加碼生育補助今年前8月逾760人申請 - 經濟日報</a><span class="ext-meta">經濟日報 · <span style="all:unset" class="age age-fresh">8 小時前</span></span></li></ul>
+</details>
+</section>
+
+<section id="international">
+  <h2>國際重大議題</h2>
+  <div class="section-desc">每日精選 2 則，來源：BBC / Guardian / Google News / Straits Times</div>
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxORXhQV0haVjlnZFRxdzZ6NnBXX21kejdHcW01djZFZjNJUEw3ZWtIMTVXTFJvbnpUMXVITjF5NTluYTlrLXZmSExlM0hXZVRoVkRYWU1lMnB0ajRnaG03QWxTT2ZkN3JheVRMSVZGLTdMbkRVNG9JTG5NR2RXYXpEcHFPMkt0aXVOblQ2cnFJZTNXR29fRmd2TG1NbmlpZw?oc=5" target="_blank" rel="noopener">聯合國兒童基金會籲孟加拉終結童婚</a></h3>
+  <div class="meta"><span class="source">GoogleNewsEN / Hiru News</span><span class="age age-fresh">23 小時前</span><span class="score">議題分數 10</span></div>
+  <p class="summary">聯合國兒童基金會呼籲孟加拉採取行動終結童婚問題</p>
+  <details class="orig"><summary>原文標題</summary><p>UNICEF calls for action to end child marriage in Bangladesh - Hiru News</p></details>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://www.theguardian.com/commentisfree/2026/oct/23/teenage-girls-ban-school-uniform-porn-children-minors" target="_blank" rel="noopener">英國少女發起禁止色情片使用校服運動</a></h3>
+  <div class="meta"><span class="source">Guardian / Unknown</span><span class="age age-fresh">19 小時前</span><span class="score">議題分數 8</span></div>
+  <p class="summary">四名英國少女投書衛報，呼籲修法禁止色情內容使用校服，指出沒有人應該因穿著為兒童設計的衣服而感到緊張，要求英國法律終結對校服的噁心性化現象</p>
+  <details class="orig"><summary>原文標題</summary><p>We’re teenage girls fighting to ban the use of school uniform in porn. Why have you left it up to us? | Rose, Mae, Aylin and Willow</p></details>
+</article>
+</section>
+
+<section id="aabe">
+  <h2>近 7 日國教盟媒體露出</h2>
+  <div class="section-desc">關鍵字：國教盟、國教行動聯盟、王瀚陽（Google News RSS 對小眾關鍵字有 ~2 日延遲，故採 7 日視窗）</div>
+  
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9xbk5TYW9zMXlCTTNPMUJHT1UweU5OLXA0N1oxSDZsUjN4VGJtazlHNlYwZ01DVWw4aDhaTksxRjBybzhRalJWVkJ6eDFYQWJPNGZrRENPWFhMVlEzakJ4UUI1MmhMVk0wNi1Mc1BYWQ?oc=5" target="_blank" rel="noopener">教育部補助進用1600名特教助理員 國教盟：應公開實際人力安排 - 知新聞</a></h3>
+  <div class="meta"><span class="source">知新聞</span><span class="date">10/21</span></div>
+  <p class="summary">教育部補助進用1600名特教助理員 國教盟：應公開實際人力安排 知新聞</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE1uekZRU0tMSFU3NjAtREZaLWVLakVhWnJTX2tyOXlDak1PRERTODNQNVdPOVVrOEcxU2lrSTNjZnR1eUxsZEp4aE9oZ3Ryc2FX?oc=5" target="_blank" rel="noopener">台中特教生遭捆綁座椅國教盟籲加強教師專業支持| 文教新訊| 文教 - UDN</a></h3>
+  <div class="meta"><span class="source">UDN</span><span class="date">10/21</span></div>
+  <p class="summary">台中特教生遭捆綁座椅國教盟籲加強教師專業支持| 文教新訊| 文教 UDN</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE9nZ1lvc3VQZXRIVW44cy1CVzU4TEVSTmtkOUc3WTBOeUgyMWlhT1VlOWFnZzNQcHJFUFc0RFF6bWt4R29sWXpJUFBuSTJ4NG1G0gFWQVVfeXFMT2lEQ25oYkIydEdOQ2RUN0pRMHF2U1l2djRub0RoVkJZamlMWUc0SDVRaFYxTXVIaVNCeFdRTUJSWmJiaXAzRFhvTkJCdXN0RDFLVUhZWWc?oc=5" target="_blank" rel="noopener">普特融合檢討 全國「疑似生」約9千人…國教盟籲公開特教人力到位情形 - UDN</a></h3>
+  <div class="meta"><span class="source">UDN</span><span class="date">10/21</span></div>
+  <p class="summary">普特融合檢討 全國「疑似生」約9千人…國教盟籲公開特教人力到位情形 UDN</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTFA0bVQtUmN5SFpxb1ZIYllxX1NOeWk2YVlMRVRNaklGUTY1aExremZGYTFkMnNqMEp2Y3V1REkxM1FtTUxaYlhzbdIBTEFVX3lxTE82dFp0eHNhUU9DN09xRjJEczJHRDNVVmhxblZjeldTSF9NTFN2OWFaWU53WlgyTUlOcHBrV3FQYzQ2OUwtSEZNX05NVTA?oc=5" target="_blank" rel="noopener">「隱形障礙」學生破8萬人！校園特教缺口爆發　民團開砲喊話教育部 - 三立新聞</a></h3>
+  <div class="meta"><span class="source">三立新聞</span><span class="date">10/21</span></div>
+  <p class="summary">「隱形障礙」學生破8萬人！校園特教缺口爆發 民團開砲喊話教育部 三立新聞</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE04Nkd0STEtQnpueU1BM0pibnYzdlMxRnppNHpKUmJVb2VBRHhkb2xBbG9fa2VWc1hKNENyeURCNVdwWHZucHBjSkR4NFZiTThYOWQxeGdzTEdyWmJMUXo1b2V2ZTg5cGvSAWdBVV95cUxNODZHdEkxLUJ6bnlNQTNKYm52M3ZTMUZ6aTR6SlJiVW9lQUR4ZG9sQWxvX2tlVnNYSjRDcnlEQjVXcFh2bnBwY0pEeDRWYk04WDlkMXhnc0xHclpiTFF6NW9ldmU4OXBr?oc=5" target="_blank" rel="noopener">依托咪酯成學生接觸毒品第2名 國教盟籲別只看宣導數字 - 大紀元</a></h3>
+  <div class="meta"><span class="source">大紀元</span><span class="date">10/22</span></div>
+  <p class="summary">依托咪酯成學生接觸毒品第2名 國教盟籲別只看宣導數字 大紀元</p>
+</article>
+</section>
+
+<section id="candidates">
+  <h2>今天值得開題</h2>
+  <div class="section-desc">日報替理事長挑出的候選，請在 LINE 回「做＋部門／不做／觀察」</div>
+  
+<article class="card">
+  <h3 class="title">IEP數位化政策喊兩年仍未落實，葛如鈞促將特教納入AI預算</h3>
+  <div class="meta"><span class="source">建議 重大 · 家長部</span></div>
+  <p class="summary">涉及特教政策執行落差與資源分配，呼應國教盟近期特教人力倡議主軸</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiQkFVX3lxTFBrV2dJb3hLN1RDUWlRV3NkSmtpYUFDSVd2Z2NDaVFyRzBxSWtjdjVidDAtNXVEejZRaGNsSEY3LW9NZw?oc=5" target="_blank" rel="noopener">墨新聞-MORE News</a>（只有一個來源）</p>
+</article>
+
+<article class="card">
+  <h3 class="title">學界倡議AI衝擊下閱讀教育應重批判思考而非只找答案</h3>
+  <div class="meta"><span class="source">建議 一般 · 兩部門合寫</span></div>
+  <p class="summary">涉及教學方法轉型與學習能力培養，對各學齡段學生均有影響</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1SMlMtbkFiZThnWlNFc0tXTURBUVVLU3JFQjhFOHRaUVM1Q1FRT1lhZUViTGtHZnFJdGljM1RjLTF4ZXN0VUFPc0J5U0FNanhpSXlhSVhJNHJxelA4bVdJ?oc=5" target="_blank" rel="noopener">中央社 CNA</a>（只有一個來源）</p>
+</article>
+  
+<div class="empty-state">
+  <p class="empty-desc">目前每一題走到哪一步，請看<a href="https://claude.ai/artifact/UYGwjUYkBzJ4yGodUiHUGa" target="_blank" rel="noopener">快速倡議看板</a></p>
+</div>
+</section>
+
+<section class="ai-insight" id="insight">
+  <h2>國教盟小編心得整理</h2>
+  <div class="ai-badge">由 Claude Sonnet 4.5 協助整理</div>
+  <p>今日新聞聚焦於特教資源落實、AI衝擊教育，以及兒少安全議題。特教助理員與IEP數位化進度受到關注，顯示普特融合政策執行面仍有落差。</p><p>跨議題串連方面，AI對閱讀教育的衝擊與特教數位化需求形成呼應，國教盟近期針對特教人力到位情形的倡議已獲多家媒體報導。國際上孟加拉童婚問題、英國校服情色化爭議，均凸顯兒少權益保護的急迫性。</p><p>建議一：可考慮持續追蹤IEP數位化與特教AI預算編列進度，回應葛如鈞委員提案並檢視教育部承諾落實情形。建議二：值得關注AI工具對不同學習需求學生的影響，特別是批判思考能力培養如何兼顧特殊教育與普通教育學生的差異化需求。</p>
+</section>
+
+</main>
+
+<footer>
+  <p>本日報由國教行動聯盟（AABE）每日 18:00 自動生成 · 6 大議題類別 + 4 國際來源 + AI 觀察整理</p>
+  <p>網址：<a href="https://naer-tw.github.io/daily-news/">naer-tw.github.io/daily-news/</a></p>
+</footer>
+
+<script>
+function toggleTheme() {
+  var t = document.body.dataset.theme;
+  document.body.dataset.theme = (t === 'dark') ? 'light' : 'dark';
+  localStorage.setItem('theme', document.body.dataset.theme);
+  document.querySelector('.theme-toggle').textContent = document.body.dataset.theme === 'dark' ? '☀️' : '🌙';
+}
+(function() {
+  var saved = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.body.dataset.theme = saved;
+  document.querySelector('.theme-toggle').textContent = saved === 'dark' ? '☀️' : '🌙';
+})();
+</script>
+
+</body>
+</html>
