@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>兒少與教育議題的國教盟日報 - 2026-11-15</title>
+<meta property="og:title" content="兒少與教育議題的國教盟日報 - 2026年11月15日">
+<meta property="og:description" content="每日 3 則台灣、2 則國際重大兒少與教育議題，附 AI 心得整理。國教行動聯盟。">
+<meta property="og:image" content="https://naer-tw.github.io/daily-news/og-image.png?v=2026-11-15">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://naer-tw.github.io/daily-news/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #5c1a30;
+  --primary-light: #7a2840;
+  --accent: #e8553d;
+  --accent-light: #f07060;
+  --accent-bg: #fef4f0;
+  --ink: #1a1a2e;
+  --ink-muted: #6b7280;
+  --bg: #faf9f7;
+  --card: #ffffff;
+  --border: #e5e3dc;
+  --border-strong: #1a1a2e;
+}
+[data-theme="dark"] {
+  --primary: #f07060; --primary-light: #f59090;
+  --accent: #f07060; --accent-bg: #2a1410;
+  --ink: #f1f5f9; --ink-muted: #94a3b8;
+  --bg: #0f172a; --card: #1e293b; --border: #334155; --border-strong: #f1f5f9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+.theme-toggle {
+  position: fixed; top: 20px; right: 20px;
+  background: var(--card); border: 1px solid var(--border);
+  width: 40px; height: 40px; border-radius: 999px;
+  cursor: pointer; font-size: 18px; z-index: 100;
+}
+header {
+  background: var(--card); border-bottom: 2px solid var(--primary);
+  padding: 40px 20px 32px; text-align: center;
+}
+header .badge {
+  display: inline-block; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px;
+}
+header h1 {
+  font-size: clamp(24px, 4vw, 36px); font-weight: 900;
+  letter-spacing: -0.01em; color: var(--primary);
+  margin: 0 0 12px; line-height: 1.3;
+}
+header .date {
+  font-size: 15px; color: var(--ink-muted);
+  font-variant-numeric: tabular-nums; margin-bottom: 20px;
+}
+nav {
+  display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+}
+nav a {
+  padding: 8px 18px; border: 1px solid var(--border);
+  border-radius: 999px; font-size: 14px; font-weight: 500;
+  color: var(--ink); text-decoration: none;
+  background: var(--bg); transition: all 0.15s;
+}
+nav a:hover, nav a.active {
+  background: var(--primary); color: white; border-color: var(--primary);
+}
+main {
+  max-width: 760px; margin: 0 auto; padding: 40px 20px 80px;
+}
+section { margin-bottom: 56px; }
+section h2 {
+  font-size: 22px; font-weight: 800; color: var(--primary);
+  margin: 0 0 24px; padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary);
+  letter-spacing: -0.005em;
+}
+section .section-desc {
+  font-size: 14px; color: var(--ink-muted);
+  margin: -16px 0 24px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  padding: 24px; margin-bottom: 16px; border-radius: 8px;
+  position: relative; transition: border-color 0.15s;
+}
+.card:hover { border-color: var(--accent); }
+.card .rank {
+  position: absolute; top: 20px; right: 24px;
+  font-size: 28px; font-weight: 900; color: var(--accent);
+  font-variant-numeric: tabular-nums; line-height: 1;
+}
+.card .title {
+  font-size: 19px; font-weight: 700; line-height: 1.4;
+  margin: 0 60px 12px 0; letter-spacing: -0.005em;
+}
+.card .title a {
+  color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.card .title a:hover { border-bottom-color: var(--accent); }
+.card .meta {
+  font-size: 13px; color: var(--ink-muted);
+  margin-bottom: 12px; display: flex; gap: 16px; flex-wrap: wrap;
+}
+.card .meta .score {
+  display: inline-block; padding: 2px 8px;
+  background: var(--accent-bg); color: var(--accent);
+  border-radius: 4px; font-size: 11px; font-weight: 600;
+}
+.card .summary {
+  font-size: 15px; color: var(--ink);
+  line-height: 1.75; opacity: 0.9;
+}
+.card .orig {
+  margin-top: 12px; padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 13px; color: var(--ink-muted);
+}
+.card .orig summary { cursor: pointer; opacity: 0.7; }
+.card .orig p { margin-top: 8px; font-style: italic; }
+.aabe-card { border-left: 3px solid var(--accent); }
+.empty-state {
+  background: var(--card); border: 1px dashed var(--border);
+  padding: 32px; text-align: center; border-radius: 8px;
+}
+.empty-state .empty-title {
+  font-size: 16px; font-weight: 700; color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+.empty-state .empty-desc {
+  font-size: 14px; color: var(--ink-muted);
+  line-height: 1.7; max-width: 480px; margin: 0 auto;
+}
+.ai-insight {
+  background: linear-gradient(135deg, #fef4f0 0%, #fff 100%);
+  border: 1px solid var(--accent); border-radius: 12px;
+  padding: 32px; margin-top: 32px;
+}
+[data-theme="dark"] .ai-insight {
+  background: linear-gradient(135deg, #2a1410 0%, var(--card) 100%);
+}
+.ai-insight h2 {
+  color: var(--accent); border-bottom-color: var(--accent);
+}
+.ai-insight .ai-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent);
+  border: 1px solid var(--accent); padding: 2px 8px;
+  border-radius: 4px; margin-bottom: 16px; text-transform: uppercase;
+}
+.ai-insight p {
+  font-size: 16px; line-height: 1.9;
+  margin-bottom: 14px;
+}
+.ai-insight p:last-child { margin-bottom: 0; }
+footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--ink-muted); font-size: 13px;
+  border-top: 1px solid var(--border);
+}
+footer a { color: var(--ink-muted); }
+@media print {
+  .theme-toggle, nav { display: none; }
+  .card { break-inside: avoid; }
+}
+@media (max-width: 600px) {
+  header { padding: 24px 16px; }
+  main { padding: 28px 14px 60px; }
+  .card { padding: 18px; }
+  .card .title { font-size: 17px; margin-right: 50px; }
+  .card .rank { font-size: 22px; top: 16px; right: 18px; }
+  .ai-insight { padding: 22px 18px; }
+}
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="切換深色模式">🌙</button>
+
+<header>
+  <div class="badge">每日 18:00 自動更新</div>
+  <h1>兒少與教育議題的國教盟日報</h1>
+  <div class="date">2026年11月15日（週日）</div>
+  <nav>
+    <a href="https://naer-tw.github.io/daily-news/" class="active">日報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/weekly/2026-W46.html">週報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/monthly/2026-11.html">月報</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="taiwan">
+  <h2>台灣重大議題</h2>
+  <div class="section-desc">過去 24 小時內，依議題重要性、政府/立法訊號、權威媒體加權，分數 ≥ 5 才入榜</div>
+  
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uX095Q2p4UGhBcW9QYlBQLUF2azFfTmttNzhwMDU2OE16NTJ5TFR4ZXpLMXVDWlNpVzYzZDQ2ajhRaVJuWWRxZHh2dGduV2dGS3p2SGRReEdiV1lvdl9pLV9xOW4?oc=5" target="_blank" rel="noopener">討論牆 | 夏莉絲兒虐案傳投票前一天開調解會議 周軒：怎讓市民安心？ - LINE TODAY</a></h3>
+  <div class="meta"><span class="source">LINE TODAY</span><span class="age age-fresh">2 小時前</span><span class="score">議題分數 8</span></div>
+  <p class="summary">討論牆 | 夏莉絲兒虐案傳投票前一天開調解會議 周軒：怎讓市民安心？ LINE TODAY</p>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTFBRR0xvVDlmbjlIanFfRUpZZU95LTQ4WVlpVUd3dzc3VWVEQTBId2R4cjNIT0NCVHd4NEZVczVqV1p3RXUwblBXUWdwNV9zUQ?oc=5" target="_blank" rel="noopener">美國麻疹「清零」地位為何被撤銷？幼兒園接種率跌到92.4%，今年逾5400例、11月至今5人死亡| 中央社 | 新聞 - 風傳媒</a></h3>
+  <div class="meta"><span class="source">風傳媒</span><span class="age age-fresh">6 小時前</span><span class="score">議題分數 8</span></div>
+  <p class="summary">美國麻疹「清零」地位為何被撤銷？幼兒園接種率跌到92.4%，今年逾5400例、11月至今5人死亡| 中央社 | 新聞 風傳媒</p>
+</article>
+
+<article class="card">
+  <div class="rank">#3</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE93UTQ2bktPenB1b0NxeDVQLTd2ckt3MTFjcFNBd2RUMlJBald3TGExRHBUSTdNN3otRDg1WkFybGIzbkFCZkhYM2Y5TTVZaERhbEloMzMzaGRiak1WM2M3aC1CM3U?oc=5" target="_blank" rel="noopener">討論牆 | 幼園兒虐案投票前日開調解會? 蔣萬安:法務局會說明 - LINE TODAY</a></h3>
+  <div class="meta"><span class="source">LINE TODAY</span><span class="age age-fresh">3 小時前</span><span class="score">議題分數 8</span></div>
+  <p class="summary">討論牆 | 幼園兒虐案投票前日開調解會? 蔣萬安:法務局會說明 LINE TODAY</p>
+</article>
+  
+<details class="extended">
+  <summary>延伸觀察（分數 3-4，未達 Top 3 門檻）— 共 5 則</summary>
+  <ul><li><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5MaGRNV0ozTHl4TjRBZDgtTFU4SXBSTmlzUHhBUDNLQy1rWEw5SW5JVmZ5M1hQUzVNQVFHZUMtQ1BKc2Y4YXpEUnZfdTJnZVNNTHFYdkFWM0t3bHU2X19BMEtmQ3EyTTAzWTBJTS12Y1pfMnRHTnFhdDViUTJwclE?oc=5" target="_blank" rel="noopener">動手玩數感！偏鄉離島一起來 數學巡迴展前進新竹金門 - 教育部全球資訊網</a><span class="ext-meta">教育部全球資訊網 · <span style="all:unset" class="age age-fresh">7 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMinwNBVV95cUxQTndWSVlnR21fV0g2Mkl0ZS1MQmN6MlZpY0J6UFZWMkpXZUZlMXF3cXpsQWRicmJ4dV9LUDhnQnB5UGpsODlPYUhnZURONkZ1N1ZOQjJRTHVkTTJuZFdFcWtjbnpqUVg1WjI3OE53UGl1RGZBcmxrNlY2amFiZ2I4ZlNwRnJqeWthWWpaZjF1X2MzVWgyNXo3VnlTV0lRQzNUQjFxU2JLeUlXSndmWE1EUDNnU3Voa1Y1TVFWQnZheVBJZG5PdzBDSXlUYjZyN2RXdDNmNTl3eEJSZWllcVMzTjBRY3A1MGVmRFpyX1drWHRJUkNKdUlKd2dzeHdSaUJHMFJJZ0VTcUc4UW1zU0cyTFRVMmpWUXZLcG41QTRBazlOaXZVTVJZanNIdU9kSlcydzhUdllQc2FTMjJvaXhlWnFKaWNubXdSOExFb0NnQ1BrcllOUGRVcTZ6c3BidEp5cjdlcnBONHdHUnA4MlBTOHItd2czSjIwb0ZCT09JTHJ3SXpYVEZjM0lQNzVxTkZ6Z3VVZTVUWFpyZEJYc3pR?oc=5" target="_blank" rel="noopener">教育部PBL計畫強化AI倫理 跨域實作培養中小學生無法被取代的能力 - Yahoo新聞</a><span class="ext-meta">Yahoo新聞 · <span style="all:unset" class="age age-fresh">1 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE5LbUtjcXNHaUZKRk1IMUNDdTAxaU9TbUcwT1lQaEJScjZWeUZUdDlOcmVQaTNGMUxqakNtZGlzZnNfY0xZQVBnb9IBTEFVX3lxTE1zekpKSEo3aFNVbEJiQXFfRkVDUTlOTWhPeENLbi1aQVpIbHUzRS1ONDQ5Qm5ZWDZLQ2lWX1ZQUXdZNFJnWGU2Tjh6ODY?oc=5" target="_blank" rel="noopener">每年補助提高至20萬！教育部這新制月底上路　點名「這身分」還鬆綁限制 - 三立新聞網SETN.com</a><span class="ext-meta">三立新聞網SETN.com · <span style="all:unset" class="age age-fresh">14 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE00WFJHd1VycEV5bWhuUmI3SDZiRFJibWVNSUVXYU5PdXhVWDZZelVOVk9CbE9mOVNWOW10WDQ4OUtSN1NLYzdmdtIBTEFVX3lxTE0tVk9NYkpoU2VGS3ZLdFRHS19BUUU2a3V5TlhtWVd0RDBjSkFYYWRUYUk1dTVlWHVEaDlqVmJST19MajZlVjU2cFd5UlI?oc=5" target="_blank" rel="noopener">「這津貼」又調高！8月起教育部每月加碼至1.5萬　預估5500人受惠 - 三立新聞網SETN.com</a><span class="ext-meta">三立新聞網SETN.com · <span style="all:unset" class="age age-fresh">12 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeUh3WnRxa29sTjd3VkUtZVBMUFAtSE5yX29XZzBTNkx2R1ZlaVJUSC1FVWpZVElLM3hlTGQtNWV4VEVMcjVtZVJjZ1JoX09qUm1lVXVodkFrUWRvRkVJMFFCSG5jNk5PaVc5VVRielV4VXNQUzRNV0Z1bWtQTDFlSmlFeFB4Z2M4?oc=5" target="_blank" rel="noopener">法國學生不滿教育改革方案表明續抗議 - 澳門廣播電視股份有限公司</a><span class="ext-meta">澳門廣播電視股份有限公司 · <span style="all:unset" class="age age-fresh">16 小時前</span></span></li></ul>
+</details>
+</section>
+
+<section id="international">
+  <h2>國際重大議題</h2>
+  <div class="section-desc">每日精選 2 則，來源：BBC / Guardian / Google News / Straits Times</div>
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://www.bbc.co.uk/news/articles/c680zgm7j3zvo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">40歲意外發現自己也是被領養：與領養丈夫共收養三名兒童</a></h3>
+  <div class="meta"><span class="source">BBC / Unknown</span><span class="age age-fresh">0 分前</span><span class="score">議題分數 13</span></div>
+  <p class="summary">威爾斯議會議員凱瑟琳·卡倫表示，她完全是偶然發現自己被領養的真相。</p>
+  <details class="orig"><summary>原文標題</summary><p>I took in three children with my husband, who was adopted, then found out at 40 that I was too</p></details>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://www.theguardian.com/commentisfree/2026/nov/15/oxford-platforming-nathan-cofnas-black-students-frank-ellis" target="_blank" rel="noopener">牛津大學為爭議學者提供平台 黑人學生恐受衝擊</a></h3>
+  <div class="meta"><span class="source">Guardian / Unknown</span><span class="age age-fresh">2 小時前</span><span class="score">議題分數 5</span></div>
+  <p class="summary">90年代我曾師從惡名昭彰的種族主義講師法蘭克·艾利斯。在本應自由探索的時期，這段經歷逐漸侵蝕我的自信。</p>
+  <details class="orig"><summary>原文標題</summary><p>Oxford is platforming race baiter Nathan Cofnas. I know how corrosive that will be for Black students | Ebony Riddell Bamber</p></details>
+</article>
+</section>
+
+<section id="aabe">
+  <h2>近 7 日國教盟媒體露出</h2>
+  <div class="section-desc">關鍵字：國教盟、國教行動聯盟、王瀚陽（Google News RSS 對小眾關鍵字有 ~2 日延遲，故採 7 日視窗）</div>
+  
+<div class="empty-state">
+  <p class="empty-title">今日無媒體露出</p>
+  <p class="empty-desc">建議考量：是否該主動發稿回應今日議題、或聯繫媒體就近期倡議成果接受採訪。</p>
+</div>
+</section>
+
+<section id="candidates">
+  <h2>今天值得開題</h2>
+  <div class="section-desc">日報替理事長挑出的候選，請在 LINE 回「做＋部門／不做／觀察」</div>
+  
+<article class="card">
+  <h3 class="title">台北市夏莉絲幼兒園兒虐案傳於市長選舉投票前一日開調解會議引發程序爭議</h3>
+  <div class="meta"><span class="source">建議 重大 · 家長部</span></div>
+  <p class="summary">涉及托育機構兒虐案件司法程序透明度與行政監督機制，關乎家長對公權力信任與兒少安全保障。</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uX095Q2p4UGhBcW9QYlBQLUF2azFfTmttNzhwMDU2OE16NTJ5TFR4ZXpLMXVDWlNpVzYzZDQ2ajhRaVJuWWRxZHh2dGduV2dGS3p2SGRReEdiV1lvdl9pLV9xOW4?oc=5" target="_blank" rel="noopener">LINE TODAY</a>（只有一個來源）</p>
+</article>
+
+<article class="card">
+  <h3 class="title">美國麻疹清零地位遭撤銷，幼兒園接種率跌至92.4%，今年逾5400例11月至今5人死亡</h3>
+  <div class="meta"><span class="source">建議 重大 · 家長部</span></div>
+  <p class="summary">國際公衛警訊凸顯疫苗接種率下降風險，台灣幼兒園接種率管理政策與家長疫苗認知值得檢視。</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTFBRR0xvVDlmbjlIanFfRUpZZU95LTQ4WVlpVUd3dzc3VWVEQTBId2R4cjNIT0NCVHd4NEZVczVqV1p3RXUwblBXUWdwNV9zUQ?oc=5" target="_blank" rel="noopener">風傳媒</a>（只有一個來源）</p>
+</article>
+  
+<div class="empty-state">
+  <p class="empty-desc">目前每一題走到哪一步，請看<a href="https://claude.ai/artifact/UYGwjUYkBzJ4yGodUiHUGa" target="_blank" rel="noopener">快速倡議看板</a></p>
+</div>
+</section>
+
+<section class="ai-insight" id="insight">
+  <h2>國教盟小編心得整理</h2>
+  <div class="ai-badge">由 Claude Sonnet 4.5 協助整理</div>
+  <p>今日核心趨勢聚焦於台北市幼兒園兒虐案調解爭議，以及美國因接種率下降導致麻疹清零地位遭撤銷的公衛警訊。</p><p>跨議題串連方面，兒虐案調解時機引發程序正義質疑，反映托育安全監管機制仍待強化；美國麻疹疫情則凸顯疫苗接種率與公共衛生政策連動性，台灣幼兒園接種率管理值得參照檢視。</p><p>建議一：可考慮關注幼兒園兒虐案後續司法與行政程序透明度議題，涉及托育機構問責與家長權益保障機制。建議二：值得追蹤美國麻疹案例對台灣幼兒園疫苗接種政策的啟示，特別是接種率監測與家長溝通策略面向。</p>
+</section>
+
+</main>
+
+<footer>
+  <p>本日報由國教行動聯盟（AABE）每日 18:00 自動生成 · 6 大議題類別 + 4 國際來源 + AI 觀察整理</p>
+  <p>網址：<a href="https://naer-tw.github.io/daily-news/">naer-tw.github.io/daily-news/</a></p>
+</footer>
+
+<script>
+function toggleTheme() {
+  var t = document.body.dataset.theme;
+  document.body.dataset.theme = (t === 'dark') ? 'light' : 'dark';
+  localStorage.setItem('theme', document.body.dataset.theme);
+  document.querySelector('.theme-toggle').textContent = document.body.dataset.theme === 'dark' ? '☀️' : '🌙';
+}
+(function() {
+  var saved = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.body.dataset.theme = saved;
+  document.querySelector('.theme-toggle').textContent = saved === 'dark' ? '☀️' : '🌙';
+})();
+</script>
+
+</body>
+</html>
