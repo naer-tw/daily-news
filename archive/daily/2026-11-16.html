@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>兒少與教育議題的國教盟日報 - 2026-11-16</title>
+<meta property="og:title" content="兒少與教育議題的國教盟日報 - 2026年11月16日">
+<meta property="og:description" content="每日 3 則台灣、2 則國際重大兒少與教育議題，附 AI 心得整理。國教行動聯盟。">
+<meta property="og:image" content="https://naer-tw.github.io/daily-news/og-image.png?v=2026-11-16">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://naer-tw.github.io/daily-news/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #5c1a30;
+  --primary-light: #7a2840;
+  --accent: #e8553d;
+  --accent-light: #f07060;
+  --accent-bg: #fef4f0;
+  --ink: #1a1a2e;
+  --ink-muted: #6b7280;
+  --bg: #faf9f7;
+  --card: #ffffff;
+  --border: #e5e3dc;
+  --border-strong: #1a1a2e;
+}
+[data-theme="dark"] {
+  --primary: #f07060; --primary-light: #f59090;
+  --accent: #f07060; --accent-bg: #2a1410;
+  --ink: #f1f5f9; --ink-muted: #94a3b8;
+  --bg: #0f172a; --card: #1e293b; --border: #334155; --border-strong: #f1f5f9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+.theme-toggle {
+  position: fixed; top: 20px; right: 20px;
+  background: var(--card); border: 1px solid var(--border);
+  width: 40px; height: 40px; border-radius: 999px;
+  cursor: pointer; font-size: 18px; z-index: 100;
+}
+header {
+  background: var(--card); border-bottom: 2px solid var(--primary);
+  padding: 40px 20px 32px; text-align: center;
+}
+header .badge {
+  display: inline-block; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px;
+}
+header h1 {
+  font-size: clamp(24px, 4vw, 36px); font-weight: 900;
+  letter-spacing: -0.01em; color: var(--primary);
+  margin: 0 0 12px; line-height: 1.3;
+}
+header .date {
+  font-size: 15px; color: var(--ink-muted);
+  font-variant-numeric: tabular-nums; margin-bottom: 20px;
+}
+nav {
+  display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+}
+nav a {
+  padding: 8px 18px; border: 1px solid var(--border);
+  border-radius: 999px; font-size: 14px; font-weight: 500;
+  color: var(--ink); text-decoration: none;
+  background: var(--bg); transition: all 0.15s;
+}
+nav a:hover, nav a.active {
+  background: var(--primary); color: white; border-color: var(--primary);
+}
+main {
+  max-width: 760px; margin: 0 auto; padding: 40px 20px 80px;
+}
+section { margin-bottom: 56px; }
+section h2 {
+  font-size: 22px; font-weight: 800; color: var(--primary);
+  margin: 0 0 24px; padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary);
+  letter-spacing: -0.005em;
+}
+section .section-desc {
+  font-size: 14px; color: var(--ink-muted);
+  margin: -16px 0 24px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  padding: 24px; margin-bottom: 16px; border-radius: 8px;
+  position: relative; transition: border-color 0.15s;
+}
+.card:hover { border-color: var(--accent); }
+.card .rank {
+  position: absolute; top: 20px; right: 24px;
+  font-size: 28px; font-weight: 900; color: var(--accent);
+  font-variant-numeric: tabular-nums; line-height: 1;
+}
+.card .title {
+  font-size: 19px; font-weight: 700; line-height: 1.4;
+  margin: 0 60px 12px 0; letter-spacing: -0.005em;
+}
+.card .title a {
+  color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.card .title a:hover { border-bottom-color: var(--accent); }
+.card .meta {
+  font-size: 13px; color: var(--ink-muted);
+  margin-bottom: 12px; display: flex; gap: 16px; flex-wrap: wrap;
+}
+.card .meta .score {
+  display: inline-block; padding: 2px 8px;
+  background: var(--accent-bg); color: var(--accent);
+  border-radius: 4px; font-size: 11px; font-weight: 600;
+}
+.card .summary {
+  font-size: 15px; color: var(--ink);
+  line-height: 1.75; opacity: 0.9;
+}
+.card .orig {
+  margin-top: 12px; padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 13px; color: var(--ink-muted);
+}
+.card .orig summary { cursor: pointer; opacity: 0.7; }
+.card .orig p { margin-top: 8px; font-style: italic; }
+.aabe-card { border-left: 3px solid var(--accent); }
+.empty-state {
+  background: var(--card); border: 1px dashed var(--border);
+  padding: 32px; text-align: center; border-radius: 8px;
+}
+.empty-state .empty-title {
+  font-size: 16px; font-weight: 700; color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+.empty-state .empty-desc {
+  font-size: 14px; color: var(--ink-muted);
+  line-height: 1.7; max-width: 480px; margin: 0 auto;
+}
+.ai-insight {
+  background: linear-gradient(135deg, #fef4f0 0%, #fff 100%);
+  border: 1px solid var(--accent); border-radius: 12px;
+  padding: 32px; margin-top: 32px;
+}
+[data-theme="dark"] .ai-insight {
+  background: linear-gradient(135deg, #2a1410 0%, var(--card) 100%);
+}
+.ai-insight h2 {
+  color: var(--accent); border-bottom-color: var(--accent);
+}
+.ai-insight .ai-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent);
+  border: 1px solid var(--accent); padding: 2px 8px;
+  border-radius: 4px; margin-bottom: 16px; text-transform: uppercase;
+}
+.ai-insight p {
+  font-size: 16px; line-height: 1.9;
+  margin-bottom: 14px;
+}
+.ai-insight p:last-child { margin-bottom: 0; }
+footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--ink-muted); font-size: 13px;
+  border-top: 1px solid var(--border);
+}
+footer a { color: var(--ink-muted); }
+@media print {
+  .theme-toggle, nav { display: none; }
+  .card { break-inside: avoid; }
+}
+@media (max-width: 600px) {
+  header { padding: 24px 16px; }
+  main { padding: 28px 14px 60px; }
+  .card { padding: 18px; }
+  .card .title { font-size: 17px; margin-right: 50px; }
+  .card .rank { font-size: 22px; top: 16px; right: 18px; }
+  .ai-insight { padding: 22px 18px; }
+}
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="切換深色模式">🌙</button>
+
+<header>
+  <div class="badge">每日 18:00 自動更新</div>
+  <h1>兒少與教育議題的國教盟日報</h1>
+  <div class="date">2026年11月16日（週一）</div>
+  <nav>
+    <a href="https://naer-tw.github.io/daily-news/" class="active">日報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/weekly/2026-W47.html">週報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/monthly/2026-11.html">月報</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="taiwan">
+  <h2>台灣重大議題</h2>
+  <div class="section-desc">過去 24 小時內，依議題重要性、政府/立法訊號、權威媒體加權，分數 ≥ 5 才入榜</div>
+  
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9mRU5tN2F5MHlGUkt0SDhBSUFnLWx6MllybVFfUEVkS0ZTQThwNldZQVlUSkxTM1NaMm1WdXNKYWNFTUczSF9sX0R1S1N4WjRSTE90TnJVZXJuWEZaam16Szl4VU1lZ1JvYTNmXzdB?oc=5" target="_blank" rel="noopener">當街安全帽猛K男童被錄影PO網 警查訪母子通報社政單位釐清兒虐 - 中時新聞網</a></h3>
+  <div class="meta"><span class="source">中時新聞網</span><span class="age age-fresh">6 小時前</span><span class="score">議題分數 10</span></div>
+  <p class="summary">當街安全帽猛K男童被錄影PO網 警查訪母子通報社政單位釐清兒虐 中時新聞網</p>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5SaGFxVHFULTMzNTRsTEl6T2R6cktQYjBwX0VRU0hhSjZwSm96SWRsVExRa21IOV9IRWNQR1VUczg4bjF0Um5VNzVXN0o3Smc?oc=5" target="_blank" rel="noopener">少子化衝擊兒科醫療 台大童醫院長籲重新分配資源 - 公視新聞</a></h3>
+  <div class="meta"><span class="source">公視新聞</span><span class="age age-fresh">3 小時前</span><span class="score">議題分數 9</span></div>
+  <p class="summary">少子化衝擊兒科醫療 台大童醫院長籲重新分配資源 公視新聞</p>
+</article>
+
+<article class="card">
+  <div class="rank">#3</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFA4X195SU13bzFqbi1qQmxpbTNCUHl2ZnZDMGc1WjgwRGRmaWZEdklWUS1lY29IR1Vrdk9YSHF4MjFqMzJjSy1FNjZQRWRzUXF0cVN6X3J3?oc=5" target="_blank" rel="noopener">教育部心理健康促進計畫 凝聚校園力量深化SEL | 青年日報 - LINE TODAY</a></h3>
+  <div class="meta"><span class="source">LINE TODAY</span><span class="age age-fresh">1 小時前</span><span class="score">議題分數 8</span></div>
+  <p class="summary">教育部心理健康促進計畫 凝聚校園力量深化SEL | 青年日報 LINE TODAY</p>
+</article>
+  
+<details class="extended">
+  <summary>延伸觀察（分數 3-4，未達 Top 3 門檻）— 共 5 則</summary>
+  <ul><li><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5TTTd6UkhjNGpZOE1xNTRZMDVWTGxUZDR6MnFDOG00WTY4T0NPd0VUSUtvRFRLaFBoNE9vTm9vM1FnbXhhbzFjN1ZMNV9HZGtz0gFWQVVfeXFMTndUeGNMVzI3Vmh4Zlc1Y2F1c2FPdHoyemRTWi1lZ0l0VkVGSGJBM1VVMWpzbDZaV1poV3hYdFhnNTlwWUdYdjRLY3ZBY0RDOGF0Rlp4RWc?oc=5" target="_blank" rel="noopener">台中率全國之先設不適任教練查詢專區 制度把關守護兒少安全 - UDN</a><span class="ext-meta">UDN · <span style="all:unset" class="age age-fresh">36 分前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFA4ck5sTjF6NjB0Z0dtQWM5SnE3dnNFNlJmTEd1b3JFWk9DaUhoRUZKNFk0bUs2b29OVU5HZWpEbUxuUU9jRk1tNE9Hc3hjX2xNdnZPcW44ZE0?oc=5" target="_blank" rel="noopener">韓瑩願景館開幕聚焦親子需求 提育兒津貼與臨托政見 - Taiwan News</a><span class="ext-meta">Taiwan News · <span style="all:unset" class="age age-fresh">7 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9Mem1xME8zT1RONmZmcThJQjUwNW1fZFgxNHdHWl9BODJmb0xZaE1DOENGUjNILUpvaXZTZjg1SVhoME1GMmxiUTZ1ZFRHOEwxanc5UGxudw?oc=5" target="_blank" rel="noopener">（社論）教師不敢教，教育部要面對的問題 - 台灣醒報 Awakening News Network</a><span class="ext-meta">台灣醒報 Awakening News Network · <span style="all:unset" class="age age-fresh">4 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBEOHZ0ZkMyYzNsQjZQTU1yRDBHNFU2WVZEZy1VLVhFbkZMM0g2eTB6aDFBSGdHNDJJVUVnNU5OUE8xS3QtNkhEZXp1YmdwRDNIbHJteW5KRWhrdUdvbE9NQ3htWllOVEFMQzZBeDZ1M21xVFlZN182aWwybUVaRGs?oc=5" target="_blank" rel="noopener">兩大計畫打造智慧韌性新農業 - 教育部全球資訊網</a><span class="ext-meta">教育部全球資訊網 · <span style="all:unset" class="age age-fresh">1 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiRkFVX3lxTFBEVmlpY3pwdXctZnExX0RCX3l6MnlmcVpXUy0zeS0tSFMyamZpZHNMZ0d5U2h4cDNOcGhXa1AzTEh1Ri04ZWc?oc=5" target="_blank" rel="noopener">教育部推新宿舍運動 41校展宿舍改造成果 - 原住民族文化事業基金會</a><span class="ext-meta">原住民族文化事業基金會 · <span style="all:unset" class="age age-fresh">5 小時前</span></span></li></ul>
+</details>
+</section>
+
+<section id="international">
+  <h2>國際重大議題</h2>
+  <div class="section-desc">每日精選 2 則，來源：BBC / Guardian / Google News / Straits Times</div>
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOUEx1aVBPZG9VRFBnb2VFdlg5YmRvSlBGQWZmUFJVZXNXYUZxODY3M2dyVFdyYlE3bVpPeTl3d1d2a3QzalVrSmRzckM0QU9OdEhLWm5obzV0Vkx3WW56Z21TcVY3VThnQ216T0R2RVhDVTZmazczbTZZYk5ndHhJZFd3Y2Z4TnBONnk1bXJhdnVKV0hVRzdYVk5OR1FFTjJSUUVmekQteVZmb213Nk04?oc=5" target="_blank" rel="noopener">加納性別部與UNICEF深化兒童保護及線上虐待防治合作</a></h3>
+  <div class="meta"><span class="source">GoogleNewsEN / MyJoyOnline</span><span class="age age-fresh">20 小時前</span><span class="score">議題分數 7</span></div>
+  <p class="summary">加納性別部與聯合國兒童基金會（UNICEF）深化合作夥伴關係，以應對兒童保護及網路虐待問題。</p>
+  <details class="orig"><summary>原文標題</summary><p>Gender Ministry, UNICEF deepen partnership to tackle child protection, online abuse - MyJoyOnline</p></details>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://www.bbc.co.uk/news/articles/cwr7gnkd7m04o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">英保守黨承諾停止校內電子考試並削減作業量</a></h3>
+  <div class="meta"><span class="source">BBC / Unknown</span><span class="age age-fresh">12 小時前</span><span class="score">議題分數 5</span></div>
+  <p class="summary">保守黨表示，針對英格蘭的提案旨在解決過度使用螢幕及過度依賴AI的問題。</p>
+  <details class="orig"><summary>原文標題</summary><p>Tories pledge to halt screen-based school exams and cut coursework</p></details>
+</article>
+</section>
+
+<section id="aabe">
+  <h2>近 7 日國教盟媒體露出</h2>
+  <div class="section-desc">關鍵字：國教盟、國教行動聯盟、王瀚陽（Google News RSS 對小眾關鍵字有 ~2 日延遲，故採 7 日視窗）</div>
+  
+<div class="empty-state">
+  <p class="empty-title">今日無媒體露出</p>
+  <p class="empty-desc">建議考量：是否該主動發稿回應今日議題、或聯繫媒體就近期倡議成果接受採訪。</p>
+</div>
+</section>
+
+<section id="candidates">
+  <h2>今天值得開題</h2>
+  <div class="section-desc">日報替理事長挑出的候選，請在 LINE 回「做＋部門／不做／觀察」</div>
+  
+<article class="card">
+  <h3 class="title">台大兒童醫院長指出少子化衝擊兒科醫療，呼籲重新分配資源</h3>
+  <div class="meta"><span class="source">建議 一般 · 家長部</span></div>
+  <p class="summary">涉及少子化下兒科醫療人力與資源配置政策，與學齡前兒童健康照護權益相關</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5SaGFxVHFULTMzNTRsTEl6T2R6cktQYjBwX0VRU0hhSjZwSm96SWRsVExRa21IOV9IRWNQR1VUczg4bjF0Um5VNzVXN0o3Smc?oc=5" target="_blank" rel="noopener">公視新聞</a>、<a href="https://news.google.com/rss/articles/CBMi3AJBVV95cUxPOGRfaFdBS29XVE9YMXNQLWpaaWVxUzhxQUdzLVE3SUozTWFXRVZRT2ctYmxwVEJjZFVBX2NEOUJVQUxNelR6djE2THltNEhRT280OXVlNEpuXzdwTGNnLXdjWmZ3NWY1TnZ5dG9nVGRfSDVqMVoycWJXN2VWMmFWcTZyYUNLQ2pkanFXS1FyTVZJU3ZrVDlTNGlROEkwbXBGZk9hT3R5cHctWmhCT0dVVGNUZXRBRlVOYWFMRE5fNGNDVU1HMnltcHlxX3hKX1RkUE5LclR3bmFnaUJvM2Y0cW5QY0Fsb3owSU1Ia2kxbXR1WFAxeDNQMERBSDR6VE1xb1BPUExGNmRQaXItdm5yYjE2ZzJSSkt0bE5zQk1mOUZNclU4RFhyeWhYcDIwYWp2R0xtS1pIUGJYUEJfYnZscWYzWUtsNzlKMzFCUFp5SmM1SkVzTlVYbjlUZ18?oc=5" target="_blank" rel="noopener">Yahoo新聞</a></p>
+</article>
+
+<article class="card">
+  <h3 class="title">台中市率全國首創不適任教練查詢專區，制度把關兒少安全</h3>
+  <div class="meta"><span class="source">建議 一般 · 家長部</span></div>
+  <p class="summary">涉及不適任教育人員查詢機制建置，可對照現行教師不適任處理制度提出建議</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5TTTd6UkhjNGpZOE1xNTRZMDVWTGxUZDR6MnFDOG00WTY4T0NPd0VUSUtvRFRLaFBoNE9vTm9vM1FnbXhhbzFjN1ZMNV9HZGtz0gFWQVVfeXFMTndUeGNMVzI3Vmh4Zlc1Y2F1c2FPdHoyemRTWi1lZ0l0VkVGSGJBM1VVMWpzbDZaV1poV3hYdFhnNTlwWUdYdjRLY3ZBY0RDOGF0Rlp4RWc?oc=5" target="_blank" rel="noopener">UDN</a>（只有一個來源）</p>
+</article>
+  
+<div class="empty-state">
+  <p class="empty-desc">目前每一題走到哪一步，請看<a href="https://claude.ai/artifact/UYGwjUYkBzJ4yGodUiHUGa" target="_blank" rel="noopener">快速倡議看板</a></p>
+</div>
+</section>
+
+<section class="ai-insight" id="insight">
+  <h2>國教盟小編心得整理</h2>
+  <div class="ai-badge">由 Claude Sonnet 4.5 協助整理</div>
+  <p>今日新聞聚焦於少子化對兒科醫療資源的衝擊，以及兒童保護與校園心理健康機制的建置。台大兒童醫院長呼籲重新分配資源，反映人力與需求失衡。</p><p>跨議題串連方面，當街施暴兒童案件凸顯家庭教養與通報機制的缺口，而教育部推動SEL心理健康計畫、台中建立不適任教練查詢專區，均試圖從制度面強化兒少保護網。國際上加納與UNICEF深化兒童線上保護合作，英國保守黨則提出減少學校考試電子化，皆與兒少發展環境相關。</p><p>建議一：可考慮關注少子化下教育與醫療資源重分配議題，特別是兒科人力與校護配置的結構性問題。<br>建議二：值得追蹤不適任教育人員查詢機制的跨縣市整合進展，以及兒少保護通報與社政銜接的實務效能。</p>
+</section>
+
+</main>
+
+<footer>
+  <p>本日報由國教行動聯盟（AABE）每日 18:00 自動生成 · 6 大議題類別 + 4 國際來源 + AI 觀察整理</p>
+  <p>網址：<a href="https://naer-tw.github.io/daily-news/">naer-tw.github.io/daily-news/</a></p>
+</footer>
+
+<script>
+function toggleTheme() {
+  var t = document.body.dataset.theme;
+  document.body.dataset.theme = (t === 'dark') ? 'light' : 'dark';
+  localStorage.setItem('theme', document.body.dataset.theme);
+  document.querySelector('.theme-toggle').textContent = document.body.dataset.theme === 'dark' ? '☀️' : '🌙';
+}
+(function() {
+  var saved = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.body.dataset.theme = saved;
+  document.querySelector('.theme-toggle').textContent = saved === 'dark' ? '☀️' : '🌙';
+})();
+</script>
+
+</body>
+</html>
