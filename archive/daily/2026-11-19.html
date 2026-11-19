@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>兒少與教育議題的國教盟日報 - 2026-11-19</title>
+<meta property="og:title" content="兒少與教育議題的國教盟日報 - 2026年11月19日">
+<meta property="og:description" content="每日 3 則台灣、2 則國際重大兒少與教育議題，附 AI 心得整理。國教行動聯盟。">
+<meta property="og:image" content="https://naer-tw.github.io/daily-news/og-image.png?v=2026-11-19">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://naer-tw.github.io/daily-news/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #5c1a30;
+  --primary-light: #7a2840;
+  --accent: #e8553d;
+  --accent-light: #f07060;
+  --accent-bg: #fef4f0;
+  --ink: #1a1a2e;
+  --ink-muted: #6b7280;
+  --bg: #faf9f7;
+  --card: #ffffff;
+  --border: #e5e3dc;
+  --border-strong: #1a1a2e;
+}
+[data-theme="dark"] {
+  --primary: #f07060; --primary-light: #f59090;
+  --accent: #f07060; --accent-bg: #2a1410;
+  --ink: #f1f5f9; --ink-muted: #94a3b8;
+  --bg: #0f172a; --card: #1e293b; --border: #334155; --border-strong: #f1f5f9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'PingFang TC', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+.theme-toggle {
+  position: fixed; top: 20px; right: 20px;
+  background: var(--card); border: 1px solid var(--border);
+  width: 40px; height: 40px; border-radius: 999px;
+  cursor: pointer; font-size: 18px; z-index: 100;
+}
+header {
+  background: var(--card); border-bottom: 2px solid var(--primary);
+  padding: 40px 20px 32px; text-align: center;
+}
+header .badge {
+  display: inline-block; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px;
+}
+header h1 {
+  font-size: clamp(24px, 4vw, 36px); font-weight: 900;
+  letter-spacing: -0.01em; color: var(--primary);
+  margin: 0 0 12px; line-height: 1.3;
+}
+header .date {
+  font-size: 15px; color: var(--ink-muted);
+  font-variant-numeric: tabular-nums; margin-bottom: 20px;
+}
+nav {
+  display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+}
+nav a {
+  padding: 8px 18px; border: 1px solid var(--border);
+  border-radius: 999px; font-size: 14px; font-weight: 500;
+  color: var(--ink); text-decoration: none;
+  background: var(--bg); transition: all 0.15s;
+}
+nav a:hover, nav a.active {
+  background: var(--primary); color: white; border-color: var(--primary);
+}
+main {
+  max-width: 760px; margin: 0 auto; padding: 40px 20px 80px;
+}
+section { margin-bottom: 56px; }
+section h2 {
+  font-size: 22px; font-weight: 800; color: var(--primary);
+  margin: 0 0 24px; padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary);
+  letter-spacing: -0.005em;
+}
+section .section-desc {
+  font-size: 14px; color: var(--ink-muted);
+  margin: -16px 0 24px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  padding: 24px; margin-bottom: 16px; border-radius: 8px;
+  position: relative; transition: border-color 0.15s;
+}
+.card:hover { border-color: var(--accent); }
+.card .rank {
+  position: absolute; top: 20px; right: 24px;
+  font-size: 28px; font-weight: 900; color: var(--accent);
+  font-variant-numeric: tabular-nums; line-height: 1;
+}
+.card .title {
+  font-size: 19px; font-weight: 700; line-height: 1.4;
+  margin: 0 60px 12px 0; letter-spacing: -0.005em;
+}
+.card .title a {
+  color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.card .title a:hover { border-bottom-color: var(--accent); }
+.card .meta {
+  font-size: 13px; color: var(--ink-muted);
+  margin-bottom: 12px; display: flex; gap: 16px; flex-wrap: wrap;
+}
+.card .meta .score {
+  display: inline-block; padding: 2px 8px;
+  background: var(--accent-bg); color: var(--accent);
+  border-radius: 4px; font-size: 11px; font-weight: 600;
+}
+.card .summary {
+  font-size: 15px; color: var(--ink);
+  line-height: 1.75; opacity: 0.9;
+}
+.card .orig {
+  margin-top: 12px; padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 13px; color: var(--ink-muted);
+}
+.card .orig summary { cursor: pointer; opacity: 0.7; }
+.card .orig p { margin-top: 8px; font-style: italic; }
+.aabe-card { border-left: 3px solid var(--accent); }
+.empty-state {
+  background: var(--card); border: 1px dashed var(--border);
+  padding: 32px; text-align: center; border-radius: 8px;
+}
+.empty-state .empty-title {
+  font-size: 16px; font-weight: 700; color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+.empty-state .empty-desc {
+  font-size: 14px; color: var(--ink-muted);
+  line-height: 1.7; max-width: 480px; margin: 0 auto;
+}
+.ai-insight {
+  background: linear-gradient(135deg, #fef4f0 0%, #fff 100%);
+  border: 1px solid var(--accent); border-radius: 12px;
+  padding: 32px; margin-top: 32px;
+}
+[data-theme="dark"] .ai-insight {
+  background: linear-gradient(135deg, #2a1410 0%, var(--card) 100%);
+}
+.ai-insight h2 {
+  color: var(--accent); border-bottom-color: var(--accent);
+}
+.ai-insight .ai-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--accent);
+  border: 1px solid var(--accent); padding: 2px 8px;
+  border-radius: 4px; margin-bottom: 16px; text-transform: uppercase;
+}
+.ai-insight p {
+  font-size: 16px; line-height: 1.9;
+  margin-bottom: 14px;
+}
+.ai-insight p:last-child { margin-bottom: 0; }
+footer {
+  text-align: center; padding: 40px 20px;
+  color: var(--ink-muted); font-size: 13px;
+  border-top: 1px solid var(--border);
+}
+footer a { color: var(--ink-muted); }
+@media print {
+  .theme-toggle, nav { display: none; }
+  .card { break-inside: avoid; }
+}
+@media (max-width: 600px) {
+  header { padding: 24px 16px; }
+  main { padding: 28px 14px 60px; }
+  .card { padding: 18px; }
+  .card .title { font-size: 17px; margin-right: 50px; }
+  .card .rank { font-size: 22px; top: 16px; right: 18px; }
+  .ai-insight { padding: 22px 18px; }
+}
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="切換深色模式">🌙</button>
+
+<header>
+  <div class="badge">每日 18:00 自動更新</div>
+  <h1>兒少與教育議題的國教盟日報</h1>
+  <div class="date">2026年11月19日（週四）</div>
+  <nav>
+    <a href="https://naer-tw.github.io/daily-news/" class="active">日報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/weekly/2026-W47.html">週報</a>
+    <a href="https://naer-tw.github.io/daily-news/archive/monthly/2026-11.html">月報</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="taiwan">
+  <h2>台灣重大議題</h2>
+  <div class="section-desc">過去 24 小時內，依議題重要性、政府/立法訊號、權威媒體加權，分數 ≥ 5 才入榜</div>
+  
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE1rSE5pMEs3bFpIWEVObXFQeWVabWxGanlqLXpnRTA3V19vWDEwYzd3Z2ktcjZvZlBTZGtuTTZXM2Z3WXNCNjJmN0R0eFRwRXRrSzZTbVdqU1dscldfdFlzR3hUVG7SAWpBVV95cUxONGFmOUs2czdQNUs3dkpFaERuMHJPUHc2dUR6OU83YUlfWU41WXJDcWpaVVNxeUVaZngyTlpYWGY5dG1sYXdadFhNWWVJdWNkOURmODFRNnZWWkE4dnVzWlVVN0lNaUZhNWtB?oc=5" target="_blank" rel="noopener">教育部修法防不適任教師改名規避查詢 國教盟籲補漏洞 - 自由時報</a></h3>
+  <div class="meta"><span class="source">自由時報</span><span class="age age-fresh">7 小時前</span><span class="score">議題分數 12</span></div>
+  <p class="summary">教育部修法防不適任教師改名規避查詢 國教盟籲補漏洞 自由時報</p>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9tVVFTRXo1aXFSeXA0bW50TVNEb0Q1Rng3RFFBa2ktNW9mU1FuSThhajVCNldVUVNCR1BsOW9ZRUQyT1NXZURSaVhvZ0hnRzN4eFJLVG01NmFzZERVdHhsbE50NF9MZWNWdDluaQ?oc=5" target="_blank" rel="noopener">防堵狼師改名重返校園 教育部修法開放向戶政機關查個資異動 - 上報Up Media</a></h3>
+  <div class="meta"><span class="source">上報Up Media</span><span class="age age-fresh">2 小時前</span><span class="score">議題分數 11</span></div>
+  <p class="summary">防堵狼師改名重返校園 教育部修法開放向戶政機關查個資異動 上報Up Media</p>
+</article>
+
+<article class="card">
+  <div class="rank">#3</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPZERtY1VMNENrR3kzdzE5U3RlWlByaHYxZWp2V2xYWlVwdkJMenhhSzhPeUpEUlJia2VLZU11ZjJ2eHdyakxVXzc2UFN1MGtoYm9wVk9hd1l1TnZEUVA0eW1lSzRlY1NVbWo2cldRaXVxanBvTk1Nd3JEQ21OX20wUHRSN0sxeERIVlVqTNIBjAFBVV95cUxPZERtY1VMNENrR3kzdzE5U3RlWlByaHYxZWp2V2xYWlVwdkJMenhhSzhPeUpEUlJia2VLZU11ZjJ2eHdyakxVXzc2UFN1MGtoYm9wVk9hd1l1TnZEUVA0eW1lSzRlY1NVbWo2cldRaXVxanBvTk1Nd3JEQ21OX20wUHRSN0sxeERIVlVqTA?oc=5" target="_blank" rel="noopener">立法會討論深化國際教育樞紐議案 鄧飛：倡容許資助學校收非本地生 - Sing Tao Daily 星島日報加拿大</a></h3>
+  <div class="meta"><span class="source">Sing Tao Daily 星島日報加拿大</span><span class="age age-fresh">20 小時前</span><span class="score">議題分數 8</span></div>
+  <p class="summary">立法會討論深化國際教育樞紐議案 鄧飛：倡容許資助學校收非本地生 Sing Tao Daily 星島日報加拿大</p>
+</article>
+  
+<details class="extended">
+  <summary>延伸觀察（分數 3-4，未達 Top 3 門檻）— 共 5 則</summary>
+  <ul><li><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PN0RULVl3NEYxSWc3MXByMFprMXUxLUFRM3dKdEc2bkpUazM3Y0lQOFhVTDNrVGxNOV9mVHI4NjhwVFRsS0dsbEUxWEc3N1ZjN0E?oc=5" target="_blank" rel="noopener">中原獲教育部WISE計畫補助 整合七學院用AI打造數位敘事 - 中華新聞雲／中華日報</a><span class="ext-meta">中華新聞雲／中華日報 · <span style="all:unset" class="age age-fresh">24 分前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBtRFVJT3dWYXRrS3YzR0o3TkxBUVkxSUozTWhvTFd2WnhJMEFBSVBGNmwtTWdqUHA4T0x0LUJfQjFrUTBXQmIyY1FDNzBMZW5pZmc?oc=5" target="_blank" rel="noopener">教育部推中小學教師教學創新行動計畫 11月24、25日辦徵件說明會 - 蕃新聞</a><span class="ext-meta">蕃新聞 · <span style="all:unset" class="age age-fresh">5 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMi5wJBVV95cUxNVGduRnBtY0NzQ29UYXJ1TVhhQ194Rk5xTk8yLVJWXy1wNVNOSll2YkF2ODliLW1ESXpyRmcxMXJOYUZLdTl1b3FweTE1TG1STFJDNWJIVVAwRTJzRUlSUUdSTXBpT1daZXBGNlctb29YSThtdkJlXzVzcUxVbTdJQVNWWDlFbmhtcThEaTR3NVZWTDIyaFdlaU5vSV9LcHVQWXlBcTFkZ0dyQ3FaNjJ1MUhIamg5Y25BRjZ6ZU00eGVyODMzYm5aUWpST3VielJnZTdFall5cmdEUUd2SkJoaGF3YlpvcXRhU1VCVkdqbjZQMWhNZzEtSlItOEtXSG92ZTN1LXIxVk5STDI2eDlMV2ptOFE0WlVlX21FVEJtRUlWdThRejR2ZTlnWnBRQU5rQXIxakZIS05Tb3JfQzZMY3ZpWGdwa25qVVhHblVKdl9SU3hFOGtOdlg1dERlV0stUnNkRnB4Yw?oc=5" target="_blank" rel="noopener">國教署推動國中小學習扶助 金門嘉義新竹教師學生分享成長 - 報新聞 Mega News</a><span class="ext-meta">報新聞 Mega News · <span style="all:unset" class="age age-fresh">5 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE5BRDRPZDhBcmg5elJqdjd6bllVXzh3VXNjRVltOXJVQTF4ZFZUZmJoRURwX3dDdjR2bU5qTnFlenlsc2RiM2dfV2JHZ1FZVUhEQ3c?oc=5" target="_blank" rel="noopener">教育部「館館有AI」 三所國立圖書館「讀」享AI服務上路 - 蕃新聞</a><span class="ext-meta">蕃新聞 · <span style="all:unset" class="age age-fresh">5 小時前</span></span></li>
+<li><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9fZVlBQWpSZUpnTlZfZGR1SFlacy03X3VLSEIzbHhUdVU3eEtPMXc4R1dwSW4yamhjaUNZZmMyWDQ4eTlJNllhN0dPV21IWU1hU1E?oc=5" target="_blank" rel="noopener">教育部持續強化學生住宿支持措施，減輕住宿負擔並保障學生居住權益 - 蕃新聞</a><span class="ext-meta">蕃新聞 · <span style="all:unset" class="age age-fresh">8 小時前</span></span></li></ul>
+</details>
+</section>
+
+<section id="international">
+  <h2>國際重大議題</h2>
+  <div class="section-desc">每日精選 2 則，來源：BBC / Guardian / Google News / Straits Times</div>
+  
+<article class="card">
+  <div class="rank">#1</div>
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNQXJjSGxxS242TF8zNUlUbEJIRF9zX2F5cTRlVEVnb082eG94UVJ4MlQ3RnRqT1pabm9meU9XTHlmT0FrbFY4VHBtN1JROHgzTFNPaW9TbVVJeE5OTXlIVWFicjBTYjlwODFicHdtNXRkaE5KQTJ4VzZnaFRaS0FRY0ZYVlY?oc=5" target="_blank" rel="noopener">聯合國兒童基金會：聖誕節總有空間容納多一個孩子</a></h3>
+  <div class="meta"><span class="source">GoogleNewsEN / Unicef</span><span class="age age-fresh">21 小時前</span><span class="score">議題分數 7</span></div>
+  <p class="summary">聯合國兒童基金會於聖誕節呼籲關注弱勢兒童，強調節慶期間應為更多需要幫助的孩子創造機會與空間。</p>
+  <details class="orig"><summary>原文標題</summary><p>There's always room for one more child at Christmas - Unicef</p></details>
+</article>
+
+<article class="card">
+  <div class="rank">#2</div>
+  <h3 class="title"><a href="https://www.bbc.co.uk/news/articles/cw782xzn3m49o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">威爾斯預算缺口恐讓學生無法入學</a></h3>
+  <div class="meta"><span class="source">BBC / Unknown</span><span class="age age-fresh">17 小時前</span><span class="score">議題分數 5</span></div>
+  <p class="summary">威爾斯議會議長Elin Jones表示，經費短缺是威爾斯政府面臨的財政現實，可能導致學生被拒於大學門外。</p>
+  <details class="orig"><summary>原文標題</summary><p>Students face being 'turned away from college' over budget gap</p></details>
+</article>
+</section>
+
+<section id="aabe">
+  <h2>近 7 日國教盟媒體露出</h2>
+  <div class="section-desc">關鍵字：國教盟、國教行動聯盟、王瀚陽（Google News RSS 對小眾關鍵字有 ~2 日延遲，故採 7 日視窗）</div>
+  
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1BeUV5aHlacW4xWlFVU0pGSS0tZGNzRUF0VUZxM2VydkFJdFd2dGo2dHJLZWJxRXlmNHhMeFFaNFRUSWlIN2VTaTgzUVBEZWtXRWxSc1lXUW11dmo5ZjY0aERR0gFnQVVfeXFMTi03QUFfSGVXamRiNE14STBCNEpOZWFvWFRxZVFocHVoX284dTRFSlZHMUtWcGpfWWhaYjE5THlvSFZIUC1CTTJwVmNsTU5mU3RNNUJXSHZFUzU2UHNpVTlkUFUwV0l0aw?oc=5" target="_blank" rel="noopener">防狼師變更身分規避查詢 國教盟：資料庫更新不能有時間差 - 大紀元</a></h3>
+  <div class="meta"><span class="source">大紀元</span><span class="date">11/19</span></div>
+  <p class="summary">防狼師變更身分規避查詢 國教盟：資料庫更新不能有時間差 大紀元</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE9QUGotOWp3Z2IyOXd6QmxydUpiVk5LeVdKTTJxOHZvbXRXZGF1OGJocFB3bFJ5MW1OMDAtdVFIMUdaRlVLWFc2YmZBNjZnYW9hcm1VTVp6NFNPa3h3?oc=5" target="_blank" rel="noopener">狼師改名恐躲過查核！教育部修法補漏洞國教盟籲明定更新期限| 教育 - 太報 TaiSounds</a></h3>
+  <div class="meta"><span class="source">太報 TaiSounds</span><span class="date">11/19</span></div>
+  <p class="summary">狼師改名恐躲過查核！教育部修法補漏洞國教盟籲明定更新期限| 教育 太報 TaiSounds</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE00NDRZMUphWlFZTV9YZzBFZHJEekV0NWdYOENPME9OazBxbTQtY2pmNUxOZ1N3aGUtUVEwSDNLUkJDbGxuOWJjR0swNUkzVjlwams0YkdzMzB1eUNzNk00Vk54YnE0dnE0WXN5enZ3?oc=5" target="_blank" rel="noopener">防不適任人員改名躲查詢 國教盟促教部訂資料更新時限 - 中時新聞網</a></h3>
+  <div class="meta"><span class="source">中時新聞網</span><span class="date">11/19</span></div>
+  <p class="summary">防不適任人員改名躲查詢 國教盟促教部訂資料更新時限 中時新聞網</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBENzlUUWMwaVZ2czZYSjg4MHBRZTNia1g5aWpVMm9YQmxEb0FZVGVDajdhVDJ6Q1RWOVJJWkVUaEduNXlva1JiOG1IekNIR2530gFWQVVfeXFMUFpVeU96cFFvUVVkM3JWZDQ1V2pDczJicm5XV3VVaEVFSndyZ0FoRU43TDY2Q09tZy14UXB6cVNFeHJqbF9FMEozSzVYdUZZb09zRXVFMVE?oc=5" target="_blank" rel="noopener">教育部修法防狼師改名重返校園 國教盟：資料更新時限應說清楚 - UDN</a></h3>
+  <div class="meta"><span class="source">UDN</span><span class="date">11/19</span></div>
+  <p class="summary">教育部修法防狼師改名重返校園 國教盟：資料更新時限應說清楚 UDN</p>
+</article>
+
+<article class="card aabe-card">
+  <h3 class="title"><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE9BVElQME9MNkZQdy1adVVJYlREd3JPTHlNUmtFRUp4S0VKRXVVS1o0Mk9FTHJIWXdtRk9vVWE4aWhnVTZYVGZXX3FvenlEM2NlRGxQNS1Pc29DRnNL0gFiQVVfeXFMTW55NUpoYmxPTlJ1Unh6UjhlV29VeHUzYzk2dFhDX2ptekZlR2VsZEF0c3JkWlFHNWhLblV6S2JQTnRYTUdXc0RVaS1jcW5lU3RXalRaTGFrenhkX1I4Q2pra3c?oc=5" target="_blank" rel="noopener">狼師改名恐有空窗期　補習班、教練成破口 - 鏡週刊Mirror Media</a></h3>
+  <div class="meta"><span class="source">鏡週刊Mirror Media</span><span class="date">11/19</span></div>
+  <p class="summary">狼師改名恐有空窗期 補習班、教練成破口 鏡週刊Mirror Media</p>
+</article>
+</section>
+
+<section id="candidates">
+  <h2>今天值得開題</h2>
+  <div class="section-desc">日報替理事長挑出的候選，請在 LINE 回「做＋部門／不做／觀察」</div>
+  
+<article class="card">
+  <h3 class="title">教育部修法開放向戶政機關查詢個資異動，防堵不適任教師改名重返校園</h3>
+  <div class="meta"><span class="source">建議 重大 · 家長部</span></div>
+  <p class="summary">涉及兒少人身安全與不適任教師查核制度重大變革，國教盟已多次倡議且獲五家媒體露出，具政策影響力</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE1rSE5pMEs3bFpIWEVObXFQeWVabWxGanlqLXpnRTA3V19vWDEwYzd3Z2ktcjZvZlBTZGtuTTZXM2Z3WXNCNjJmN0R0eFRwRXRrSzZTbVdqU1dscldfdFlzR3hUVG7SAWpBVV95cUxONGFmOUs2czdQNUs3dkpFaERuMHJPUHc2dUR6OU83YUlfWU41WXJDcWpaVVNxeUVaZngyTlpYWGY5dG1sYXdadFhNWWVJdWNkOURmODFRNnZWWkE4dnVzWlVVN0lNaUZhNWtB?oc=5" target="_blank" rel="noopener">自由時報</a>、<a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9tVVFTRXo1aXFSeXA0bW50TVNEb0Q1Rng3RFFBa2ktNW9mU1FuSThhajVCNldVUVNCR1BsOW9ZRUQyT1NXZURSaVhvZ0hnRzN4eFJLVG01NmFzZERVdHhsbE50NF9MZWNWdDluaQ?oc=5" target="_blank" rel="noopener">上報Up Media</a></p>
+</article>
+
+<article class="card">
+  <h3 class="title">桃園龜山高中生在公園男廁遭多名少年踹打並錄影，六少涉案五人到案</h3>
+  <div class="meta"><span class="source">建議 一般 · 青年部</span></div>
+  <p class="summary">涉及校園霸凌向校外延伸、少年暴力及數位霸凌（錄影）等多重兒少保護議題，可觀察後續處置</p>
+  <p class="summary">來源：<a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1qU0pVQkxmME9SLU1nQ0VkNjdYUDl4UjFBb3UyMVRiMmhDQzlnOU5oemJCSmVoRzJNcnZTZU1zQkFEc0J5dVY2QmoxbHEwSnJSTWtwWmNxM1VYRy1keXfSAUtBVV95cUxQa2pnMjNZYnJPdTN3VEQ3d3RHcGVON0lZdExIMkZLUE5pWE9CWXYyMUtNUFJ4a1pYTVVLdlYteldLeHc5dThiSEhRQWs?oc=5" target="_blank" rel="noopener">ETtoday新聞雲</a>（只有一個來源）</p>
+</article>
+  
+<div class="empty-state">
+  <p class="empty-desc">目前每一題走到哪一步，請看<a href="https://claude.ai/artifact/UYGwjUYkBzJ4yGodUiHUGa" target="_blank" rel="noopener">快速倡議看板</a></p>
+</div>
+</section>
+
+<section class="ai-insight" id="insight">
+  <h2>國教盟小編心得整理</h2>
+  <div class="ai-badge">由 Claude Sonnet 4.5 協助整理</div>
+  <p>今日核心趨勢聚焦於不適任教師資料庫查詢漏洞，教育部修法允許向戶政機關查詢個資異動，回應國教盟長期倡議，媒體露出五則，顯示議題已進入政策修正階段。</p><p>跨議題串連方面，狼師改名規避查詢的漏洞不僅存在學校體系，補習班、運動教練等聘用單位同樣面臨資料更新時差問題。對照國際學生保護機制，即時性資料庫同步已是標準配備，台灣修法方向正確但執行細節仍待釐清。</p><p>建議一：可考慮持續追蹤教育部法規命令施行細則，特別關注戶政與教育資料庫同步更新的技術規格與時限規範，確保無空窗期。<br>建議二：值得將監督範圍擴及補習班、才藝班、運動教練等非典型教育場域的聘用查核機制，補強兒少保護網的系統性缺口。</p>
+</section>
+
+</main>
+
+<footer>
+  <p>本日報由國教行動聯盟（AABE）每日 18:00 自動生成 · 6 大議題類別 + 4 國際來源 + AI 觀察整理</p>
+  <p>網址：<a href="https://naer-tw.github.io/daily-news/">naer-tw.github.io/daily-news/</a></p>
+</footer>
+
+<script>
+function toggleTheme() {
+  var t = document.body.dataset.theme;
+  document.body.dataset.theme = (t === 'dark') ? 'light' : 'dark';
+  localStorage.setItem('theme', document.body.dataset.theme);
+  document.querySelector('.theme-toggle').textContent = document.body.dataset.theme === 'dark' ? '☀️' : '🌙';
+}
+(function() {
+  var saved = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.body.dataset.theme = saved;
+  document.querySelector('.theme-toggle').textContent = saved === 'dark' ? '☀️' : '🌙';
+})();
+</script>
+
+</body>
+</html>
